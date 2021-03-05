@@ -8,6 +8,7 @@ This project is a clone of [Quizlet](https://play.google.com/store/apps/details?
 
 Our group includes:
 
-- [Nguyen Ngoc Anh Vu](https://github.com/EagleVee)
-- [Tran Ba Hoa](https://github.com/hoatrana3)
-- [Tran Viet Tien](https://github.com/TienTran-commits)
+- [Phạm Đức Duy](https://github.com/dreamow99)
+- [Nguyễn Hữu Đạt](https://github.com/NHDat2)
+- [Đồ Thành Đạt](https://github.com/datdt312)
+- [Nguyễn Ngọc Anh Vũ](https://github.com/EagleVee)
