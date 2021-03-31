@@ -1,3 +1,10 @@
 <resources>
-    <string name="app_name">letquiz</string>
+    <string name="app_name">Trainery</string>
+    <string moduleConfig="true" name="CodePushDeploymentKey">7Ax_UGxpzxj0VA2lk7j2ATN-bJ-u9IQJ7W8Ek</string>
+    <string name="appCenterCrashes_whenToSendCrashes" moduleConfig="true" translatable="false">DO_NOT_ASK_JAVASCRIPT</string>
+    <string name="appCenterAnalytics_whenToEnableAnalytics" moduleConfig="true" translatable="false">ALWAYS_SEND</string>
+    <string name="freshchat_file_provider_authority">com.example.demoapp.provider</string>
+    <string name="facebook_app_id">1838999309599116</string>
+    <string name="fb_login_protocol_scheme">fb1838999309599116</string>
+    <string name="appID">2991152339899603168</string>
 </resources>

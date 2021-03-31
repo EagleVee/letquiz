@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "673991717827",
+    "firebase_url": "https://trainery-ed7df.firebaseio.com",
+    "project_id": "trainery-ed7df",
+    "storage_bucket": "trainery-ed7df.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:673991717827:android:a915c333667ed0493ac376",
+        "android_client_info": {
+          "package_name": "com.fitness.trainery.trainer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "673991717827-3emqmvnpk5bki0lr21hl3qkgdbhjlmdn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.fitness.trainery.trainer",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
+          "client_id": "673991717827-cevsae2dqh343reu23rvhqugmkstbukj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.fitness.trainery.trainer",
+            "certificate_hash": "cd1b6973a639d0b7b9e8e0dc1515274c2cc88709"
+          }
+        },
+        {
+          "client_id": "673991717827-uo1u12qmqbk0hah2o09m5mo1d0c6m0lj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAdXVklY6qwhiS-Pgdce6xI0DRQL9U3IHk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "673991717827-uo1u12qmqbk0hah2o09m5mo1d0c6m0lj.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "673991717827-tb893qub8lobtjih6u84v8qrv4jt9a0v.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.fitness.trainery.trainer"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -8480,11 +8480,6 @@ react-native-webview@11.0.2:
     escape-string-regexp "2.0.0"
     invariant "2.2.4"
 
-react-native-zalo-kit@^1.0.9:
-  version "1.0.9"
-  resolved "https://registry.yarnpkg.com/react-native-zalo-kit/-/react-native-zalo-kit-1.0.9.tgz#b764d2f13732f6615811e5796689f5c54b2e1a13"
-  integrity sha512-dnEiObVdAk0e/SSscL2uxqoXOcjNv4nZo7O9LdHVYOIV14e5Mbxyl7QQW6n5nMuGWAH5s4y5w8JIvdX7bDzuJA==
-
 react-native@0.63.3:
   version "0.63.3"
   resolved "https://registry.yarnpkg.com/react-native/-/react-native-0.63.3.tgz#4a7f6540e049ff41810887bbd1125abc4672f3bf"
