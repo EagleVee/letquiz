@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="_001-information" width="20" height="20" viewBox="0 0 20 20">
+    <defs>
+        <style>
+            .cls-1{fill:#beb6ce}
+        </style>
+    </defs>
+    <g id="Group_1317">
+        <g id="Group_1316">
+            <path id="Path_28695" d="M10 0a10 10 0 1 0 10 10A9.994 9.994 0 0 0 10 0zm0 18.438A8.438 8.438 0 1 1 18.438 10 8.433 8.433 0 0 1 10 18.438z" class="cls-1"/>
+        </g>
+    </g>
+    <g id="Group_1319" transform="translate(9.219 8.372)">
+        <g id="Group_1318">
+            <path id="Path_28696" d="M236.781 214.33a.781.781 0 0 0-.781.781v5.031a.781.781 0 1 0 1.563 0v-5.031a.781.781 0 0 0-.782-.781z" class="cls-1" transform="translate(-236 -214.33)"/>
+        </g>
+    </g>
+    <g id="Group_1321" transform="translate(8.945 5.306)">
+        <g id="Group_1320">
+            <circle id="Ellipse_596" cx="1.055" cy="1.055" r="1.055" class="cls-1"/>
+        </g>
+    </g>
+</svg>

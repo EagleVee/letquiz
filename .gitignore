@@ -57,3 +57,12 @@ buck-out/
 
 # CocoaPods
 /ios/Pods/
+.env
+.env.*
+
+# Keystores
+
+/android/*.keystore
+
+# react-native-config codegen
+ios/tmp.xcconfig

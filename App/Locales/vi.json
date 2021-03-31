@@ -1,0 +1,200 @@
+{
+  "Auth": {
+    "Login": {
+      "Facebook": "Đăng nhập Facebook",
+      "Google": "Đăng nhập Google",
+      "Zalo": "Đăng nhập Zalo",
+      "Apple": "Đăng nhập Apple ID",
+      "ByRegistering": "Bằng cách đăng ký, bạn đồng ý với",
+      "Term": "Điều khoản & Điều kiện",
+      "Privacy": "Chính sách Quyền riêng tư",
+      "Version": "Điều kiện"
+    }
+  },
+  "Tab": {
+    "WorkOut": "Tập luyện",
+    "Trainer": "Huấn luyện viên",
+    "Profile": "Cá nhân"
+  },
+  "WeekDays": {
+    "Mon": "T2",
+    "Tue": "T3",
+    "Wed": "T4",
+    "Thu": "T5",
+    "Fri": "T6",
+    "Sat": "T7",
+    "Sun": "CN"
+  },
+  "WorkOut": {
+    "YourSessionsThisWeek": "Bài tập tuần này của bạn",
+    "CurrentPrograms": "Chương trình đang tập",
+    "LatestPrograms": "Chương trình mới",
+    "OutstandingTrainer": "Huấn luyện viên nổi bật",
+    "Greeting": {
+      "morning": "Chào buổi sáng!",
+      "afternoon": "Chào buổi chiều!",
+      "evening": "Chào buổi tối!"
+    },
+    "TakeADayOff": "Nghỉ ngơi một hôm"
+  },
+  "Time": {
+    "months": "tháng",
+    "weeks": "tuần",
+    "days": "ngày",
+    "hours": "giờ",
+    "minutes": "phút",
+    "seconds": "giây",
+    "month": "tháng",
+    "week": "tuần",
+    "day": "ngày",
+    "hour": "giờ",
+    "minute": "phút",
+    "subscribers": "người đăng ký",
+    "Week": "Tuần"
+  },
+  "Program": {
+    "Level": {
+      "Beginner": "Mới tập",
+      "Intermediate": "Tập quen",
+      "Advanced": "Nâng cao",
+      "All": "Tất cả"
+    }
+  },
+  "TrainerScreen": {
+    "Title": "Chương trình tập luyện online cùng huấn luyện viên.",
+    "SubTitle": "Biến việc tập luyện thành đam mê.",
+    "InstructionTitle": "Hướng dẫn sử dụng Trainery",
+    "Step": "Bước",
+    "InstructionStep1": "Tìm phòng tập / huấn luyện viên bạn yêu thích.",
+    "InstructionStep2": "Trải nghiệm các chương trình tập luyện, các thử thách và kiến thức miễn phí.",
+    "InstructionStep3": "Đăng ký gói tập luyện online cùng huấn luyện viên / phòng tập để sử dụng tất cả chương trình tập luyện chất lượng."
+  },
+  "ProgramDetailScreen": {
+    "WorkOut": "Tập luyện",
+    "Discuss": "Thảo luận",
+    "About": "Giới thiệu",
+    "Completed": "Hoàn thành",
+    "Requirements": "Yêu cầu",
+    "RequirementNoteBold": "Để có được kết quả tốt nhất!",
+    "RequirementNote": "Vui lòng hoàn thành các bài tập dưới đây trước khi vào chương trình chính.",
+    "TrainNowLeft": "Tập luyện ngay với",
+    "TrainNowRight": "",
+    "TrainNow": "Tập luyện ngay",
+    "TrainFree": "Tập MIỄN PHÍ",
+    "SubscribeWorkoutProgram": "Đăng ký gói tập luyện",
+    "ReturnWeek": "Quay lại tuần này",
+    "NoEquipmentsRequired": "Không cần dụng cụ"
+  },
+  "TrainerDetailScreen": {
+    "Program": "Chương trình",
+    "Update": "Cập nhật",
+    "About": "Giới thiệu",
+    "Completed": "Hoàn thành",
+    "ProgramUpdateRegularly": "Chương trình cập nhật liên tục",
+    "AchievementsAndCertificates": "Thành tích và chứng chỉ chuyên môn",
+    "Field": "Lĩnh vực",
+    "Connection": "Kết nối"
+  },
+  "SessionDetailScreen": {
+    "Start": "Bắt đầu"
+  },
+  "SessionPlayScreen": {
+    "SkipRestTime": "Bỏ qua thời gian nghỉ"
+  },
+  "SessionFinishScreen": {
+    "LetsRest": "Nghỉ ngơi thôi",
+    "Congratulation": "Chúc mừng bạn đã hoàn thành bài tập"
+  },
+  "WorkoutSessionScreen": {
+    "GetReady": "Chuẩn bị",
+    "ViewAllExercises": "Xem tất cả bài tập",
+    "TotalTime": "Tổng thời gian",
+    "NumberOfExercises": "Số bài tập",
+    "BackToSession": "Quay lại buổi tập"
+  },
+  "ProfileScreen": {
+    "WorkoutHistory": "Lịch sử tập luyện",
+    "Subscriptions": "gói thành viên",
+    "Devices": "Thiết bị",
+    "SuggestionsAndSupport": "Góp ý & hỗ trợ",
+    "AboutTrainery": "Về Trainery",
+    "FAQ": "Câu hỏi thường gặp",
+    "DarkMode": "Giao diện tối",
+    "Language": "Ngôn ngữ",
+    "LogOut": "Đăng xuất",
+    "LogOutConfirm": "Bạn có chắc muốn đăng xuất khỏi Trainery?",
+    "CodeInputTitle": "Nhập mã kích hoạt gói tập luyện (nếu có)"
+  },
+  "PaymentCheckoutScreen": {
+    "SubscribeWorkout": "Đăng ký tập luyện",
+    "SubscriptionTrainerPromotionTitle": "Tập luyện TẤT CẢ chương trình của ",
+    "SubscriptionTrainerPromotionDescription": "Chương trình tập luyện độc quyền, chất lượng cao được cập nhật mới thường xuyên phù hợp trình độ của bạn.",
+    "SubscriptionCommunityPromotionTitle": "Tham gia cộng đồng tập luyện",
+    "SubscriptionCommunityPromotionDescription": "Thảo luận, nhận phản hồi và cập nhật thông tin từ huấn luyện viên và cộng đồng.",
+    "SubscriptionCommunityPauseTitle": "Tạm dừng bất kỳ lúc nào!",
+    "SubscriptionCommunityPauseDescription": "Tính năng hỗ trợ tạm dừng gói thành viên linh hoạt.",
+    "WorkOutWith": "Tập luyện cùng:",
+    "SubscriptionPlan": "Đăng ký gói tập luyện:",
+    "NoDiscount": "Không giảm giá",
+    "SubscribeWorkoutPlanWith": "Đăng ký gói tập với ",
+    "ChoosePlanError": "Vui lòng lựa chọn gói tập trước khi đăng ký"
+  },
+  "PaymentMethodScreen": {
+    "WorkoutSubscriptionPlan": "Gói thành viên tập luyện",
+    "PaymentMethods": "Phương thức thanh toán",
+    "Bank": "Ngân hàng:",
+    "AccountHolder": "Tên tài khoản:",
+    "AccountNumber": "Số tài khoản:",
+    "TransactionMoney": "Số tiền cần thanh toán:",
+    "TransactionContent": "Nội dung chuyển tiền*:",
+    "PaymentBankNote": "- Nhập nội dung chuyển khoản như trên để Trainery kích hoạt đúng gói tập cho bạn.\n- Trainery sẽ kích hoạt TỰ ĐỘNG gói tập của bạn trong vòng 24 giờ sau khi nhận được chuyển khoản.",
+    "PaymentBankTransfer": "Bạn chuyển tiền đến tài khoản sau để hoàn tất đăng ký nhé."
+  },
+  "AboutScreen": {
+    "Title": "Tập luyện cùng huấn luyện viên tại nhà",
+    "Description": "Đây là miêu tả của Trainery."
+  },
+  "SubscriptionListScreen": {
+    "WorkoutWithTrainer": "Tập luyện cùng huấn luyện viên",
+    "SubscriptionExpireAt": "Hạn thành viên ngày: "
+  },
+  "Util": {
+    "Close": "Thoát",
+    "Pause": "Tạm dừng",
+    "Continue": "Tiếp tục",
+    "Confirm": "Xác nhận",
+    "Complete": "Hoàn thành",
+    "Exit": "Thoát",
+    "Recount": "Đếm lại",
+    "Next": "Tiếp theo",
+    "GetIn": "Vào bài tập",
+    "Success": "Thành công"
+  },
+  "RegularTerm": {
+    "ComingSoon": "Coming Soon",
+    "comingSoon": "coming soon",
+    "Discount": "Giảm giá",
+    "Version": "Phiên bản",
+    "CopiedToClipboard": "Đã sao chép vào khay nhớ tạm",
+    "Confirm": "Xác nhận",
+    "OK": "OK",
+    "Cancel": "Cancel"
+  },
+  "Error": {
+    "InvalidVideoSource": "Nguồn video không khả dụng"
+  },
+  "Month": {
+    "1": "Tháng 1/",
+    "2": "Tháng 2/",
+    "3": "Tháng 3/",
+    "4": "Tháng 4/",
+    "5": "Tháng 5/",
+    "6": "Tháng 6/",
+    "7": "Tháng 7/",
+    "8": "Tháng 8/",
+    "9": "Tháng 9/",
+    "10": "Tháng 10/",
+    "11": "Tháng 11/",
+    "12": "Tháng 12/"
+  }
+}

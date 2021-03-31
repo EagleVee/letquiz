@@ -1,6 +1,6 @@
 # letquiz
 
-A project created for UET's Mobile Application Development course (INT3122_20).
+A project created for UET Mobile Cloud Computing course (INT3122_20).
 
 This project is a clone of [Quizlet](https://play.google.com/store/apps/details?id=com.quizlet.quizletandroid)
 
@@ -21,5 +21,7 @@ Please refer to [this document](http://bit.ly/3bnCSaR)
 
 - Git clone this project
 - Open terminal at the root of the project
-- Run `flutter pub get` to install all the dependencies
-- Run `flutter run` to launch the application. Make sure you have a device or simulaltor connected.
+- Make sure you have `yarn` and `cocoapods` installed
+- Run `yarn install` to install all the dependencies
+- Run `cd ios && pod install` to install CocoaPods packages
+- Connect an Android device or simulator, and run `react-native run-android`, or if you're a mac user, run `react-native run-ios`

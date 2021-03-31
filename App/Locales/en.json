@@ -1,0 +1,206 @@
+{
+  "Auth": {
+    "Login": {
+      "Facebook": "Login via Facebook",
+      "Google": "Login via Google",
+      "Zalo": "Login via Zalo",
+      "Apple": "Login via Apple ID",
+      "ByRegistering": "By registering, you will accept",
+      "Term": "Terms and Conditions",
+      "Privacy": "Privacy Policy",
+      "Version": "Version"
+    }
+  },
+  "Tab": {
+    "WorkOut": "Work Out",
+    "Trainer": "Trainer",
+    "Profile": "Profile"
+  },
+  "WeekDays": {
+    "Mon": "Mon",
+    "Tue": "Tue",
+    "Wed": "Wed",
+    "Thu": "Thu",
+    "Fri": "Fri",
+    "Sat": "Sat",
+    "Sun": "Sun"
+  },
+  "WorkOut": {
+    "YourSessionsThisWeek": "Your week sessions",
+    "CurrentPrograms": "Current programs",
+    "LatestPrograms": "Latest programs",
+    "OutstandingTrainer": "Outstanding trainers",
+    "Greeting": {
+      "morning": "Good morning!",
+      "afternoon": "Good afternoon!",
+      "evening": "Good evening!"
+    },
+    "TakeADayOff": "Take a day off"
+  },
+  "Unit": {
+    "months": "months",
+    "weeks": "weeks",
+    "days": "days",
+    "hours": "hours",
+    "minutes": "minutes",
+    "seconds": "seconds",
+    "reps": "reps",
+    "month": "month",
+    "week": "week",
+    "day": "day",
+    "hour": "hour",
+    "minute": "minute",
+    "subscribers": "subscribers",
+    "Week": "Week"
+  },
+  "Program": {
+    "Level": {
+      "Beginner": "Beginner",
+      "Intermediate": "Intermediate",
+      "Advanced": "Advanced",
+      "All": "All level"
+    }
+  },
+  "TrainerScreen": {
+    "Title": "Online training program with trainer.",
+    "SubTitle": "Turn exercising into passion.",
+    "InstructionTitle": "How to use Trainery app",
+    "Step": "Step",
+    "InstructionStep1": "Find a gym & trainer in your favourite workout field.",
+    "InstructionStep2": "Try out FREE workout programs.",
+    "InstructionStep3": "Subscribe to trainer and gain access to ALL premium online training programs."
+  },
+  "ProgramDetailScreen": {
+    "WorkOut": "Work Out",
+    "Discuss": "Discuss",
+    "About": "About",
+    "Completed": "Completed",
+    "Requirements": "Requirements",
+    "RequirementNoteBold": "In order to achieve the best result!",
+    "RequirementNote": "Please complete these following programs before diving into the main program.",
+    "TrainNowLeft": "Train with",
+    "TrainNowRight": "now",
+    "TrainNow": "Train now",
+    "TrainFree": "Train FREE",
+    "SubscribeWorkoutProgram": "Subscribe to workout program",
+    "ReturnWeek": "Return to this week",
+    "NoEquipmentsRequired": "No equipments required"
+  },
+  "TrainerDetailScreen": {
+    "Program": "Program",
+    "Update": "Update",
+    "About": "About",
+    "Completed": "Completed",
+    "ProgramUpdateRegularly": "Programs update regularly",
+    "AchievementsAndCertificates": "Achievements and professional certificates",
+    "Field": "Field",
+    "Connection": "Connection",
+    "TrainNowRight": "now",
+    "ReturnWeek": "Return to this week"
+  },
+  "SessionDetailScreen": {
+    "Start": "Let's go"
+  },
+  "SessionPlayScreen": {
+    "SkipRestTime": "Skip rest time"
+  },
+  "SessionFinishScreen": {
+    "LetsRest": "Let's rest",
+    "Congratulation": "Congratulations, you have completed the session!"
+  },
+  "WorkoutSessionScreen": {
+    "GetReady": "Get ready",
+    "ViewAllExercises": "View all exercises",
+    "TotalTime": "Total time",
+    "NumberOfExercises": "Number of exercises",
+    "BackToSession": "Back to session"
+  },
+  "ProfileScreen": {
+    "WorkoutHistory": "Workout history",
+    "Subscriptions": "subscriptions",
+    "Devices": "Devices",
+    "SuggestionsAndSupport": "Suggestions & support",
+    "AboutTrainery": "About Trainery",
+    "FAQ": "Frequently Asked Questions",
+    "DarkMode": "Dark Mode",
+    "Language": "Language",
+    "LogOut": "Log out",
+    "LogOutConfirm": "Are you sure you want to log out from Trainery?",
+    "CodeInputTitle": "Input your subscription code"
+  },
+  "PaymentCheckoutScreen": {
+    "SubscribeWorkout": "Subscribe workout",
+    "SubscriptionTrainerPromotionTitle": "Gain access to ALL programs from ",
+    "SubscriptionTrainerPromotionDescription": "Exclusive, high quality workout programs updated regularly to suit your level.",
+    "SubscriptionCommunityPromotionTitle": "Join the workout community",
+    "SubscriptionCommunityPromotionDescription": "Discuss, receive responses and updated information from trainer and community.",
+    "SubscriptionCommunityPauseTitle": "Pause anytime",
+    "SubscriptionCommunityPauseDescription": "Flexibly pausing subscription support.",
+    "WorkOutWith": "Work out with: ",
+    "SubscriptionPlan": "Subscription plan",
+    "NoDiscount": "No discount",
+    "SubscribeWorkoutPlanWith": "Subscribe workout plan with ",
+    "ChoosePlanError": "Please choose a plan before subscribing"
+  },
+  "PaymentMethodScreen": {
+    "WorkoutSubscriptionPlan": "Gói thành viên tập luyện",
+    "PaymentMethods": "Payment methods",
+    "Bank": "Bank:",
+    "AccountHolder": "Account holder:",
+    "AccountNumber": "Account number:",
+    "TransactionMoney": "Transaction money:",
+    "TransactionContent": "Transaction content*:",
+    "PaymentBankNote": "- Make sure to confirm your transaction content so Trainery can activate your subscription plan.\n- Trainery will activate your subscription AUTOMATICALLY within 24 hours after completing the transaction.",
+    "PaymentBankTransfer": "Please transfer to this bank account to complete your subscription"
+  },
+  "AboutScreen": {
+    "Title": "Work out with our trainers at your home",
+    "Description": "This is Trainery description."
+  },
+  "SubscriptionListScreen": {
+    "WorkoutWithTrainer": "Workout with trainer",
+    "SubscriptionExpireAt": "Subscription expire at: "
+  },
+  "Util": {
+    "Close": "Close",
+    "Pause": "Pause",
+    "Continue": "Continue",
+    "Confirm": "Confirm",
+    "Complete": "Complete",
+    "Exit": "Exit",
+    "Recount": "Recount",
+    "Next": "Next",
+    "GetIn": "Get in",
+    "Rest": "Rest",
+    "Reps": "Reps",
+    "reps": "reps",
+    "Success": "Success"
+  },
+  "RegularTerm": {
+    "ComingSoon": "Coming Soon",
+    "comingSoon": "coming soon",
+    "Discount": "Discount",
+    "Version": "Version",
+    "CopiedToClipboard": "Copied to clipboard",
+    "Confirm": "Confirm",
+    "OK": "OK",
+    "Cancel": "Cancel"
+  },
+  "Error": {
+    "InvalidVideoSource": "The video source is invalid"
+  },
+  "Month": {
+    "1": "January ",
+    "2": "February ",
+    "3": "March ",
+    "4": "April ",
+    "5": "May ",
+    "6": "June ",
+    "7": "July ",
+    "8": "August ",
+    "9": "September ",
+    "10": "October ",
+    "11": "November ",
+    "12": "December "
+  }
+}

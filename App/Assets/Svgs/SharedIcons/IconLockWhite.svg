@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="24" viewBox="0 0 20 24">
+    <defs>
+        <style>
+            .cls-1{fill:#fff}
+        </style>
+    </defs>
+    <g id="_001-padlock" transform="translate(-42.667)">
+        <g id="Group_1168" transform="translate(42.667)">
+            <g id="Group_1167">
+                <path id="Path_28364" d="M59.667 8V7a7 7 0 1 0-14 0v1a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3V11a3 3 0 0 0-3-3zm-12-1a5 5 0 1 1 10 0v1h-10zm13 14a1 1 0 0 1-1 1h-14a1 1 0 0 1-1-1V11a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1z" class="cls-1" transform="translate(-42.667)"/>
+            </g>
+        </g>
+        <g id="Group_1170" transform="translate(49.667 11.5)">
+            <g id="Group_1169">
+                <path id="Path_28365" d="M195 245.333a2.993 2.993 0 0 0-1 5.816v1.684a1 1 0 0 0 2 0v-1.684a2.993 2.993 0 0 0-1-5.816zm0 4a1 1 0 1 1 1-1 1 1 0 0 1-1 1z" class="cls-1" transform="translate(-192 -245.333)"/>
+            </g>
+        </g>
+    </g>
+</svg>

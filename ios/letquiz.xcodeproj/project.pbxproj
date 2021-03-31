@@ -8,12 +8,41 @@
 
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* letquizTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* letquizTests.m */; };
+		06F0CAF8060C4929BC4A0E2D /* Manrope-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DB3BF4498A2A47CBAC2F71C6 /* Manrope-ExtraBold.ttf */; };
+		0E0997CD749D41BD807A0005 /* OpenSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7193DCAD27BB462594288147 /* OpenSans-Italic.ttf */; };
+		0EC63729352749969196E4DA /* Lato-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5DAAC342484941019F518681 /* Lato-Italic.ttf */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		1CC5A94B9DE94F5CB194B0A5 /* Lato-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AC46841C08944DC8B82C7654 /* Lato-LightItalic.ttf */; };
+		1E2B341F367A4063BB19A766 /* Lato-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7386735E3B444C7AB9B742FA /* Lato-BoldItalic.ttf */; };
+		263E30E5DDFD45258F411F78 /* Lato-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DDD7A52937094C2B9EA32B69 /* Lato-ThinItalic.ttf */; };
+		267ACCFFA3824F1881891226 /* Lato-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 72EF4D2898FD46269548DEA6 /* Lato-Regular.ttf */; };
+		35A3DFCE8D4C4A2CAB399B3C /* antfill.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8538A1CDA3B54877B56853F0 /* antfill.ttf */; };
+		36094F6685F84B9A92D3EDF1 /* OpenSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1FAA0653AD7C440C98557698 /* OpenSans-Light.ttf */; };
+		363F0CF0236440049AE9D1A2 /* Manrope-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 954D0C8C95FC4671B7A9E296 /* Manrope-Medium.ttf */; };
+		3ABF4B95AFFA4861A5B6601A /* Lato-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 57E2659E40554BE2A36FAC48 /* Lato-BlackItalic.ttf */; };
+		3C07DF75FA104B10AF46002C /* Manrope-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A647977A13154783AB722BDD /* Manrope-Bold.ttf */; };
+		3D80EFE4F4B9444594122D3A /* Manrope-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 945642D08A754F43B69019EA /* Manrope-SemiBold.ttf */; };
+		3E84F40FA3F94E6D923F17D5 /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C81A2BC2E97F4E9EA2A138A2 /* OpenSans-Regular.ttf */; };
+		45C0AD72629E4B3D8A7AA1AF /* OpenSans-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 82E3378ACE3344519E6AF513 /* OpenSans-ExtraBold.ttf */; };
+		489596C4F754413FA11B269C /* Lato-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9326F9D16F184EDD943A0D68 /* Lato-Bold.ttf */; };
+		4EBEDF341703490EA20EC9F5 /* antoutline.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD096B6A92384C7F99A72F44 /* antoutline.ttf */; };
 		55ACC60CFFBBB549386EEA39 /* libPods-letquiz-letquizTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 11DC7382806961A854423CC9 /* libPods-letquiz-letquizTests.a */; };
+		6B9F45F43A64410F999DEE70 /* OpenSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C7E85EAAC996419D92AEB732 /* OpenSans-SemiBold.ttf */; };
+		6F5050373F524A7191515D54 /* OpenSans-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9D217E80B64340888D03549E /* OpenSans-ExtraBoldItalic.ttf */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		81F601880D964C50B4BA11B6 /* OpenSans-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8ACD335C6AB54A96A1E638BD /* OpenSans-LightItalic.ttf */; };
+		92AD39C3BE5148DBA59CC832 /* OpenSans-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 74805AB6994646EDB8F53718 /* OpenSans-SemiBoldItalic.ttf */; };
+		971A321C6E9644DDA19C2781 /* Lato-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 178D9C154DB84B36928CFBF8 /* Lato-Black.ttf */; };
+		C382FC2615D84D23835EEDC5 /* Lato-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 17FE7B6823244A2CB2632758 /* Lato-Light.ttf */; };
+		CCED20859DFB4DE588EB1AE9 /* OpenSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AC39B1470D3D4932902DBA69 /* OpenSans-BoldItalic.ttf */; };
+		D0804973F0C544E2BF9E6D18 /* Manrope-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 85372CD297AC445AB65E2E1C /* Manrope-ExtraLight.ttf */; };
+		D149C9926DC94A51BAF8E816 /* Manrope-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D51953722A084B09A337F3BB /* Manrope-Light.ttf */; };
 		DDABFAD49A364DBBCA32BBEF /* libPods-letquiz.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C630B371EE1185346D9507A7 /* libPods-letquiz.a */; };
+		E49AA0DBC38440B09A3A38AE /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E7D0FE8BC5CA4289A7C2B05C /* OpenSans-Bold.ttf */; };
+		E8DDD8571F8A4E448BA5C008 /* Manrope-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F893AE242AA04BDEBB1E728D /* Manrope-Regular.ttf */; };
+		F311C8CACD7D406A8EBD12AF /* Lato-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8986678941E546ADB6C84195 /* Lato-Thin.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,20 +59,65 @@
 		00E356EE1AD99517003FC87E /* letquizTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = letquizTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* letquizTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = letquizTests.m; sourceTree = "<group>"; };
+		0E879AD85F014190AB9FA4B7 /* FontAwesome5_Brands.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Brands.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Brands.ttf"; sourceTree = "<group>"; };
 		11DC7382806961A854423CC9 /* libPods-letquiz-letquizTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-letquiz-letquizTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		12DA235DCED04C6F9ED3BAA6 /* MaterialIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* letquiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = letquiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = letquiz/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = letquiz/AppDelegate.m; sourceTree = "<group>"; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = letquiz/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = letquiz/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = letquiz/main.m; sourceTree = "<group>"; };
+		178D9C154DB84B36928CFBF8 /* Lato-Black.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Lato-Black.ttf"; path = "../App/Themes/Fonts/Lato/Lato-Black.ttf"; sourceTree = "<group>"; };
+		17FE7B6823244A2CB2632758 /* Lato-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Lato-Light.ttf"; path = "../App/Themes/Fonts/Lato/Lato-Light.ttf"; sourceTree = "<group>"; };
+		1FAA0653AD7C440C98557698 /* OpenSans-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "OpenSans-Light.ttf"; path = "../App/Themes/Fonts/OpenSans/OpenSans-Light.ttf"; sourceTree = "<group>"; };
+		1FF653784E084042BAA84195 /* EvilIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = EvilIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf"; sourceTree = "<group>"; };
+		29CE66A83AAE41149B5C1225 /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = SimpleLineIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf"; sourceTree = "<group>"; };
+		3540BD11D0E54C7790238F3C /* FontAwesome.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf"; sourceTree = "<group>"; };
+		3F8F8B4061CD461CB9D3F278 /* Fontisto.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Fontisto.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Fontisto.ttf"; sourceTree = "<group>"; };
 		5638B337380266149B17CF59 /* Pods-letquiz-letquizTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-letquiz-letquizTests.debug.xcconfig"; path = "Target Support Files/Pods-letquiz-letquizTests/Pods-letquiz-letquizTests.debug.xcconfig"; sourceTree = "<group>"; };
+		57E2659E40554BE2A36FAC48 /* Lato-BlackItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Lato-BlackItalic.ttf"; path = "../App/Themes/Fonts/Lato/Lato-BlackItalic.ttf"; sourceTree = "<group>"; };
+		58D38ADC3D074F19994EE8C8 /* Ionicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Ionicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf"; sourceTree = "<group>"; };
+		5DAAC342484941019F518681 /* Lato-Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Lato-Italic.ttf"; path = "../App/Themes/Fonts/Lato/Lato-Italic.ttf"; sourceTree = "<group>"; };
+		676922EA2F2A46299142BA70 /* Octicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Octicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Octicons.ttf"; sourceTree = "<group>"; };
+		6E6791BF580948F1B2117668 /* FontAwesome5_Solid.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Solid.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Solid.ttf"; sourceTree = "<group>"; };
+		7193DCAD27BB462594288147 /* OpenSans-Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "OpenSans-Italic.ttf"; path = "../App/Themes/Fonts/OpenSans/OpenSans-Italic.ttf"; sourceTree = "<group>"; };
+		72EF4D2898FD46269548DEA6 /* Lato-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Lato-Regular.ttf"; path = "../App/Themes/Fonts/Lato/Lato-Regular.ttf"; sourceTree = "<group>"; };
+		7386735E3B444C7AB9B742FA /* Lato-BoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Lato-BoldItalic.ttf"; path = "../App/Themes/Fonts/Lato/Lato-BoldItalic.ttf"; sourceTree = "<group>"; };
+		744FED0D7B1A49E0A991CBB1 /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialCommunityIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf"; sourceTree = "<group>"; };
+		74805AB6994646EDB8F53718 /* OpenSans-SemiBoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "OpenSans-SemiBoldItalic.ttf"; path = "../App/Themes/Fonts/OpenSans/OpenSans-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = letquiz/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		82E3378ACE3344519E6AF513 /* OpenSans-ExtraBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "OpenSans-ExtraBold.ttf"; path = "../App/Themes/Fonts/OpenSans/OpenSans-ExtraBold.ttf"; sourceTree = "<group>"; };
+		85372CD297AC445AB65E2E1C /* Manrope-ExtraLight.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Manrope-ExtraLight.ttf"; path = "../App/Themes/Fonts/Manrope/Manrope-ExtraLight.ttf"; sourceTree = "<group>"; };
+		8538A1CDA3B54877B56853F0 /* antfill.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = antfill.ttf; path = "../node_modules/@ant-design/icons-react-native/fonts/antfill.ttf"; sourceTree = "<group>"; };
+		8986678941E546ADB6C84195 /* Lato-Thin.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Lato-Thin.ttf"; path = "../App/Themes/Fonts/Lato/Lato-Thin.ttf"; sourceTree = "<group>"; };
+		8ACD335C6AB54A96A1E638BD /* OpenSans-LightItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "OpenSans-LightItalic.ttf"; path = "../App/Themes/Fonts/OpenSans/OpenSans-LightItalic.ttf"; sourceTree = "<group>"; };
+		9326F9D16F184EDD943A0D68 /* Lato-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Lato-Bold.ttf"; path = "../App/Themes/Fonts/Lato/Lato-Bold.ttf"; sourceTree = "<group>"; };
+		945642D08A754F43B69019EA /* Manrope-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Manrope-SemiBold.ttf"; path = "../App/Themes/Fonts/Manrope/Manrope-SemiBold.ttf"; sourceTree = "<group>"; };
+		954D0C8C95FC4671B7A9E296 /* Manrope-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Manrope-Medium.ttf"; path = "../App/Themes/Fonts/Manrope/Manrope-Medium.ttf"; sourceTree = "<group>"; };
+		9CF447102F224562BA02E359 /* Feather.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Feather.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Feather.ttf"; sourceTree = "<group>"; };
+		9D217E80B64340888D03549E /* OpenSans-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "OpenSans-ExtraBoldItalic.ttf"; path = "../App/Themes/Fonts/OpenSans/OpenSans-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		9EF358CB7F3749F5891D61C8 /* FontAwesome5_Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Regular.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Regular.ttf"; sourceTree = "<group>"; };
+		A647977A13154783AB722BDD /* Manrope-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Manrope-Bold.ttf"; path = "../App/Themes/Fonts/Manrope/Manrope-Bold.ttf"; sourceTree = "<group>"; };
+		AC39B1470D3D4932902DBA69 /* OpenSans-BoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "OpenSans-BoldItalic.ttf"; path = "../App/Themes/Fonts/OpenSans/OpenSans-BoldItalic.ttf"; sourceTree = "<group>"; };
+		AC46841C08944DC8B82C7654 /* Lato-LightItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Lato-LightItalic.ttf"; path = "../App/Themes/Fonts/Lato/Lato-LightItalic.ttf"; sourceTree = "<group>"; };
+		AD096B6A92384C7F99A72F44 /* antoutline.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = antoutline.ttf; path = "../node_modules/@ant-design/icons-react-native/fonts/antoutline.ttf"; sourceTree = "<group>"; };
 		B3FC4B2AA0B68AFB2F82EBED /* Pods-letquiz-letquizTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-letquiz-letquizTests.release.xcconfig"; path = "Target Support Files/Pods-letquiz-letquizTests/Pods-letquiz-letquizTests.release.xcconfig"; sourceTree = "<group>"; };
+		BF4C588E96334EBBA76F86A8 /* Entypo.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Entypo.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Entypo.ttf"; sourceTree = "<group>"; };
 		BFB07DA0D7122F9899A286B9 /* Pods-letquiz.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-letquiz.release.xcconfig"; path = "Target Support Files/Pods-letquiz/Pods-letquiz.release.xcconfig"; sourceTree = "<group>"; };
 		C630B371EE1185346D9507A7 /* libPods-letquiz.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-letquiz.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7E85EAAC996419D92AEB732 /* OpenSans-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "OpenSans-SemiBold.ttf"; path = "../App/Themes/Fonts/OpenSans/OpenSans-SemiBold.ttf"; sourceTree = "<group>"; };
+		C81A2BC2E97F4E9EA2A138A2 /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "OpenSans-Regular.ttf"; path = "../App/Themes/Fonts/OpenSans/OpenSans-Regular.ttf"; sourceTree = "<group>"; };
+		CA519F4BC1BC488BBF24E437 /* AntDesign.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = AntDesign.ttf; path = "../node_modules/react-native-vector-icons/Fonts/AntDesign.ttf"; sourceTree = "<group>"; };
+		D51953722A084B09A337F3BB /* Manrope-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Manrope-Light.ttf"; path = "../App/Themes/Fonts/Manrope/Manrope-Light.ttf"; sourceTree = "<group>"; };
+		DB3BF4498A2A47CBAC2F71C6 /* Manrope-ExtraBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Manrope-ExtraBold.ttf"; path = "../App/Themes/Fonts/Manrope/Manrope-ExtraBold.ttf"; sourceTree = "<group>"; };
+		DDD7A52937094C2B9EA32B69 /* Lato-ThinItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Lato-ThinItalic.ttf"; path = "../App/Themes/Fonts/Lato/Lato-ThinItalic.ttf"; sourceTree = "<group>"; };
+		DFF2E616338B4667ADABD314 /* Zocial.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Zocial.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Zocial.ttf"; sourceTree = "<group>"; };
+		E5529FB9B99546CABAD64666 /* Foundation.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Foundation.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Foundation.ttf"; sourceTree = "<group>"; };
+		E7D0FE8BC5CA4289A7C2B05C /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "OpenSans-Bold.ttf"; path = "../App/Themes/Fonts/OpenSans/OpenSans-Bold.ttf"; sourceTree = "<group>"; };
 		EBB17687A9F8ED6C1045929C /* Pods-letquiz.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-letquiz.debug.xcconfig"; path = "Target Support Files/Pods-letquiz/Pods-letquiz.debug.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		F893AE242AA04BDEBB1E728D /* Manrope-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Manrope-Regular.ttf"; path = "../App/Themes/Fonts/Manrope/Manrope-Regular.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +180,58 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		694000DFD09B4346A18868AE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E7D0FE8BC5CA4289A7C2B05C /* OpenSans-Bold.ttf */,
+				AC39B1470D3D4932902DBA69 /* OpenSans-BoldItalic.ttf */,
+				82E3378ACE3344519E6AF513 /* OpenSans-ExtraBold.ttf */,
+				9D217E80B64340888D03549E /* OpenSans-ExtraBoldItalic.ttf */,
+				7193DCAD27BB462594288147 /* OpenSans-Italic.ttf */,
+				1FAA0653AD7C440C98557698 /* OpenSans-Light.ttf */,
+				8ACD335C6AB54A96A1E638BD /* OpenSans-LightItalic.ttf */,
+				C81A2BC2E97F4E9EA2A138A2 /* OpenSans-Regular.ttf */,
+				C7E85EAAC996419D92AEB732 /* OpenSans-SemiBold.ttf */,
+				74805AB6994646EDB8F53718 /* OpenSans-SemiBoldItalic.ttf */,
+				8538A1CDA3B54877B56853F0 /* antfill.ttf */,
+				AD096B6A92384C7F99A72F44 /* antoutline.ttf */,
+				CA519F4BC1BC488BBF24E437 /* AntDesign.ttf */,
+				BF4C588E96334EBBA76F86A8 /* Entypo.ttf */,
+				1FF653784E084042BAA84195 /* EvilIcons.ttf */,
+				9CF447102F224562BA02E359 /* Feather.ttf */,
+				3540BD11D0E54C7790238F3C /* FontAwesome.ttf */,
+				0E879AD85F014190AB9FA4B7 /* FontAwesome5_Brands.ttf */,
+				9EF358CB7F3749F5891D61C8 /* FontAwesome5_Regular.ttf */,
+				6E6791BF580948F1B2117668 /* FontAwesome5_Solid.ttf */,
+				3F8F8B4061CD461CB9D3F278 /* Fontisto.ttf */,
+				E5529FB9B99546CABAD64666 /* Foundation.ttf */,
+				58D38ADC3D074F19994EE8C8 /* Ionicons.ttf */,
+				744FED0D7B1A49E0A991CBB1 /* MaterialCommunityIcons.ttf */,
+				12DA235DCED04C6F9ED3BAA6 /* MaterialIcons.ttf */,
+				676922EA2F2A46299142BA70 /* Octicons.ttf */,
+				29CE66A83AAE41149B5C1225 /* SimpleLineIcons.ttf */,
+				DFF2E616338B4667ADABD314 /* Zocial.ttf */,
+				178D9C154DB84B36928CFBF8 /* Lato-Black.ttf */,
+				57E2659E40554BE2A36FAC48 /* Lato-BlackItalic.ttf */,
+				9326F9D16F184EDD943A0D68 /* Lato-Bold.ttf */,
+				7386735E3B444C7AB9B742FA /* Lato-BoldItalic.ttf */,
+				5DAAC342484941019F518681 /* Lato-Italic.ttf */,
+				17FE7B6823244A2CB2632758 /* Lato-Light.ttf */,
+				AC46841C08944DC8B82C7654 /* Lato-LightItalic.ttf */,
+				72EF4D2898FD46269548DEA6 /* Lato-Regular.ttf */,
+				8986678941E546ADB6C84195 /* Lato-Thin.ttf */,
+				DDD7A52937094C2B9EA32B69 /* Lato-ThinItalic.ttf */,
+				A647977A13154783AB722BDD /* Manrope-Bold.ttf */,
+				DB3BF4498A2A47CBAC2F71C6 /* Manrope-ExtraBold.ttf */,
+				85372CD297AC445AB65E2E1C /* Manrope-ExtraLight.ttf */,
+				D51953722A084B09A337F3BB /* Manrope-Light.ttf */,
+				954D0C8C95FC4671B7A9E296 /* Manrope-Medium.ttf */,
+				F893AE242AA04BDEBB1E728D /* Manrope-Regular.ttf */,
+				945642D08A754F43B69019EA /* Manrope-SemiBold.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
@@ -122,6 +248,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				FF5EF3BF950DE9A94BCD3E99 /* Pods */,
+				694000DFD09B4346A18868AE /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -145,7 +272,6 @@
 				5638B337380266149B17CF59 /* Pods-letquiz-letquizTests.debug.xcconfig */,
 				B3FC4B2AA0B68AFB2F82EBED /* Pods-letquiz-letquizTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -160,7 +286,6 @@
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
-				4AF74663B600E85ACD30E038 /* [CP] Embed Pods Frameworks */,
 				F2372DB07EA7799C10638774 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
@@ -183,7 +308,6 @@
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				C96AF34579E403C13BBCB19D /* [CP] Embed Pods Frameworks */,
 				CFB31CA256542D6491B21A9B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
@@ -245,6 +369,35 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				E49AA0DBC38440B09A3A38AE /* OpenSans-Bold.ttf in Resources */,
+				CCED20859DFB4DE588EB1AE9 /* OpenSans-BoldItalic.ttf in Resources */,
+				45C0AD72629E4B3D8A7AA1AF /* OpenSans-ExtraBold.ttf in Resources */,
+				6F5050373F524A7191515D54 /* OpenSans-ExtraBoldItalic.ttf in Resources */,
+				0E0997CD749D41BD807A0005 /* OpenSans-Italic.ttf in Resources */,
+				36094F6685F84B9A92D3EDF1 /* OpenSans-Light.ttf in Resources */,
+				81F601880D964C50B4BA11B6 /* OpenSans-LightItalic.ttf in Resources */,
+				3E84F40FA3F94E6D923F17D5 /* OpenSans-Regular.ttf in Resources */,
+				6B9F45F43A64410F999DEE70 /* OpenSans-SemiBold.ttf in Resources */,
+				92AD39C3BE5148DBA59CC832 /* OpenSans-SemiBoldItalic.ttf in Resources */,
+				35A3DFCE8D4C4A2CAB399B3C /* antfill.ttf in Resources */,
+				4EBEDF341703490EA20EC9F5 /* antoutline.ttf in Resources */,
+				971A321C6E9644DDA19C2781 /* Lato-Black.ttf in Resources */,
+				3ABF4B95AFFA4861A5B6601A /* Lato-BlackItalic.ttf in Resources */,
+				489596C4F754413FA11B269C /* Lato-Bold.ttf in Resources */,
+				1E2B341F367A4063BB19A766 /* Lato-BoldItalic.ttf in Resources */,
+				0EC63729352749969196E4DA /* Lato-Italic.ttf in Resources */,
+				C382FC2615D84D23835EEDC5 /* Lato-Light.ttf in Resources */,
+				1CC5A94B9DE94F5CB194B0A5 /* Lato-LightItalic.ttf in Resources */,
+				267ACCFFA3824F1881891226 /* Lato-Regular.ttf in Resources */,
+				F311C8CACD7D406A8EBD12AF /* Lato-Thin.ttf in Resources */,
+				263E30E5DDFD45258F411F78 /* Lato-ThinItalic.ttf in Resources */,
+				3C07DF75FA104B10AF46002C /* Manrope-Bold.ttf in Resources */,
+				06F0CAF8060C4929BC4A0E2D /* Manrope-ExtraBold.ttf in Resources */,
+				D0804973F0C544E2BF9E6D18 /* Manrope-ExtraLight.ttf in Resources */,
+				D149C9926DC94A51BAF8E816 /* Manrope-Light.ttf in Resources */,
+				363F0CF0236440049AE9D1A2 /* Manrope-Medium.ttf in Resources */,
+				E8DDD8571F8A4E448BA5C008 /* Manrope-Regular.ttf in Resources */,
+				3D80EFE4F4B9444594122D3A /* Manrope-SemiBold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,23 +417,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "set -e\n\nexport NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh\n";
-		};
-		4AF74663B600E85ACD30E038 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-letquiz-letquizTests/Pods-letquiz-letquizTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-letquiz-letquizTests/Pods-letquiz-letquizTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-letquiz-letquizTests/Pods-letquiz-letquizTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
 		};
 		A8DEE00E28BDF12D5F3CF624 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -324,23 +460,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C96AF34579E403C13BBCB19D /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-letquiz/Pods-letquiz-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-letquiz/Pods-letquiz-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-letquiz/Pods-letquiz-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		CFB31CA256542D6491B21A9B /* [CP] Copy Pods Resources */ = {

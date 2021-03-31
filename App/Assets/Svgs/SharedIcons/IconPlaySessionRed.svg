@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16.002" height="16" viewBox="0 0 16.002 16">
+    <defs>
+        <style>
+            .cls-1{fill:#ff4715}
+        </style>
+    </defs>
+    <g id="ico_play" transform="translate(0 -.002)">
+        <path id="Path_28471" d="M16.506 12.25l-3.323-2.415a.4.4 0 0 0-.636.323v4.829a.4.4 0 0 0 .219.357.4.4 0 0 0 .182.043.4.4 0 0 0 .235-.078l3.323-2.409a.4.4 0 0 0 0-.646z" class="cls-1" transform="translate(-5.866 -4.561)"/>
+        <path id="Path_28472" d="M8 0a8 8 0 1 0 8 8 8 8 0 0 0-8-8zm0 14.667A6.665 6.665 0 1 1 14.665 8 6.664 6.664 0 0 1 8 14.667z" class="cls-1"/>
+    </g>
+</svg>
