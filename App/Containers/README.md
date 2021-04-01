@@ -1,9 +1,5 @@
-### Fixtures folder
+### Containers folder
 
-All key API responses are housed here.
+All screens are housed here.
 
-These API responses can be used for several reasons. _E.G._:
-
-- To bypass logins when building any screen of the application
-- To quickly test API parsing in unit tests
-- To separate Network from Data concerns while coding
+These screens are used to display the UI to the users and perform user actions
