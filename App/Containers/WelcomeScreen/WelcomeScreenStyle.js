@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { StyleSheet } from "react-native";
 import { deviceWidth, WIDTH_RATIO } from "Themes/Metrics";
-import { useThemeStyles } from 'Hooks/useThemeStyles';
-import { useThemeColors } from 'Hooks/useThemeColors';
+import { useThemeStyles } from "Hooks/useThemeStyles";
+import { useThemeColors } from "Hooks/useThemeColors";
 
 export const WelcomeScreenStyle = OriginalComponent => props => {
   const ApplicationStyles = useThemeStyles();
@@ -22,17 +22,17 @@ export const WelcomeScreenStyle = OriginalComponent => props => {
       height: 207 * WIDTH_RATIO,
     },
     contentContainer: {
-      paddingTop: 20 * WIDTH_RATIO,
+      paddingVertical: 10 * WIDTH_RATIO,
     },
     textContainer: {
       paddingHorizontal: 16 * WIDTH_RATIO,
       width: deviceWidth,
       ...ApplicationStyles.utils.centerRow,
-      justifyContent: "center"
+      justifyContent: "center",
     },
     text: {
-      ...ApplicationStyles.text.h8,
-      textAlign: "center"
+      ...ApplicationStyles.text.h7,
+      textAlign: "center",
     },
     dot: {
       width: 8 * WIDTH_RATIO,
@@ -40,16 +40,35 @@ export const WelcomeScreenStyle = OriginalComponent => props => {
       borderRadius: 4 * WIDTH_RATIO,
     },
     activeDot: {
-      width: 16 * WIDTH_RATIO,
-      height: 16 * WIDTH_RATIO,
-      borderRadius: 8 * WIDTH_RATIO,
-    }
+      width: 12 * WIDTH_RATIO,
+      height: 12 * WIDTH_RATIO,
+      borderRadius: 6 * WIDTH_RATIO,
+    },
+    footer: {
+      paddingTop: 16 * WIDTH_RATIO,
+      paddingHorizontal: 16 * WIDTH_RATIO,
+    },
+    registerButton: {
+      paddingVertical: 16 * WIDTH_RATIO,
+      borderRadius: 4 * WIDTH_RATIO,
+      backgroundColor: Colors.primaryButton,
+      ...ApplicationStyles.utils.middle,
+    },
+    registerText: {
+      ...ApplicationStyles.text.h7,
+      color: "white",
+    },
+    loginButton: {
+      paddingVertical: 16 * WIDTH_RATIO,
+      borderRadius: 4 * WIDTH_RATIO,
+      ...ApplicationStyles.utils.middle,
+    },
+    loginText: {
+      marginTop: 4 * WIDTH_RATIO,
+      ...ApplicationStyles.text.h8,
+      color: Colors.primaryButton,
+    },
   });
 
-  return (
-    <OriginalComponent
-      {...props}
-      styles={styles}
-    />
-  );
-}
+  return <OriginalComponent {...props} styles={styles} />;
+};
