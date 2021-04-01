@@ -19,7 +19,7 @@ export const LaunchScreenStyle = OriginalComponent => props => {
     ...ApplicationStyles.utils,
     ...ApplicationStyles.text,
     container: {
-      backgroundColor: "#090110",
+      backgroundColor: Colors.primary,
       alignItems: "center",
       paddingBottom: 32 * WIDTH_RATIO,
     },
@@ -30,7 +30,7 @@ export const LaunchScreenStyle = OriginalComponent => props => {
     },
     appName: {
       marginTop: 23.5 * WIDTH_RATIO,
-      fontFamily: Fonts.type.primaryFont,
+      fontFamily: Fonts.type.titleBoldFont,
       fontSize: 32 * WIDTH_RATIO,
       color: "white",
       letterSpacing: 12.8 * WIDTH_RATIO,

@@ -11,7 +11,6 @@ import { RNFlatList } from "Components/RNComponents";
 import TransformHelper from "Utils/TransformHelper";
 import SessionTransform from "Transforms/SessionTransform";
 import SessionCardItem from "Components/SessionCardItem/SessionCardItem";
-import { isAuthenticated } from "react-native-zalo-kit";
 
 function WorkoutWeekSessionBlock(props) {
   const { styles, NavigationMethods } = props;

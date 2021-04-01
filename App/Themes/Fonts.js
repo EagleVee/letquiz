@@ -1,12 +1,14 @@
 const type = {
-  primaryFont: "OpenSans-Regular",
-  boldFont: "OpenSans-Bold",
-  extraBoldFont: "OpenSans-ExtraBold",
-  lightFont: "OpenSans-Light",
-  italicFont: "OpenSans-Italic",
-  productFont: "OpenSans-Regular",
-  productBoldFont: "OpenSans-Bold",
-  productItalicFont: "OpenSans-Italic",
+  primaryFont: "Manrope-Regular",
+  boldFont: "Manrope-Bold",
+  extraBoldFont: "Manrope-Black",
+  lightFont: "Manrope-Light",
+  italicFont: "Manrope-Italic",
+  productFont: "Manrope-Regular",
+  productBoldFont: "Manrope-Bold",
+  productItalicFont: "Manrope-Italic",
+  titleFont: "Lato-Regular",
+  titleBoldFont: "Lato-Bold",
 };
 
 const size = {
@@ -23,43 +25,7 @@ const size = {
   tiny: 8.5,
 };
 
-const style = {
-  h1: {
-    fontFamily: type.base,
-    fontSize: size.h1,
-  },
-  h2: {
-    fontWeight: "bold",
-    fontSize: size.h2,
-  },
-  h3: {
-    fontFamily: type.emphasis,
-    fontSize: size.h3,
-  },
-  h4: {
-    fontFamily: type.base,
-    fontSize: size.h4,
-  },
-  h5: {
-    fontFamily: type.base,
-    fontSize: size.h5,
-  },
-  h6: {
-    fontFamily: type.emphasis,
-    fontSize: size.h6,
-  },
-  normal: {
-    fontFamily: type.base,
-    fontSize: size.regular,
-  },
-  description: {
-    fontFamily: type.base,
-    fontSize: size.medium,
-  },
-};
-
 export default {
   type,
   size,
-  style,
 };
