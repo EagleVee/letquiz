@@ -29,7 +29,7 @@ function WorkoutNewProgramBlock(props) {
       <BlockDivider height={39 * WIDTH_RATIO} />
       <BlockTitle title={I18n.t("WorkOut.LatestPrograms")} />
       <RNFlatList
-        data={newPrograms}
+        data={[]}
         renderItem={renderCardItem}
         contentContainerStyle={styles.listContent}
       />

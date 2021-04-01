@@ -54,9 +54,9 @@ function WorkoutCalendar(props) {
         renderItem={renderItem}
         keyExtractor={extract}
       />
-      <TouchableOpacity onPress={onDayOffPress} style={styles.dayOffButton}>
-        <Text style={styles.dayOffText}>{I18n.t("WorkOut.TakeADayOff")}</Text>
-      </TouchableOpacity>
+      {/*<TouchableOpacity onPress={onDayOffPress} style={styles.dayOffButton}>*/}
+      {/*  <Text style={styles.dayOffText}>{I18n.t("WorkOut.TakeADayOff")}</Text>*/}
+      {/*</TouchableOpacity>*/}
     </View>
   );
 }

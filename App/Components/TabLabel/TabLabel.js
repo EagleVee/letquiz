@@ -19,9 +19,6 @@ function TabLabel(props) {
           light: focused ? iconActive : iconLight,
         }}
       />
-      <Text source={label} style={styles.label}>
-        {I18n.t(label)}
-      </Text>
     </View>
   );
 }

@@ -18,7 +18,7 @@ export function* startup(action) {
     Keys.language,
     "en",
   );
-  yield put(DeviceActions.changeLanguage(savedLanguage));
+  yield put(DeviceActions.changeLanguage("en"));
 
   // Handle dark/light theme
   const savedTheme = yield call(

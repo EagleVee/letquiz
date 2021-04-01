@@ -1,7 +1,7 @@
 const type = {
   primaryFont: "Manrope-Regular",
   boldFont: "Manrope-Bold",
-  extraBoldFont: "Manrope-Black",
+  extraBoldFont: "Manrope-ExtraBold",
   lightFont: "Manrope-Light",
   italicFont: "Manrope-Italic",
   productFont: "Manrope-Regular",
