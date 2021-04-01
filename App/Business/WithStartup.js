@@ -8,8 +8,8 @@ export const WithStartup = OriginalComponent => props => {
   const NavigationMethods = useNavigationMethods();
 
   function startupCallback(isAuthenticated) {
-    NavigationMethods.resetStackToTab();
-    // NavigationMethods.resetStack("FAQScreen");
+    // NavigationMethods.resetStackToTab();
+    NavigationMethods.resetStack("WelcomeScreen");
   }
 
   useEffect(() => {

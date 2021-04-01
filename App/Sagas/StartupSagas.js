@@ -16,7 +16,7 @@ export function* startup(action) {
   const savedLanguage = yield call(
     LocalStorageService.get,
     Keys.language,
-    "vi",
+    "en",
   );
   yield put(DeviceActions.changeLanguage(savedLanguage));
 
