@@ -4,16 +4,24 @@ import { WIDTH_RATIO } from "Themes/Metrics";
 import { useThemeStyles } from "Hooks/useThemeStyles";
 import { useThemeColors } from "Hooks/useThemeColors";
 
-export const LoginScreenStyle = OriginalComponent => props => {
+export const LoginInputStyle = OriginalComponent => props => {
   const ApplicationStyles = useThemeStyles();
   const Colors = useThemeColors();
   const styles = StyleSheet.create({
-    ...ApplicationStyles.screen,
     ...ApplicationStyles.utils,
     ...ApplicationStyles.text,
-    main: {
-      paddingTop: 12 * WIDTH_RATIO,
-      paddingHorizontal: 16 * WIDTH_RATIO,
+    inputContainer: {
+      paddingBottom: 8 * WIDTH_RATIO,
+      borderBottomWidth: WIDTH_RATIO,
+      borderBottomColor: Colors.calendarBorder,
+      ...ApplicationStyles.utils.centerRow,
+    },
+    input: {
+      flex: 1,
+      ...ApplicationStyles.text.h8,
+    },
+    eyeButton: {
+      padding: 8 * WIDTH_RATIO,
     },
   });
 

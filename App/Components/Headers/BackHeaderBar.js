@@ -6,17 +6,20 @@ import PropTypes from "prop-types";
 import { WIDTH_RATIO } from "Themes/Metrics";
 import { useNavigationMethods } from "Hooks/useNavigationMethods";
 import { useThemeSvgs } from "Hooks/useThemeSvgs";
+import { useThemeColors } from "../../Hooks/useThemeColors";
 
 function BackHeaderBar(props) {
   const { styles, onPress, title } = props;
   const NavigationMethods = useNavigationMethods();
   const Svgs = useThemeSvgs();
+  const Colors = useThemeColors();
   return (
     <View style={styles.container}>
       <TouchableOpacity
         onPress={onPress ? onPress : NavigationMethods.goBack}
         style={styles.backButton}>
         <Svgs.Pointer.ArrowBack
+          fill={Colors.primaryButton}
           width={21 * WIDTH_RATIO}
           height={21 * WIDTH_RATIO}
         />
