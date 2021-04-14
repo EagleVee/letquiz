@@ -1,5 +1,24 @@
+import Ionicons from "react-native-vector-icons/Ionicons";
+import React from "react";
+import { WIDTH_RATIO } from "../Themes/Metrics";
 export const TabLabel = {
-  workout: "Tab.WorkOut",
-  trainer: "Tab.Trainer",
+  home: "Tab.WorkOut",
+  search: "Tab.Trainer",
   profile: "Tab.Profile",
+};
+
+export const TabIcon = {
+  home: props => (
+    <Ionicons name={"home-outline"} size={24 * WIDTH_RATIO} {...props} />
+  ),
+  search: props => (
+    <Ionicons name={"search"} size={24 * WIDTH_RATIO} {...props} />
+  ),
+  profile: props => (
+    <Ionicons
+      name={"ios-person-circle-outline"}
+      size={24 * WIDTH_RATIO}
+      {...props}
+    />
+  ),
 };

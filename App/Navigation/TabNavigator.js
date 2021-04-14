@@ -2,10 +2,10 @@ import React from "react";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { deviceWidth, HEIGHT_RATIO, EXTRA_FOOTER_HEIGHT } from "Themes/Metrics";
 import TabLabel from "Components/TabLabel/TabLabel";
-import WorkoutScreen from "Containers/WorkoutScreen/WorkoutScreen";
-import TrainerScreen from "Containers/TrainerScreen/TrainerScreen";
+import HomeScreen from "Containers/HomeScreen/HomeScreen";
 import ProfileScreen from "Containers/ProfileScreen/ProfileScreen";
-import { useThemeColors } from "../Hooks/useThemeColors";
+import SearchScreen from "Containers/SearchScreen/SearchScreen";
+import { useThemeColors } from "Hooks/useThemeColors";
 
 const Tab = createBottomTabNavigator();
 
@@ -13,7 +13,7 @@ function TabNavigator(props) {
   const Colors = useThemeColors();
   return (
     <Tab.Navigator
-      initialRouteName="WorkoutScreen"
+      initialRouteName="HomeScreen"
       screenOptions={{}}
       tabBarOptions={{
         style: {
@@ -23,22 +23,22 @@ function TabNavigator(props) {
         },
       }}>
       <Tab.Screen
-        name="WorkoutScreen"
+        name="HomeScreen"
         options={{
           tabBarLabel: ({ focused }) => {
-            return <TabLabel focused={focused} name="workout" />;
+            return <TabLabel focused={focused} name="home" />;
           },
         }}
-        component={WorkoutScreen}
+        component={HomeScreen}
       />
       <Tab.Screen
-        name="TrainerScreen"
+        name="SearchScreen"
         options={{
           tabBarLabel: ({ focused }) => {
-            return <TabLabel focused={focused} name="trainer" />;
+            return <TabLabel focused={focused} name="search" />;
           },
         }}
-        component={TrainerScreen}
+        component={SearchScreen}
       />
       <Tab.Screen
         name="ProfileScreen"

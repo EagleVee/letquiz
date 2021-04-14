@@ -2,18 +2,15 @@ import React from "react";
 import { StyleSheet } from "react-native";
 import { Fonts } from "Themes";
 import { WIDTH_RATIO } from "Themes/Metrics";
-import { TabLabel } from "Fixtures/TabBar";
+import { TabIcon, TabLabel } from "Fixtures/TabBar";
 import { useThemeColors } from "Hooks/useThemeColors";
-import { useThemeSvgs } from "Hooks/useThemeSvgs";
 
 export const TabLabelStyle = OriginalComponent => props => {
-  const Svgs = useThemeSvgs();
-  const { focused, name } = props;
-  const iconLight = Svgs.Tab[name];
-  const iconDark = Svgs.Tab[name];
-  const iconActive = Svgs.TabActive[name];
-  const label = TabLabel[name];
   const Colors = useThemeColors();
+  const { focused, name } = props;
+  const Icon = TabIcon[name];
+  const label = TabLabel[name];
+
   const styles = StyleSheet.create({
     container: {
       flex: 1,
@@ -33,13 +30,6 @@ export const TabLabelStyle = OriginalComponent => props => {
   });
 
   return (
-    <OriginalComponent
-      {...props}
-      styles={styles}
-      iconLight={iconLight}
-      iconDark={iconDark}
-      iconActive={iconActive}
-      label={label}
-    />
+    <OriginalComponent {...props} styles={styles} Icon={Icon} label={label} />
   );
 };

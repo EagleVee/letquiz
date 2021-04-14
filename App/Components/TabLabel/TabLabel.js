@@ -3,22 +3,14 @@ import { View, Text } from "react-native";
 import { TabLabelStyle } from "./TabLabelStyle";
 import PropTypes from "prop-types";
 import { compose } from "ramda";
-import I18n from "Locales";
-import ThemeSvg from "Components/ThemeSvg/ThemeSvg";
-import { WIDTH_RATIO } from "Themes/Metrics";
+import { useThemeColors } from "../../Hooks/useThemeColors";
 
 function TabLabel(props) {
-  const { styles, iconLight, iconDark, iconActive, label, focused } = props;
+  const { styles, Icon, focused } = props;
+  const Colors = useThemeColors();
   return (
     <View style={styles.container}>
-      <ThemeSvg
-        width={20 * WIDTH_RATIO}
-        height={20 * WIDTH_RATIO}
-        svg={{
-          dark: focused ? iconActive : iconDark,
-          light: focused ? iconActive : iconLight,
-        }}
-      />
+      <Icon color={focused ? Colors.tabIconActive : Colors.tabIconInactive} />
     </View>
   );
 }
