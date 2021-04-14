@@ -16,7 +16,6 @@ export const BackHeaderBarStyle = OriginalComponent => props => {
       alignItems: "center",
       paddingTop: notSafeArea ? STATUS_BAR_HEIGHT : 0,
       backgroundColor: backgroundColor,
-      ...ApplicationStyles.themedShadow,
     },
     backButton: {
       paddingHorizontal: 16 * WIDTH_RATIO,

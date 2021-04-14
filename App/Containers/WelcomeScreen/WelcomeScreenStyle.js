@@ -3,6 +3,7 @@ import { StyleSheet } from "react-native";
 import { deviceWidth, WIDTH_RATIO } from "Themes/Metrics";
 import { useThemeStyles } from "Hooks/useThemeStyles";
 import { useThemeColors } from "Hooks/useThemeColors";
+import { Fonts } from "../../Themes";
 
 export const WelcomeScreenStyle = OriginalComponent => props => {
   const ApplicationStyles = useThemeStyles();

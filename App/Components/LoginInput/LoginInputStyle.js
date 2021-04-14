@@ -18,7 +18,7 @@ export const LoginInputStyle = OriginalComponent => props => {
     },
     input: {
       flex: 1,
-      ...ApplicationStyles.text.h8,
+      ...ApplicationStyles.text.h7,
     },
     eyeButton: {
       padding: 8 * WIDTH_RATIO,

@@ -12,8 +12,7 @@ function AppLogoWithVersion(props) {
   const { styles } = props;
   return (
     <View style={styles.container}>
-      <AppLogoGradient width={108 * WIDTH_RATIO} height={80 * WIDTH_RATIO} />
-      <Text style={styles.name}>QUIZLET</Text>
+      <Text style={styles.name}>Quizlet</Text>
       <Text style={styles.version}>
         {I18n.t("RegularTerm.Version") + " " + APP_VERSION_NAME}
       </Text>

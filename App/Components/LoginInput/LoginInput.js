@@ -18,16 +18,14 @@ function LoginInput(props: TextInputProps) {
     secureTextEntry = false,
   } = props;
   const Colors = useThemeColors();
-  const [showSecureText, setShowSecureText] = useState(
-    secureTextEntry === true,
-  );
+  const [secureText, setSecureText] = useState(secureTextEntry === true);
 
   function onTextChange(text) {
     onChangeText(inputKey, text);
   }
 
   function onEyePress() {
-    setShowSecureText(!showSecureText);
+    setSecureText(!secureText);
   }
 
   return (
@@ -36,7 +34,7 @@ function LoginInput(props: TextInputProps) {
         <TextInput
           {...props}
           style={styles.input}
-          secureTextEntry={!showSecureText}
+          secureTextEntry={secureText}
           onTextChange={onTextChange}
         />
         {secureTextEntry === true && (
@@ -44,9 +42,7 @@ function LoginInput(props: TextInputProps) {
             <AntDesign
               size={20 * WIDTH_RATIO}
               name={"eyeo"}
-              color={
-                showSecureText ? Colors.primaryButton : Colors.primaryTitle
-              }
+              color={secureText ? Colors.primaryButton : Colors.primaryTitle}
             />
           </TouchableOpacity>
         )}

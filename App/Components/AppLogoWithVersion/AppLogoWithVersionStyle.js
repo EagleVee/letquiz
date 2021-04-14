@@ -12,13 +12,10 @@ export const AppLogoWithVersionStyle = OriginalComponent => props => {
     ...ApplicationStyles.text,
     container: {
       width: "100%",
-      alignItems: "center",
-      justifyContent: "center",
+      ...ApplicationStyles.utils.middle,
     },
     name: {
-      marginTop: 7 * WIDTH_RATIO,
-      ...ApplicationStyles.text.h6,
-      letterSpacing: 8 * WIDTH_RATIO,
+      ...ApplicationStyles.text.h4Bold,
     },
     version: {
       marginTop: 2 * WIDTH_RATIO,

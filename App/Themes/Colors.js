@@ -25,6 +25,7 @@ export const sharedColors = {
   greyItem: "#9C9E9B",
   lightGreyItem: "#888888",
   primaryRed: "#ff4715",
+  primaryYellow: "#F5B352",
   primaryOrange: "#FF7d38",
   primaryGrey: "#6f6d79",
   primaryText: "#090110",
