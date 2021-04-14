@@ -4,11 +4,11 @@ import { WIDTH_RATIO } from 'Themes/Metrics';
 import { useThemeStyles } from 'Hooks/useThemeStyles';
 import { useThemeColors } from 'Hooks/useThemeColors';
 
-export const ExerciseDetailInfoStyle = OriginalComponent => props => {
+export const HomeScreenStyle = OriginalComponent => props => {
   const ApplicationStyles = useThemeStyles();
   const Colors = useThemeColors();
   const styles = StyleSheet.create({
-    
+    ...ApplicationStyles.screen,
     ...ApplicationStyles.utils,
     ...ApplicationStyles.text,
   });
