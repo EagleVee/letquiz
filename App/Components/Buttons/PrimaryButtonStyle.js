@@ -2,47 +2,27 @@ import React from "react";
 import { StyleSheet } from "react-native";
 import { Colors, Fonts } from "Themes";
 import { WIDTH_RATIO } from "Themes/Metrics";
+import { useThemeColors } from "../../Hooks/useThemeColors";
+import { useThemeStyles } from "../../Hooks/useThemeStyles";
 
-export const PrimaryButtonStyle = (OriginalComponent) => (props) => {
+export const PrimaryButtonStyle = OriginalComponent => props => {
   const { style, isAvailable = true, labelStyle } = props;
-
+  const Colors = useThemeColors();
+  const ApplicationStyles = useThemeStyles();
   const styles = StyleSheet.create({
+    ...ApplicationStyles.utils,
+    ...ApplicationStyles.text,
     container: {
-      // height: 48 * WIDTH_RATIO,
-      // borderRadius: 24 * WIDTH_RATIO,
-      // alignItems: "center",
-      // justifyContent: "center",
       width: "100%",
-      shadowColor: "rgba(42, 53, 113, 0.16)",
-      shadowOffset: {
-        width: 0,
-        height: 4,
-      },
-      shadowRadius: 10,
-      shadowOpacity: 1,
-      ...style,
-    },
-    buttonInner: {
-      width: "100%",
-      height: 48 * WIDTH_RATIO,
-      borderRadius: 24 * WIDTH_RATIO,
-      alignItems: "center",
-      justifyContent: "center",
-      borderWidth: 4 * WIDTH_RATIO,
-      borderColor: "white",
-      shadowColor: "rgba(42, 53, 113, 0.16)",
-      shadowOffset: {
-        width: 0,
-        height: 4,
-      },
-      shadowRadius: 10,
-      shadowOpacity: 1,
+      paddingVertical: 14 * WIDTH_RATIO,
+      borderRadius: 8 * WIDTH_RATIO,
+      backgroundColor: isAvailable ? Colors.primaryButton : "transparent",
+      ...ApplicationStyles.utils.middle,
       ...style,
     },
     buttonText: {
-      fontFamily: Fonts.type.boldFont,
-      fontSize: 15 * WIDTH_RATIO,
-      color: isAvailable ? "white" : Colors.textBlack,
+      ...ApplicationStyles.text.h7,
+      color: isAvailable ? Colors.white : Colors.primaryButton,
       ...labelStyle,
     },
   });

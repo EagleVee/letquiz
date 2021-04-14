@@ -11,6 +11,7 @@ import Carousel, { Pagination } from "react-native-snap-carousel";
 import { deviceWidth, WIDTH_RATIO } from "../../Themes/Metrics";
 import BlockDivider from "../../Components/Dividers/BlockDivider";
 import { useThemeColors } from "../../Hooks/useThemeColors";
+import PrimaryButton from "../../Components/Buttons/PrimaryButton";
 
 const welcomeText = [
   "90% of students who use Quizlet report higher grades",
@@ -41,7 +42,7 @@ function WelcomeScreen(props) {
   }
 
   function onLoginPress() {
-    NavigationMethods.resetStackToTab();
+    NavigationMethods.goToScreen("LoginScreen");
   }
 
   return (
@@ -69,14 +70,17 @@ function WelcomeScreen(props) {
           />
         </View>
         <View style={styles.footer}>
-          <TouchableOpacity
-            style={styles.registerButton}
-            onPress={onRegisterPress}>
-            <Text style={styles.registerText}>Register FREE</Text>
-          </TouchableOpacity>
-          <TouchableOpacity style={styles.loginButton} onPress={onLoginPress}>
-            <Text style={styles.loginText}>Or login</Text>
-          </TouchableOpacity>
+          <PrimaryButton
+            onPress={onRegisterPress}
+            title={"Register FREE"}
+            isAvailable={true}
+          />
+          <BlockDivider height={4 * WIDTH_RATIO} />
+          <PrimaryButton
+            onPress={onLoginPress}
+            title={"Or login"}
+            isAvailable={false}
+          />
         </View>
       </RNScrollView>
     </Container>

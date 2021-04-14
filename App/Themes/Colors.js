@@ -3,6 +3,7 @@ export const sharedColors = {
   blackOpacity: "rgba(0, 0, 0, 0.3)",
   black: "#000000",
   primary: "#4257B2",
+  primaryActive: "3B4C9B",
   primaryButton: "#00CC96",
   activePrimary: "#632066",
   inactivePrimary: "#e5e5e5",

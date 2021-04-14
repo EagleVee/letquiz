@@ -1,20 +1,18 @@
-import React, { useState } from "react";
-import { View, Text, TouchableOpacity } from "react-native";
+import React from "react";
+import { Text, TouchableOpacity } from "react-native";
 import { PrimaryButtonStyle } from "./PrimaryButtonStyle";
 import { PropTypesValue } from "Utils/type";
-import PrimaryGradientBackground from "../Backgrounds/PrimaryGradientBackground";
+import { TouchableOpacityProps } from "react-native";
 
-function PrimaryButton(props) {
-  const { onPress, title, isAvailable, styles } = props;
+function PrimaryButton(props: TouchableOpacityProps) {
+  const { onPress, title, isAvailable, styles, style, ...otherProps } = props;
 
   return (
     <TouchableOpacity
       style={styles.container}
       onPress={onPress}
-      disabled={!isAvailable}>
-      <PrimaryGradientBackground style={styles.buttonInner}>
-        <Text style={styles.buttonText}>{title}</Text>
-      </PrimaryGradientBackground>
+      {...otherProps}>
+      <Text style={styles.buttonText}>{title}</Text>
     </TouchableOpacity>
   );
 }
