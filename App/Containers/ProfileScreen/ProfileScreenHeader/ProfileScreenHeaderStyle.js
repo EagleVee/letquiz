@@ -11,10 +11,8 @@ export const ProfileScreenHeaderStyle = OriginalComponent => props => {
     ...ApplicationStyles.utils,
     ...ApplicationStyles.text,
     container: {
-      backgroundColor: Colors.cardBackground,
+      backgroundColor: Colors.primary,
       paddingHorizontal: 16 * WIDTH_RATIO,
-      borderBottomLeftRadius: 24 * WIDTH_RATIO,
-      borderBottomRightRadius: 24 * WIDTH_RATIO,
     },
     infoContainer: {
       paddingTop: 12 * WIDTH_RATIO + STATUS_BAR_HEIGHT,
@@ -50,7 +48,7 @@ export const ProfileScreenHeaderStyle = OriginalComponent => props => {
       paddingBottom: 13 * WIDTH_RATIO,
     },
     unauthenticatedContainer: {
-      paddingTop: 60 * WIDTH_RATIO + STATUS_BAR_HEIGHT,
+      paddingTop: 20 * WIDTH_RATIO,
     },
     socialButtonContainer: {
       paddingTop: 40 * WIDTH_RATIO,

@@ -8,7 +8,6 @@ import FastImage from "Components/RNComponents/FastImage";
 import { WIDTH_RATIO } from "Themes/Metrics";
 import { useThemeSvgs } from "Hooks/useThemeSvgs";
 import AppLogoWithVersion from "Components/AppLogoWithVersion/AppLogoWithVersion";
-import SubscriptionCodeInput from "../../../Components/SubscriptionCodeInput/SubscriptionCodeInput";
 
 function ProfileScreenHeader(props) {
   const { styles, customer, isAuthenticated } = props;
@@ -55,9 +54,7 @@ function ProfileScreenHeader(props) {
   return (
     <View style={styles.container}>
       {isAuthenticated ? renderAuthenticated() : renderUnauthenticated()}
-      <View style={styles.codeContainer}>
-        <SubscriptionCodeInput />
-      </View>
+      <View style={styles.codeContainer}></View>
     </View>
   );
 }
