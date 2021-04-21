@@ -24,7 +24,7 @@ function AppNavigation(props) {
   function TabWithActionModal(props) {
     return (
       <>
-        <TabNavigator {...props} onAddTabPress={onOpenActionModal} />
+        <TabNavigator {...props} onCreateTabPress={onOpenActionModal} />
         <CreateActionModal
           isVisible={actionModalVisible}
           onBackdropPress={onCloseActionModal}

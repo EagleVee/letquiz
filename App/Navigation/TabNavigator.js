@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import { useNavigation } from "@react-navigation/native";
+import React from "react";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { deviceWidth, HEIGHT_RATIO, EXTRA_FOOTER_HEIGHT } from "Themes/Metrics";
 import TabLabel from "Components/TabLabel/TabLabel";
@@ -8,18 +7,17 @@ import ProfileScreen from "Containers/ProfileScreen/ProfileScreen";
 import SearchScreen from "Containers/SearchScreen/SearchScreen";
 import { useThemeColors } from "Hooks/useThemeColors";
 import { View } from "react-native";
-import CreateActionModal from "../Components/CreateActionModal/CreateActionModal";
 
 const Tab = createBottomTabNavigator();
 function CreateActionModalPlaceholder() {
   return <View />;
 }
 
-function TabNavigator({ onAddTabPress }) {
+function TabNavigator({ onCreateTabPress }) {
   const Colors = useThemeColors();
 
   function HomeScreenWithProps(props) {
-    return <HomeScreen {...props} onAddTabPress={onAddTabPress} />;
+    return <HomeScreen {...props} onCreateTabPress={onCreateTabPress} />;
   }
 
   return (
@@ -62,7 +60,7 @@ function TabNavigator({ onAddTabPress }) {
         listeners={{
           tabPress: e => {
             e.preventDefault();
-            onAddTabPress();
+            onCreateTabPress();
           },
         }}
         component={CreateActionModalPlaceholder}
