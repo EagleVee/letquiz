@@ -6,8 +6,6 @@ import {
   TabActions,
 } from "@react-navigation/native";
 import { useSelector } from "react-redux";
-import ProgramTransform from "../Transforms/ProgramTransform";
-import TrainerTransform from "../Transforms/TrainerTransform";
 
 export const useNavigationMethods = () => {
   const navigation = useNavigation();
@@ -51,31 +49,6 @@ export const useNavigationMethods = () => {
     navigation.dispatch(StackActions.replace("Tab"));
   }
 
-  function goToProgramDetail(
-    paramProgram = new ProgramTransform(),
-    params = {},
-  ) {
-    const isSubscribed = program.subscribedProgramIds.includes(paramProgram.id);
-    navigation.push("ProgramDetailScreen", {
-      program: paramProgram,
-      isSubscribed: isSubscribed,
-      ...params,
-    });
-  }
-
-  function goToTrainerDetail(
-    paramTrainer = new TrainerTransform(),
-    params = {},
-  ) {
-    const isSubscribed = trainer.subscribedTrainerIds.includes(paramTrainer.id);
-
-    navigation.push("TrainerDetailScreen", {
-      trainer: paramTrainer,
-      isSubscribed: isSubscribed,
-      ...params,
-    });
-  }
-
   return {
     goBack,
     goToScreen,
@@ -84,7 +57,5 @@ export const useNavigationMethods = () => {
     pop,
     resetStack,
     resetStackToTab,
-    goToProgramDetail,
-    goToTrainerDetail,
   };
 };
