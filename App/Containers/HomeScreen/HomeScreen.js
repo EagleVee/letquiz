@@ -12,7 +12,7 @@ import BlockDivider from "../../Components/Dividers/BlockDivider";
 import Feather from "react-native-vector-icons/Feather";
 
 function HomeScreen(props) {
-  const { styles, navigation, route } = props;
+  const { styles, navigation, route, onAddTabPress } = props;
   const NavigationMethods = useNavigationMethods();
   const Colors = useThemeColors();
 
@@ -50,7 +50,7 @@ function HomeScreen(props) {
             </View>
           </TouchableOpacity>
           <BlockDivider height={16 * WIDTH_RATIO} />
-          <TouchableOpacity style={styles.card} onPress={onSearchPress}>
+          <TouchableOpacity style={styles.card} onPress={onAddTabPress}>
             <Feather
               name={"plus-circle"}
               size={36 * WIDTH_RATIO}

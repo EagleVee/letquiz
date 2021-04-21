@@ -3,6 +3,7 @@ import FontAwesome5 from "react-native-vector-icons/FontAwesome5";
 import Entypo from "react-native-vector-icons/Entypo";
 import AntDesign from "react-native-vector-icons/AntDesign";
 import EvilIcons from "react-native-vector-icons/EvilIcons";
+import Ionicons from "react-native-vector-icons/Ionicons";
 import Feather from "react-native-vector-icons/Feather";
 import FontAwesome5Pro from "react-native-vector-icons/FontAwesome5Pro";
 import Foundation from "react-native-vector-icons/Foundation";
@@ -26,4 +27,5 @@ export {
   Octicons,
   SimpleLineIcons,
   Zocial,
+  Ionicons
 };

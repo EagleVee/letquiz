@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
+import { useNavigation } from "@react-navigation/native";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { deviceWidth, HEIGHT_RATIO, EXTRA_FOOTER_HEIGHT } from "Themes/Metrics";
 import TabLabel from "Components/TabLabel/TabLabel";
@@ -6,11 +7,21 @@ import HomeScreen from "Containers/HomeScreen/HomeScreen";
 import ProfileScreen from "Containers/ProfileScreen/ProfileScreen";
 import SearchScreen from "Containers/SearchScreen/SearchScreen";
 import { useThemeColors } from "Hooks/useThemeColors";
+import { View } from "react-native";
+import CreateActionModal from "../Components/CreateActionModal/CreateActionModal";
 
 const Tab = createBottomTabNavigator();
+function CreateActionModalPlaceholder() {
+  return <View />;
+}
 
-function TabNavigator(props) {
+function TabNavigator({ onAddTabPress }) {
   const Colors = useThemeColors();
+
+  function HomeScreenWithProps(props) {
+    return <HomeScreen {...props} onAddTabPress={onAddTabPress} />;
+  }
+
   return (
     <Tab.Navigator
       initialRouteName="HomeScreen"
@@ -29,7 +40,7 @@ function TabNavigator(props) {
             return <TabLabel focused={focused} name="home" />;
           },
         }}
-        component={HomeScreen}
+        component={HomeScreenWithProps}
       />
       <Tab.Screen
         name="SearchScreen"
@@ -39,6 +50,22 @@ function TabNavigator(props) {
           },
         }}
         component={SearchScreen}
+      />
+      <Tab.Screen
+        name="CreateActionModalPlaceholder"
+        options={{
+          tabBarLabel: ({ focused }) => {
+            return <TabLabel focused={focused} name="add" />;
+          },
+          animationEnabled: true,
+        }}
+        listeners={{
+          tabPress: e => {
+            e.preventDefault();
+            onAddTabPress();
+          },
+        }}
+        component={CreateActionModalPlaceholder}
       />
       <Tab.Screen
         name="ProfileScreen"
