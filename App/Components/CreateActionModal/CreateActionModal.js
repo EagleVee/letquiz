@@ -42,7 +42,7 @@ function CreateActionModal(props: ModalProps) {
           style={styles.actionButton}>
           <Ionicons
             name={"ios-duplicate-outline"}
-            size={24 * WIDTH_RATIO}
+            size={20 * WIDTH_RATIO}
             color={Colors.primaryTitle}
           />
           <Text style={styles.actionButtonText}>Create study set</Text>
@@ -52,7 +52,7 @@ function CreateActionModal(props: ModalProps) {
           style={styles.actionButton}>
           <Feather
             name={"folder"}
-            size={24 * WIDTH_RATIO}
+            size={20 * WIDTH_RATIO}
             color={Colors.primaryTitle}
           />
           <Text style={styles.actionButtonText}>Create folder</Text>
@@ -62,7 +62,7 @@ function CreateActionModal(props: ModalProps) {
           style={styles.actionButton}>
           <Feather
             name={"star"}
-            size={24 * WIDTH_RATIO}
+            size={20 * WIDTH_RATIO}
             color={Colors.primaryTitle}
           />
           <Text style={styles.actionButtonText}>Create class</Text>

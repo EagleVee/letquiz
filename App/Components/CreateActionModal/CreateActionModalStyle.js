@@ -20,7 +20,7 @@ export const CreateActionModalStyle = OriginalComponent => props => {
       ...ApplicationStyles.utils.centerRow,
     },
     actionButtonText: {
-      ...ApplicationStyles.text.h7,
+      ...ApplicationStyles.text.h8,
       marginLeft: 12 * WIDTH_RATIO,
     },
     screenContainer: {
