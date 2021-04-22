@@ -30,4 +30,5 @@ Please refer to [this document](http://bit.ly/3bnCSaR)
 - Passed
 - Can find test files in `__test__`
 
+ ![Button-test](https://i.imgur.com/sfSmchV.png)
  ![Button-test](https://i.imgur.com/HJwH0Et.png)
