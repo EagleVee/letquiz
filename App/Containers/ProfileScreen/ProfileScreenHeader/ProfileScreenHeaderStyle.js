@@ -11,41 +11,27 @@ export const ProfileScreenHeaderStyle = OriginalComponent => props => {
     ...ApplicationStyles.utils,
     ...ApplicationStyles.text,
     container: {
-      backgroundColor: Colors.primary,
+      backgroundColor: Colors.cardBackground,
       paddingHorizontal: 16 * WIDTH_RATIO,
     },
     infoContainer: {
       paddingTop: 12 * WIDTH_RATIO + STATUS_BAR_HEIGHT,
-      flexDirection: "row",
       alignItems: "center",
     },
     nameContainer: {
-      flex: 1,
-      paddingHorizontal: 12 * WIDTH_RATIO,
-    },
-    settingButton: {
-      width: 48 * WIDTH_RATIO,
-      height: 48 * WIDTH_RATIO,
-      backgroundColor: Colors.background,
-      borderRadius: 12 * WIDTH_RATIO,
-      borderWidth: WIDTH_RATIO,
-      borderColor: Colors.switchInactive,
-      ...ApplicationStyles.utils.middle,
+      paddingTop: 16 * WIDTH_RATIO,
+      paddingHorizontal: 16 * WIDTH_RATIO,
+      alignItems: "center",
     },
     email: {
       ...ApplicationStyles.text.h8,
-      color: "#2b86f1",
     },
     avatar: {
-      width: 80 * WIDTH_RATIO,
-      height: 80 * WIDTH_RATIO,
+      width: 160 * WIDTH_RATIO,
+      height: 160 * WIDTH_RATIO,
       borderWidth: 4 * WIDTH_RATIO,
-      borderRadius: 40 * WIDTH_RATIO,
+      borderRadius: 80 * WIDTH_RATIO,
       borderColor: Colors.portraitBorder,
-    },
-    codeContainer: {
-      paddingTop: 20 * WIDTH_RATIO,
-      paddingBottom: 13 * WIDTH_RATIO,
     },
     unauthenticatedContainer: {
       paddingTop: 20 * WIDTH_RATIO,

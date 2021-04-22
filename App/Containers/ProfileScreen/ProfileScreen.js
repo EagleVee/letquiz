@@ -26,10 +26,9 @@ function ProfileScreen(props) {
   const Svgs = useThemeSvgs();
   const Modal = useModal();
   const dispatch = useDispatch();
-  const { customer, auth, device, trainer } = useSelector(state => state);
+  const { customer, auth, device } = useSelector(state => state);
   const { theme, language } = device;
   const { isAuthenticated } = auth;
-  const { trainerSubscriptions } = trainer;
 
   function onBarPress(route, params = {}) {
     try {
@@ -52,43 +51,13 @@ function ProfileScreen(props) {
   }
 
   return (
-    <Container statusBarColor={Colors.cardBackground}>
+    <Container statusBarColor={Colors.primary}>
       <RNScrollView>
         <ProfileScreenHeader
           customer={customer}
           isAuthenticated={isAuthenticated}
         />
         <View style={styles.profileMain}>
-          <ProfileRouteBar
-            isVisible={isAuthenticated}
-            type="route"
-            onPress={onBarPress.bind(this, "WorkoutHistoryScreen")}
-            title={I18n.t("ProfileScreen.WorkoutHistory")}
-            Icon={Svgs.Profile.WorkoutHistory}
-            iconFill={theme === LIGHT_THEME ? "black" : null}
-          />
-          <BlockDivider height={12 * WIDTH_RATIO} />
-          <ProfileRouteBar
-            isVisible={isAuthenticated}
-            type="route"
-            onPress={onBarPress.bind(this, "SubscriptionListScreen")}
-            title={
-              trainerSubscriptions.length +
-              " " +
-              I18n.t("ProfileScreen.Subscriptions")
-            }
-            Icon={Svgs.Profile.Subscription}
-            iconFill={theme === LIGHT_THEME ? "black" : null}
-          />
-          <BlockDivider height={12 * WIDTH_RATIO} />
-          <ProfileRouteBar
-            isVisible={isAuthenticated}
-            type="route"
-            onPress={onBarPress.bind(this, "DeviceListScreen")}
-            title={I18n.t("ProfileScreen.Devices")}
-            Icon={Svgs.Profile.Device}
-            iconFill={theme === LIGHT_THEME ? "black" : null}
-          />
           <BlockDivider height={12 * WIDTH_RATIO} />
           <ProfileRouteBar
             onPress={onBarPress.bind(this, "WorkoutHistoryScreen")}
@@ -132,7 +101,6 @@ function ProfileScreen(props) {
             onPress={onLogoutPress}
           />
           <BlockDivider height={40 * WIDTH_RATIO} />
-          {isAuthenticated && <AppLogoWithVersion />}
         </View>
       </RNScrollView>
     </Container>

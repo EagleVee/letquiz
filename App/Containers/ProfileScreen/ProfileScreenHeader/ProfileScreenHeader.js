@@ -13,7 +13,7 @@ function ProfileScreenHeader(props) {
   const { styles, customer, isAuthenticated } = props;
   const Svgs = useThemeSvgs();
   const NavigationMethods = useNavigationMethods();
-  const { avatarSource, fullname, email } = customer;
+  const { avatarSource, username, email } = customer;
 
   function onLoginSuccess() {
     NavigationMethods.resetStackToTab();
@@ -38,15 +38,9 @@ function ProfileScreenHeader(props) {
           resizeMode="cover"
         />
         <View style={styles.nameContainer}>
-          <Text style={styles.h7Bold}>{fullname}</Text>
+          <Text style={styles.h6Bold}>{username}</Text>
           <Text style={styles.email}>{email}</Text>
         </View>
-        <TouchableOpacity onPress={() => {}} style={styles.settingButton}>
-          <Svgs.Profile.Setting
-            width={20 * WIDTH_RATIO}
-            height={20 * WIDTH_RATIO}
-          />
-        </TouchableOpacity>
       </View>
     );
   }
@@ -54,7 +48,6 @@ function ProfileScreenHeader(props) {
   return (
     <View style={styles.container}>
       {isAuthenticated ? renderAuthenticated() : renderUnauthenticated()}
-      <View style={styles.codeContainer}></View>
     </View>
   );
 }
