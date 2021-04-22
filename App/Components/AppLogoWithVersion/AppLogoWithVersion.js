@@ -13,9 +13,6 @@ function AppLogoWithVersion(props) {
   return (
     <View style={styles.container}>
       <Text style={styles.name}>Quizlet</Text>
-      <Text style={styles.version}>
-        {I18n.t("RegularTerm.Version") + " " + APP_VERSION_NAME}
-      </Text>
     </View>
   );
 }
