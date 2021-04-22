@@ -7,7 +7,10 @@ import { useThemeColors } from "Hooks/useThemeColors";
 export const BackHeaderBarStyle = OriginalComponent => props => {
   const ApplicationStyles = useThemeStyles();
   const Colors = useThemeColors();
-  const { notSafeArea = false, backgroundColor = Colors.tabBackground } = props;
+  const {
+    notSafeArea = false,
+    backgroundColor = Colors.cardBackground,
+  } = props;
   const styles = StyleSheet.create({
     ...ApplicationStyles.utils,
     ...ApplicationStyles.text,

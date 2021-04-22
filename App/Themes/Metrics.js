@@ -10,7 +10,7 @@ const NOTCH_STATUS_BAR_HEIGHT = 44;
 
 export const hasNotch = DeviceInfo.hasNotch();
 export const paddingBottom = hasNotch ? 32 : 20;
-export const tabBottom = hasNotch ? 20 : 0;
+export const tabBottom = hasNotch ? 12 : 0;
 
 export const STATUS_BAR_HEIGHT = hasNotch
   ? NOTCH_STATUS_BAR_HEIGHT

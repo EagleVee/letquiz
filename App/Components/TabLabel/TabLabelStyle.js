@@ -9,7 +9,7 @@ export const TabLabelStyle = OriginalComponent => props => {
   const Colors = useThemeColors();
   const { focused, name } = props;
   const Icon = TabIcon[name];
-  const label = TabLabel[name];
+  // const label = TabLabel[name];
 
   const styles = StyleSheet.create({
     container: {
@@ -29,7 +29,5 @@ export const TabLabelStyle = OriginalComponent => props => {
     },
   });
 
-  return (
-    <OriginalComponent {...props} styles={styles} Icon={Icon} label={label} />
-  );
+  return <OriginalComponent {...props} styles={styles} Icon={Icon} />;
 };
