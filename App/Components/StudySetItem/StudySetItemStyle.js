@@ -1,20 +1,24 @@
 import React, { useState } from "react";
 import { StyleSheet } from "react-native";
-import { tabBottom, WIDTH_RATIO } from "Themes/Metrics";
+import { WIDTH_RATIO } from "Themes/Metrics";
 import { useThemeStyles } from "Hooks/useThemeStyles";
 import { useThemeColors } from "Hooks/useThemeColors";
 
-export const StudySetDetailScreenStyle = OriginalComponent => props => {
+export const StudySetItemStyle = OriginalComponent => props => {
   const ApplicationStyles = useThemeStyles();
   const Colors = useThemeColors();
   const styles = StyleSheet.create({
-    ...ApplicationStyles.screen,
     ...ApplicationStyles.utils,
     ...ApplicationStyles.text,
-    footer: {
-      marginHorizontal: 16 * WIDTH_RATIO,
-      paddingTop: 16 * WIDTH_RATIO,
-      paddingBottom: 16 * WIDTH_RATIO + tabBottom,
+    container: {
+      width: 360 * WIDTH_RATIO,
+      paddingHorizontal: 20 * WIDTH_RATIO,
+      paddingVertical: 16 * WIDTH_RATIO,
+      backgroundColor: Colors.cardBackground,
+    },
+    title: {
+      ...ApplicationStyles.text.h8Bold,
+      flex: 1,
     },
   });
 

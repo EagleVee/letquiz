@@ -4,20 +4,36 @@ import { compose } from "ramda";
 import { useNavigationMethods } from "Hooks/useNavigationMethods";
 import { HomeScreenStyle } from "./HomeScreenStyle";
 import Container from "Components/Container/Container";
-import { RNScrollView } from "Components/RNComponents";
+import { RNFlatList, RNScrollView } from "Components/RNComponents";
 import { useThemeColors } from "../../Hooks/useThemeColors";
 import Ionicons from "react-native-vector-icons/Ionicons";
 import { WIDTH_RATIO } from "../../Themes/Metrics";
 import BlockDivider from "../../Components/Dividers/BlockDivider";
 import Feather from "react-native-vector-icons/Feather";
+import { studySets } from "../../Fixtures/StudySet";
+import StudySetItem from "../../Components/StudySetItem/StudySetItem";
+import { useSelector } from "react-redux";
 
 function HomeScreen(props) {
   const { styles, navigation, route, onCreateTabPress } = props;
   const NavigationMethods = useNavigationMethods();
   const Colors = useThemeColors();
+  const { currentStudySets } = useSelector(state => state.studySet);
 
   function onSearchPress() {
     NavigationMethods.goToScreen("SearchScreen");
+  }
+
+  function onStudySetPress(item) {
+    NavigationMethods.goToScreen("StudySetDetailScreen", {
+      studySet: item,
+    });
+  }
+
+  function renderStudySetItem({ item, index }) {
+    return (
+      <StudySetItem studySet={item} index={index} onPress={onStudySetPress} />
+    );
   }
 
   return (
@@ -67,6 +83,12 @@ function HomeScreen(props) {
             </View>
           </TouchableOpacity>
         </View>
+        <RNFlatList
+          data={currentStudySets}
+          renderItem={renderStudySetItem}
+          dividerHeight={12 * WIDTH_RATIO}
+          contentContainerStyle={styles.listContent}
+        />
       </RNScrollView>
     </Container>
   );

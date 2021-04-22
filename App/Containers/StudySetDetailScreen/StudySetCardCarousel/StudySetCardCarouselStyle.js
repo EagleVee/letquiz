@@ -4,24 +4,26 @@ import { WIDTH_RATIO } from "Themes/Metrics";
 import { useThemeStyles } from "Hooks/useThemeStyles";
 import { useThemeColors } from "Hooks/useThemeColors";
 
-export const AppLogoWithVersionStyle = OriginalComponent => props => {
+export const StudySetCardCarouselStyle = OriginalComponent => props => {
   const ApplicationStyles = useThemeStyles();
   const Colors = useThemeColors();
   const styles = StyleSheet.create({
     ...ApplicationStyles.utils,
     ...ApplicationStyles.text,
-    container: {
-      width: "100%",
+    paginationActive: {
+      width: 8 * WIDTH_RATIO,
+      height: 8 * WIDTH_RATIO,
+      borderRadius: 4 * WIDTH_RATIO,
+      backgroundColor: Colors.primaryButton,
+    },
+    paginationInactive: {
+      width: 8 * WIDTH_RATIO,
+      height: 8 * WIDTH_RATIO,
+      borderRadius: 4 * WIDTH_RATIO,
+      backgroundColor: Colors.cardBackground,
+    },
+    paginationContainer: {
       ...ApplicationStyles.utils.middle,
-    },
-    name: {
-      ...ApplicationStyles.text.h4Bold,
-      color: Colors.white,
-    },
-    version: {
-      marginTop: 2 * WIDTH_RATIO,
-      ...ApplicationStyles.text.h9,
-      color: Colors.inputTitle,
     },
   });
 

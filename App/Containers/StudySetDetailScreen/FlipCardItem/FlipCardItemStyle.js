@@ -1,27 +1,27 @@
 import React, { useState } from "react";
 import { StyleSheet } from "react-native";
-import { WIDTH_RATIO } from "Themes/Metrics";
+import { deviceWidth, WIDTH_RATIO } from "Themes/Metrics";
 import { useThemeStyles } from "Hooks/useThemeStyles";
 import { useThemeColors } from "Hooks/useThemeColors";
 
-export const AppLogoWithVersionStyle = OriginalComponent => props => {
+export const FlipCardItemStyle = OriginalComponent => props => {
   const ApplicationStyles = useThemeStyles();
   const Colors = useThemeColors();
   const styles = StyleSheet.create({
     ...ApplicationStyles.utils,
     ...ApplicationStyles.text,
     container: {
+      width: deviceWidth - 32 * WIDTH_RATIO,
+      height: ((deviceWidth - 32 * WIDTH_RATIO) * 3) / 4,
+      backgroundColor: Colors.background,
+    },
+    card: {
       width: "100%",
+      height: "100%",
+      backgroundColor: Colors.cardBackground,
       ...ApplicationStyles.utils.middle,
-    },
-    name: {
-      ...ApplicationStyles.text.h4Bold,
-      color: Colors.white,
-    },
-    version: {
-      marginTop: 2 * WIDTH_RATIO,
-      ...ApplicationStyles.text.h9,
-      color: Colors.inputTitle,
+      paddingHorizontal: 16 * WIDTH_RATIO,
+      paddingVertical: 14 * WIDTH_RATIO,
     },
   });
 

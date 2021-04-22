@@ -1,6 +1,4 @@
-import { Appearance } from "react-native";
 import { call, put } from "redux-saga/effects";
-import ProgramActions from "Redux/Actions/ProgramActions";
 import DeviceActions from "Redux/Actions/DeviceActions";
 import { LocalStorageService } from "../Services/LocalStorageService";
 import Keys from "../Config/Keys";
@@ -10,9 +8,6 @@ import ContentActions from "../Redux/Actions/ContentActions";
 
 export function* startup(action) {
   const { callback = () => {} } = action;
-  // yield put(ProgramActions.getNewProgramsSuccess());
-
-  // Handle language
   const savedLanguage = yield call(
     LocalStorageService.get,
     Keys.language,
@@ -30,21 +25,21 @@ export function* startup(action) {
   yield put(DeviceActions.changeTheme(savedTheme));
 
   // Handle authentication
-  let isAuthenticated = false;
+  let isAuthenticated = true;
   const savedRefreshToken = yield call(
     LocalStorageService.get,
     Keys.refreshToken,
     "",
   );
 
-  yield call(API.auth.setAuthorizationHeader, savedRefreshToken);
-  const refreshResponse = yield call(API.auth.refreshToken);
-  if (refreshResponse.status === true) {
-    isAuthenticated = true;
-    yield put(AuthActions.authenticateSuccess(refreshResponse));
-  }
+  yield put(AuthActions.setAuthenticated(true));
 
-  yield put(ContentActions.getFaqs());
+  // yield call(API.auth.setAuthorizationHeader, savedRefreshToken);
+  // const refreshResponse = yield call(API.auth.refreshToken);
+  // if (refreshResponse.status === true) {
+  //   isAuthenticated = true;
+  //   yield put(AuthActions.authenticateSuccess(refreshResponse));
+  // }
 
   // Callback
   yield call(callback, isAuthenticated);
