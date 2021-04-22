@@ -51,7 +51,7 @@ function ProfileScreen(props) {
   }
 
   return (
-    <Container statusBarColor={Colors.primary}>
+    <Container statusBarColor={Colors.cardBackground}>
       <RNScrollView>
         <ProfileScreenHeader
           customer={customer}
