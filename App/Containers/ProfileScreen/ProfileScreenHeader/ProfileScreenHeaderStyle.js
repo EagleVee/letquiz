@@ -13,6 +13,7 @@ export const ProfileScreenHeaderStyle = OriginalComponent => props => {
     container: {
       backgroundColor: Colors.cardBackground,
       paddingHorizontal: 16 * WIDTH_RATIO,
+      paddingBottom: 20 * WIDTH_RATIO,
     },
     infoContainer: {
       paddingTop: 12 * WIDTH_RATIO + STATUS_BAR_HEIGHT,
