@@ -13,6 +13,10 @@ Our group includes:
 - [Đồ Thành Đạt](https://github.com/datdt312)
 - [Nguyễn Ngọc Anh Vũ](https://github.com/EagleVee)
 
+## Landing Page
+
+[Introduction of Quizlet](https://eaglevee.github.io/letquiz/)
+
 ## Requirements Specification
 
 Please refer to [this document](http://bit.ly/3bnCSaR)
