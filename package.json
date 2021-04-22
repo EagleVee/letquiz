@@ -41,6 +41,7 @@
     "querystringify": "^2.2.0",
     "ramda": "^0.27.1",
     "react": "16.13.1",
+    "react-dom": "^17.0.2",
     "react-native": "0.63.3",
     "react-native-action-button": "^2.8.5",
     "react-native-actionsheet": "^2.4.2",
@@ -111,6 +112,7 @@
     "react-native-vector-icons": "^7.1.0",
     "react-native-video": "^5.0.2",
     "react-native-walkthrough-tooltip": "^1.1.7",
+    "react-native-web": "^0.16.0",
     "react-native-webview": "11.0.2",
     "react-navigation": "4.0.10",
     "react-navigation-material-bottom-tabs": "^2.1.2",
@@ -133,16 +135,18 @@
     "@babel/core": "^7.8.4",
     "@babel/runtime": "^7.8.4",
     "@react-native-community/eslint-config": "^1.1.0",
-    "babel-jest": "^25.1.0",
     "babel-plugin-module-resolver": "^4.0.0",
-    "eslint": "^6.5.1",
-    "jest": "^25.5.4",
+    "babel-plugin-react-native-web": "^0.16.0",
+    "eslint": "7.11.0",
+    "jest": "26.6.0",
     "metro-config": "^0.65.1",
     "metro-react-native-babel-preset": "^0.59.0",
     "metro-react-native-babel-transformer": "^0.65.1",
     "node-sass": "^5.0.0",
     "prettier": "^2.2.1",
     "react-native-sass-transformer": "^1.4.0",
+    "react-scripts": "^4.0.3",
+    "webpack": "4.44.2",
     "react-test-renderer": "16.13.1"
   },
   "jest": {
@@ -177,7 +181,20 @@
     "clear:metro-cache": "rm -rf $TMPDIR/react-*; rm -rf $TMPDIR/haste-*; rm -rf $TMPDIR/metro-*; watchman watch-del-all",
     "generate": "node FileGenerator.js",
     "start": "react-native start",
+    "web": "react-scripts start",
     "test": "jest",
     "reverse:tcp": "adb reverse tcp:8081 tcp:8081"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
