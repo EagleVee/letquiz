@@ -5,6 +5,7 @@ import { RNSwitchStyle } from "./RNSwitchStyle";
 import PropTypes from "prop-types";
 import Animated, { spring, interpolateColors } from "react-native-reanimated";
 import { useThemeColors } from "Hooks/useThemeColors";
+import { WIDTH_RATIO } from "../../Themes/Metrics";
 
 function RNSwitch(props) {
   const { styles, value, onValueChange } = props;
@@ -42,12 +43,13 @@ function RNSwitch(props) {
     }),
     borderColor: interpolateColors(switchTranslate, {
       inputRange: [0, 14],
-      outputColorRange: [Colors.background, Colors.primaryRed],
+      outputColorRange: [Colors.background, Colors.primaryButton],
     }),
     shadowColor: interpolateColors(switchTranslate, {
       inputRange: [0, 14],
       outputColorRange: ["rgba(132, 30, 22, 0.16)", "transparent"],
     }),
+    borderWidth: 2 * WIDTH_RATIO,
     shadowOffset: {
       width: 0,
       height: 1,
@@ -59,11 +61,11 @@ function RNSwitch(props) {
   const interpolateThumbStyle = {
     backgroundColor: interpolateColors(switchTranslate, {
       inputRange: [0, 14],
-      outputColorRange: [Colors.primaryRed, Colors.white],
+      outputColorRange: [Colors.primaryButton, Colors.white],
     }),
     borderColor: interpolateColors(switchTranslate, {
       inputRange: [0, 14],
-      outputColorRange: [Colors.buttonBackground, Colors.primaryRed],
+      outputColorRange: [Colors.buttonBackground, Colors.primaryButton],
     }),
   };
   const memoizedOnSwitchPressCallback = React.useCallback(() => {

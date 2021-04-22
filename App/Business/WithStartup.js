@@ -9,7 +9,11 @@ export const WithStartup = OriginalComponent => props => {
 
   function startupCallback(isAuthenticated) {
     // NavigationMethods.resetStackToTab();
-    NavigationMethods.resetStack("WelcomeScreen");
+    if (isAuthenticated) {
+      NavigationMethods.resetStackToTab();
+    } else {
+      NavigationMethods.resetStack("WelcomeScreen");
+    }
   }
 
   useEffect(() => {

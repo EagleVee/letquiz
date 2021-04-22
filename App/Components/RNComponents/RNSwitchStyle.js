@@ -25,7 +25,7 @@ export const RNSwitchStyle = OriginalComponent => props => {
       height: 26 * WIDTH_RATIO,
       borderRadius: 13 * WIDTH_RATIO,
       borderWidth: 4 * WIDTH_RATIO,
-      borderColor: Colors.buttonBackground,
+      borderColor: Colors.primaryButton,
       ...thumbStyle,
     },
   });

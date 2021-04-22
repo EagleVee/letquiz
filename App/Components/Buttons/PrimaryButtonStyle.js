@@ -15,7 +15,7 @@ export const PrimaryButtonStyle = OriginalComponent => props => {
     container: {
       width: "100%",
       paddingVertical: 14 * WIDTH_RATIO,
-      borderRadius: 8 * WIDTH_RATIO,
+      borderRadius: 4 * WIDTH_RATIO,
       backgroundColor: isAvailable ? Colors.primaryButton : "transparent",
       ...ApplicationStyles.utils.middle,
       ...style,

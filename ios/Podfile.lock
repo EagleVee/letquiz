@@ -320,9 +320,6 @@ PODS:
     - React-Core
   - react-native-webview (11.0.2):
     - React-Core
-  - react-native-zalo-kit (1.0.9):
-    - React
-    - ZaloSDK
   - React-RCTActionSheet (0.63.3):
     - React-Core/RCTActionSheetHeaders (= 0.63.3)
   - React-RCTAnimation (0.63.3):
@@ -437,12 +434,6 @@ PODS:
   - Yoga (1.14.0)
   - YogaKit (1.18.1):
     - Yoga (~> 1.14)
-  - ZaloSDK (2.5.1009):
-    - ZaloSDK/Core (= 2.5.1009)
-    - ZaloSDK/Main (= 2.5.1009)
-  - ZaloSDK/Core (2.5.1009)
-  - ZaloSDK/Main (2.5.1009):
-    - ZaloSDK/Core
 
 DEPENDENCIES:
   - BVLinearGradient (from `../node_modules/react-native-linear-gradient`)
@@ -510,7 +501,6 @@ DEPENDENCIES:
   - react-native-video (from `../node_modules/react-native-video`)
   - "react-native-viewpager (from `../node_modules/@react-native-community/viewpager`)"
   - react-native-webview (from `../node_modules/react-native-webview`)
-  - react-native-zalo-kit (from `../node_modules/react-native-zalo-kit`)
   - React-RCTActionSheet (from `../node_modules/react-native/Libraries/ActionSheetIOS`)
   - React-RCTAnimation (from `../node_modules/react-native/Libraries/NativeAnimation`)
   - React-RCTBlob (from `../node_modules/react-native/Libraries/Blob`)
@@ -564,7 +554,6 @@ SPEC REPOS:
     - SDWebImageWebPCoder
     - SSZipArchive
     - YogaKit
-    - ZaloSDK
 
 EXTERNAL SOURCES:
   BVLinearGradient:
@@ -655,8 +644,6 @@ EXTERNAL SOURCES:
     :path: "../node_modules/@react-native-community/viewpager"
   react-native-webview:
     :path: "../node_modules/react-native-webview"
-  react-native-zalo-kit:
-    :path: "../node_modules/react-native-zalo-kit"
   React-RCTActionSheet:
     :path: "../node_modules/react-native/Libraries/ActionSheetIOS"
   React-RCTAnimation:
@@ -781,7 +768,6 @@ SPEC CHECKSUMS:
   react-native-video: 0bb76b6d6b77da3009611586c7dbf817b947f30e
   react-native-viewpager: 32259f9d01874abdf42b25cf81a1d78d1aa55582
   react-native-webview: dfd7202ff115c44d3ea401c2f36122fb3ac79f07
-  react-native-zalo-kit: 96847dbe1a3b8f855be5715ef9bada72b22b88d6
   React-RCTActionSheet: 53ea72699698b0b47a6421cb1c8b4ab215a774aa
   React-RCTAnimation: 1befece0b5183c22ae01b966f5583f42e69a83c2
   React-RCTBlob: 0b284339cbe4b15705a05e2313a51c6d8b51fa40
@@ -818,7 +804,6 @@ SPEC CHECKSUMS:
   TouchID: ba4c656d849cceabc2e4eef722dea5e55959ecf4
   Yoga: 7d13633d129fd179e01b8953d38d47be90db185a
   YogaKit: f782866e155069a2cca2517aafea43200b01fd5a
-  ZaloSDK: 0da456bf02a77e927bca1501d9df464d61c06d55
 
 PODFILE CHECKSUM: ec5a7e2cda14f3a3c918c918045f6fcf679c2079
 

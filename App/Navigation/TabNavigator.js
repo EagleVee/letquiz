@@ -6,11 +6,20 @@ import HomeScreen from "Containers/HomeScreen/HomeScreen";
 import ProfileScreen from "Containers/ProfileScreen/ProfileScreen";
 import SearchScreen from "Containers/SearchScreen/SearchScreen";
 import { useThemeColors } from "Hooks/useThemeColors";
+import { View } from "react-native";
 
 const Tab = createBottomTabNavigator();
+function CreateActionModalPlaceholder() {
+  return <View />;
+}
 
-function TabNavigator(props) {
+function TabNavigator({ onCreateTabPress }) {
   const Colors = useThemeColors();
+
+  function HomeScreenWithProps(props) {
+    return <HomeScreen {...props} onCreateTabPress={onCreateTabPress} />;
+  }
+
   return (
     <Tab.Navigator
       initialRouteName="HomeScreen"
@@ -29,7 +38,7 @@ function TabNavigator(props) {
             return <TabLabel focused={focused} name="home" />;
           },
         }}
-        component={HomeScreen}
+        component={HomeScreenWithProps}
       />
       <Tab.Screen
         name="SearchScreen"
@@ -39,6 +48,22 @@ function TabNavigator(props) {
           },
         }}
         component={SearchScreen}
+      />
+      <Tab.Screen
+        name="CreateActionModalPlaceholder"
+        options={{
+          tabBarLabel: ({ focused }) => {
+            return <TabLabel focused={focused} name="add" />;
+          },
+          animationEnabled: true,
+        }}
+        listeners={{
+          tabPress: e => {
+            e.preventDefault();
+            onCreateTabPress();
+          },
+        }}
+        component={CreateActionModalPlaceholder}
       />
       <Tab.Screen
         name="ProfileScreen"
