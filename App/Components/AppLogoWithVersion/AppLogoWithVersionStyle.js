@@ -16,6 +16,7 @@ export const AppLogoWithVersionStyle = OriginalComponent => props => {
     },
     name: {
       ...ApplicationStyles.text.h4Bold,
+      color: Colors.white,
     },
     version: {
       marginTop: 2 * WIDTH_RATIO,
