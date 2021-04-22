@@ -25,3 +25,10 @@ Please refer to [this document](http://bit.ly/3bnCSaR)
 - Run `yarn install` to install all the dependencies
 - Run `cd ios && pod install` to install CocoaPods packages
 - Connect an Android device or simulator, and run `react-native run-android`, or if you're a mac user, run `react-native run-ios`
+
+## Testing Result
+- Passed
+- Can find test files in `__test__`
+
+ ![Button-test](https://i.imgur.com/sfSmchV.png)
+ ![Button-test](https://i.imgur.com/HJwH0Et.png)
