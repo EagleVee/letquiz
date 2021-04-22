@@ -32,14 +32,10 @@ Please refer to [this document](http://bit.ly/3bnCSaR)
 - Unit test Result
 - 
  ![Button-test](https://i.imgur.com/sfSmchV.png)
- ![Button-test](https://i.imgur.com/HJwH0Et.png)
+ 
 - Integration test Result 
 
- ![Button-test](https://i.imgur.com/FN5jdrT.jpg)
- ![Button-test](https://i.imgur.com/7CLSZyg.jpg)
- ![Button-test](https://i.imgur.com/L0t0Vtj.jpg)
-  ![Button-test](https://i.imgur.com/Gv6eNSs.jpg)
- ![Button-test](https://i.imgur.com/pbvycH9.jpg)
+ ![Button-test](https://i.imgur.com/Z8yYSKQ.png)
 
  
  
