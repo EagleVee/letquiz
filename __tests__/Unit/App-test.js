@@ -44,6 +44,7 @@ it("Log when clicked", () => {
   expect(onClick).toHaveBeenCalledTimes(1);
   expect(button.innerHTML).toBe("Clicked");
   /////////////////////////////////////////
+  /////////////////////////////////////////
   act(() => {
     for (let i = 0; i < 5; i++) {
       button.dispatchEvent(new MouseEvent("click", { bubbles: true }));
@@ -52,7 +53,8 @@ it("Log when clicked", () => {
 
   expect(onClick).toHaveBeenCalledTimes(6);
   expect(button.innerHTML).toBe("Clicked");
-   /////////////////////////////////////////
+  /////////////////////////////////////////
+  /////////////////////////////////////////
   act(() => {
     button.dispatchEvent(new MouseEvent("click", { bubbles: true }));
   });
@@ -60,7 +62,7 @@ it("Log when clicked", () => {
   expect(onClick).toHaveBeenCalledTimes(7);
   expect(button.innerHTML).toBe("Clicked");
   /////////////////////////////////////////
-   /////////////////////////////////////////
+  /////////////////////////////////////////
   act(() => {
     button.dispatchEvent(new MouseEvent("click", { bubbles: true }));
   });
@@ -68,7 +70,7 @@ it("Log when clicked", () => {
   expect(onClick).toHaveBeenCalledTimes(8);
   expect(button.innerHTML).toBe("Clicked");
   /////////////////////////////////////////
-   /////////////////////////////////////////
+  /////////////////////////////////////////
   act(() => {
     button.dispatchEvent(new MouseEvent("click", { bubbles: true }));
   });
@@ -76,13 +78,14 @@ it("Log when clicked", () => {
   expect(onClick).toHaveBeenCalledTimes(9);
   expect(button.innerHTML).toBe("Clicked");
   /////////////////////////////////////////
-   /////////////////////////////////////////
+  /////////////////////////////////////////
   act(() => {
     button.dispatchEvent(new MouseEvent("click", { bubbles: true }));
   });
 
   expect(onClick).toHaveBeenCalledTimes(10);
   expect(button.innerHTML).toBe("Clicked");
+  /////////////////////////////////////////
   /////////////////////////////////////////
   act(() => {
     for (let i = 0; i < 5; i++) {
@@ -92,4 +95,45 @@ it("Log when clicked", () => {
 
   expect(onClick).toHaveBeenCalledTimes(15);
   expect(button.innerHTML).toBe("Clicked");
+  /////////////////////////////////////////
+  /////////////////////////////////////////
+  act(() => {
+    button.dispatchEvent(new MouseEvent("click", { bubbles: true }));
+  });
+
+  expect(onClick).toHaveBeenCalledTimes(16);
+  expect(button.innerHTML).toBe("Clicked");
+  /////////////////////////////////////////
+  /////////////////////////////////////////
+  act(() => {
+    button.dispatchEvent(new MouseEvent("click", { bubbles: true }));
+  });
+
+  expect(onClick).toHaveBeenCalledTimes(17);
+  expect(button.innerHTML).toBe("Clicked");
+  /////////////////////////////////////////
+  /////////////////////////////////////////
+  act(() => {
+    button.dispatchEvent(new MouseEvent("click", { bubbles: true }));
+  });
+
+  expect(onClick).toHaveBeenCalledTimes(18);
+  expect(button.innerHTML).toBe("Clicked");
+  /////////////////////////////////////////
+  /////////////////////////////////////////
+  act(() => {
+    button.dispatchEvent(new MouseEvent("click", { bubbles: true }));
+  });
+
+  expect(onClick).toHaveBeenCalledTimes(19);
+  expect(button.innerHTML).toBe("Clicked");
+  /////////////////////////////////////////
+  /////////////////////////////////////////
+  act(() => {
+    button.dispatchEvent(new MouseEvent("click", { bubbles: true }));
+  });
+
+  expect(onClick).toHaveBeenCalledTimes(20);
+  expect(button.innerHTML).toBe("Clicked");
+  /////////////////////////////////////////
 });
