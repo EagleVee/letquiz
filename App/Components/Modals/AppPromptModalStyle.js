@@ -15,7 +15,7 @@ export const AppPromptModalStyle = OriginalComponent => props => {
       marginHorizontal: 60 * WIDTH_RATIO,
       backgroundColor: Colors.cardBackground,
       alignItems: "center",
-      borderRadius: 24 * WIDTH_RATIO,
+      borderRadius: 8 * WIDTH_RATIO,
     },
     titleContainer: {
       width: "100%",
@@ -39,8 +39,8 @@ export const AppPromptModalStyle = OriginalComponent => props => {
       flexDirection: "row",
       alignItems: "center",
       backgroundColor: Colors.background,
-      borderBottomLeftRadius: 24 * WIDTH_RATIO,
-      borderBottomRightRadius: 24 * WIDTH_RATIO,
+      borderBottomLeftRadius: 8 * WIDTH_RATIO,
+      borderBottomRightRadius: 8 * WIDTH_RATIO,
     },
     okText: {
       ...ApplicationStyles.text.h8Bold,

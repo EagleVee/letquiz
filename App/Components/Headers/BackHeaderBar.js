@@ -9,7 +9,7 @@ import { useThemeSvgs } from "Hooks/useThemeSvgs";
 import { useThemeColors } from "../../Hooks/useThemeColors";
 
 function BackHeaderBar(props) {
-  const { styles, onPress, title } = props;
+  const { styles, onPress, title, renderRight } = props;
   const NavigationMethods = useNavigationMethods();
   const Svgs = useThemeSvgs();
   const Colors = useThemeColors();
@@ -27,7 +27,7 @@ function BackHeaderBar(props) {
       <Text style={styles.title} numberOfLines={1}>
         {title}
       </Text>
-      <View style={styles.placeholder} />
+      {renderRight ? renderRight() : <View style={styles.placeholder} />}
     </View>
   );
 }
@@ -36,6 +36,7 @@ BackHeaderBar.propTypes = {
   onPress: PropTypes.func,
   title: PropTypes.string,
   backgroundColor: PropTypes.string,
+  renderRight: PropTypes.func,
 };
 
 BackHeaderBar.defaultProps = {

@@ -16,6 +16,11 @@ export const StudySetDetailScreenStyle = OriginalComponent => props => {
       paddingTop: 16 * WIDTH_RATIO,
       paddingBottom: 16 * WIDTH_RATIO + tabBottom,
     },
+    utilButton: {
+      paddingHorizontal: 16 * WIDTH_RATIO,
+      paddingTop: 16 * WIDTH_RATIO,
+      paddingBottom: 20 * WIDTH_RATIO,
+    },
   });
 
   return <OriginalComponent {...props} styles={styles} />;

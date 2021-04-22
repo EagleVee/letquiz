@@ -1,12 +1,9 @@
 import React, { forwardRef, useImperativeHandle, useState } from "react";
 import { View, Text, TouchableOpacity } from "react-native";
-import { AppPromptModalStyle } from "./AppPromptModalStyle";
 import { useFunctionState } from "Hooks/useFunctionState";
 import AppModal from "./AppModal";
 import I18n from "Locales";
 import { useSetState } from "Hooks/useSetState";
-import BlockDivider from "../Dividers/BlockDivider";
-import { WIDTH_RATIO } from "../../Themes/Metrics";
 import { useThemeColors } from "../../Hooks/useThemeColors";
 
 export interface OptionModalProps {
