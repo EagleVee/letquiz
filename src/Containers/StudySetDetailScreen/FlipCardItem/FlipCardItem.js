@@ -3,11 +3,11 @@ import { View, Text, TouchableOpacity } from "react-native";
 import { compose } from "ramda";
 import { FlipCardItemStyle } from "./FlipCardItemStyle";
 import PropTypes from "prop-types";
-import CardFlip from "react-native-card-flip";
+import CardFlip, { FlipCardProps } from "react-native-card-flip";
 import CardTransform from "../../../Transforms/CardTransform";
 
-function FlipCardItem(props) {
-  const { styles, card = new CardTransform() } = props;
+function FlipCardItem(props: FlipCardProps) {
+  const { styles, card = new CardTransform(), ...cardFlipProps } = props;
   const flipRef = useRef();
   const { term, definition } = card;
 
@@ -26,7 +26,11 @@ function FlipCardItem(props) {
   }
 
   return (
-    <CardFlip style={styles.container} ref={flipRef} flipDirection={"x"}>
+    <CardFlip
+      style={styles.container}
+      ref={flipRef}
+      flipDirection={"x"}
+      {...cardFlipProps}>
       <TouchableOpacity style={styles.card} onPress={onFlip}>
         <Text style={getTextStyle(term)} numberOfLines={8}>
           {term}

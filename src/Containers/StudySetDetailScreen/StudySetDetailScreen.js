@@ -15,6 +15,8 @@ import Feather from "react-native-vector-icons/Feather";
 import { WIDTH_RATIO } from "../../Themes/Metrics";
 import Entypo from "react-native-vector-icons/Entypo";
 import ShareService from "../../Services/ShareService";
+import { studySets } from "../../Fixtures/StudySet";
+import StudySetNavigator from "./StudySetNavigator/StudySetNavigator";
 
 function StudySetDetailScreen(props) {
   const { styles, navigation, route } = props;
@@ -22,7 +24,7 @@ function StudySetDetailScreen(props) {
   const Colors = useThemeColors();
   const studySet = NavigationMethods.getParam(
     "studySet",
-    new StudySetTransform(),
+    new StudySetTransform(studySets[0]),
   );
   const { transformedCards } = studySet;
 
@@ -59,15 +61,16 @@ function StudySetDetailScreen(props) {
       <BackHeaderBar renderRight={renderRightHeader} />
       <RNScrollView>
         <StudySetCarousel cards={transformedCards} />
+        <StudySetNavigator cards={transformedCards} />
         <StudySetCardList cards={transformedCards} />
-        <View style={styles.footer}>
-          <PrimaryButton
-            title={"Study this set"}
-            isAvailable={true}
-            labelStyle={styles.h8Bold}
-          />
-        </View>
       </RNScrollView>
+      <View style={styles.footer}>
+        <PrimaryButton
+          title={"Study this set"}
+          isAvailable={true}
+          labelStyle={styles.h8Bold}
+        />
+      </View>
     </Container>
   );
 }

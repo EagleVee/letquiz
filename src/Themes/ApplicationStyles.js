@@ -33,6 +33,8 @@ export const sharedStyles = {
     listContent: {
       paddingTop: 18 * WIDTH_RATIO,
       paddingHorizontal: 16 * WIDTH_RATIO,
+      alignItems: "center",
+      justifyContent: "center",
     },
     shadow: {
       shadowColor: "rgba(42, 53, 113, 0.16)",

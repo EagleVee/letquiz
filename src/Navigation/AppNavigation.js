@@ -7,6 +7,7 @@ import WelcomeScreen from "../Containers/WelcomeScreen/WelcomeScreen";
 import LoginScreen from "../Containers/LoginScreen/LoginScreen";
 import CreateActionModal from "../Components/CreateActionModal/CreateActionModal";
 import StudySetDetailScreen from "../Containers/StudySetDetailScreen/StudySetDetailScreen";
+import FlashCardScreen from "../Containers/FlashCardScreen/FlashCardScreen";
 
 const Stack = createStackNavigator();
 
@@ -37,7 +38,9 @@ function AppNavigation(props) {
 
   return (
     <NavigationContainer>
-      <Stack.Navigator headerMode="none" initialRouteName="LaunchScreen">
+      <Stack.Navigator
+        headerMode="none"
+        initialRouteName="StudySetDetailScreen">
         <Stack.Screen name="LaunchScreen" component={LaunchScreen} />
         <Stack.Screen name="Tab" component={TabWithActionModal} />
         <Stack.Screen name="WelcomeScreen" component={WelcomeScreen} />
@@ -46,6 +49,7 @@ function AppNavigation(props) {
           name="StudySetDetailScreen"
           component={StudySetDetailScreen}
         />
+        <Stack.Screen name="FlashCardScreen" component={FlashCardScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );

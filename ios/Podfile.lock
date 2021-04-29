@@ -303,6 +303,8 @@ PODS:
     - React
   - react-native-netinfo (5.9.10):
     - React-Core
+  - react-native-pager-view (5.1.6):
+    - React-Core
   - react-native-safe-area-context (3.2.0):
     - React-Core
   - react-native-segmented-control (2.2.2):
@@ -494,6 +496,7 @@ DEPENDENCIES:
   - react-native-image-picker (from `../node_modules/react-native-image-picker`)
   - react-native-maps (from `../node_modules/react-native-maps`)
   - "react-native-netinfo (from `../node_modules/@react-native-community/netinfo`)"
+  - react-native-pager-view (from `../node_modules/react-native-pager-view`)
   - react-native-safe-area-context (from `../node_modules/react-native-safe-area-context`)
   - "react-native-segmented-control (from `../node_modules/@react-native-community/segmented-control`)"
   - "react-native-slider (from `../node_modules/@react-native-community/slider`)"
@@ -630,6 +633,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native-maps"
   react-native-netinfo:
     :path: "../node_modules/@react-native-community/netinfo"
+  react-native-pager-view:
+    :path: "../node_modules/react-native-pager-view"
   react-native-safe-area-context:
     :path: "../node_modules/react-native-safe-area-context"
   react-native-segmented-control:
@@ -761,6 +766,7 @@ SPEC CHECKSUMS:
   react-native-image-picker: 4e63090db19a528e36c0cc07d1423c8c0cb4c4ef
   react-native-maps: f4b89da81626ad7f151a8bfcb79733295d31ce5c
   react-native-netinfo: 30fb89fa913c342be82a887b56e96be6d71201dd
+  react-native-pager-view: 215ce4f3901da4da9cd36210db7f513d2e868fc2
   react-native-safe-area-context: f0906bf8bc9835ac9a9d3f97e8bde2a997d8da79
   react-native-segmented-control: 65df6cd0619b780b3843d574a72d4c7cec396097
   react-native-slider: e99fc201cefe81270fc9d81714a7a0f5e566b168

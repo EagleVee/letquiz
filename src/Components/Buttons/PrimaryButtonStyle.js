@@ -16,13 +16,13 @@ export const PrimaryButtonStyle = OriginalComponent => props => {
       width: "100%",
       paddingVertical: 14 * WIDTH_RATIO,
       borderRadius: 4 * WIDTH_RATIO,
-      backgroundColor: isAvailable ? Colors.primaryButton : "transparent",
+      backgroundColor: isAvailable ? Colors.primaryNeon : "transparent",
       ...ApplicationStyles.utils.middle,
       ...style,
     },
     buttonText: {
       ...ApplicationStyles.text.h7,
-      color: isAvailable ? Colors.white : Colors.primaryButton,
+      color: isAvailable ? Colors.white : Colors.primaryNeon,
       ...labelStyle,
     },
   });

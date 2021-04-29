@@ -14,13 +14,13 @@ export const StudySetCardCarouselStyle = OriginalComponent => props => {
       width: 8 * WIDTH_RATIO,
       height: 8 * WIDTH_RATIO,
       borderRadius: 4 * WIDTH_RATIO,
-      backgroundColor: Colors.primaryButton,
+      backgroundColor: Colors.primaryNeon,
     },
     paginationInactive: {
-      width: 8 * WIDTH_RATIO,
-      height: 8 * WIDTH_RATIO,
-      borderRadius: 4 * WIDTH_RATIO,
-      backgroundColor: Colors.cardBackground,
+      width: 6 * WIDTH_RATIO,
+      height: 6 * WIDTH_RATIO,
+      borderRadius: 3 * WIDTH_RATIO,
+      backgroundColor: Colors.white,
     },
     paginationContainer: {
       ...ApplicationStyles.utils.middle,

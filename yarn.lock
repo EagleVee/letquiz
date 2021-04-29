@@ -9183,6 +9183,11 @@ lodash.isequal@^4.5.0:
   resolved "https://registry.yarnpkg.com/lodash.isequal/-/lodash.isequal-4.5.0.tgz#415c4478f2bcc30120c22ce10ed3226f7d3e18e0"
   integrity sha1-QVxEePK8wwEgwizhDtMib30+GOA=
 
+lodash.isplainobject@^4.0.6:
+  version "4.0.6"
+  resolved "https://registry.yarnpkg.com/lodash.isplainobject/-/lodash.isplainobject-4.0.6.tgz#7c526a52d89b45c45cc690b88163be0497f550cb"
+  integrity sha1-fFJqUtibRcRcxpC4gWO+BJf1UMs=
+
 lodash.isstring@^4.0.1:
   version "4.0.1"
   resolved "https://registry.yarnpkg.com/lodash.isstring/-/lodash.isstring-4.0.1.tgz#d527dfb5456eca7cc9bb95d5daeaf88ba54a5451"
@@ -12396,6 +12401,14 @@ react-native-card-flip@^1.0.7:
     prop-types "15.5.10"
     react-lifecycles-compat "^3.0.4"
 
+react-native-card-stack-swiper@^1.2.5:
+  version "1.2.5"
+  resolved "https://registry.yarnpkg.com/react-native-card-stack-swiper/-/react-native-card-stack-swiper-1.2.5.tgz#c5497b4025e7963d50249a440aaf693e8e4c12e6"
+  integrity sha512-Z9hWblgHTU4K3YAjbIpjC2bBAc6QpEzC4FKqY2RsX0Zd9qD4UYadKXYoUjfbYGhvbDdYuTWkGE8i8lra3bKmBw==
+  dependencies:
+    prop-types "15.5.10"
+    react-lifecycles-compat "^3.0.4"
+
 react-native-code-input@^1.0.6:
   version "1.0.6"
   resolved "https://registry.yarnpkg.com/react-native-code-input/-/react-native-code-input-1.0.6.tgz#da4b0c0e04f140698320bc81cff1107e211fe923"
@@ -12611,6 +12624,11 @@ react-native-onboarding-swiper@^1.1.0:
   integrity sha512-dG2J6giQpt5kKlU+Xe68E9xy+OkmC9Yf5XD7S1mJQ5VvwySfCIXnPojai0PEQ9NmbbH06k9lqN5Ik1PGYnIdVA==
   dependencies:
     tinycolor2 "^1.4.1"
+
+react-native-pager-view@^5.1.6:
+  version "5.1.6"
+  resolved "https://registry.yarnpkg.com/react-native-pager-view/-/react-native-pager-view-5.1.6.tgz#0b47f59146fa91071aa5526c5ae1c96638e5987b"
+  integrity sha512-g1nd7YB2YdDQY10cYL7ktYzZ/2E4D6yKxiwNajBmZ2Y2k4DSPjSyAcbmLFjv/sAUyJSocHTqkQDKU2jK84tm1g==
 
 react-native-paper@^2.16.0:
   version "2.16.0"
@@ -13238,6 +13256,13 @@ redent@^1.0.0:
   dependencies:
     indent-string "^2.1.0"
     strip-indent "^1.0.1"
+
+redux-mock-store@^1.5.4:
+  version "1.5.4"
+  resolved "https://registry.yarnpkg.com/redux-mock-store/-/redux-mock-store-1.5.4.tgz#90d02495fd918ddbaa96b83aef626287c9ab5872"
+  integrity sha512-xmcA0O/tjCLXhh9Fuiq6pMrJCwFRaouA8436zcikdIpYWWCjU76CRk+i2bHx8EeiSiMGnB85/lZdU3wIJVXHTA==
+  dependencies:
+    lodash.isplainobject "^4.0.6"
 
 redux-persist@^5.10.0:
   version "5.10.0"
