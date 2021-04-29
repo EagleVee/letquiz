@@ -33,6 +33,13 @@ Please refer to [this document](http://bit.ly/3bnCSaR)
 ## Testing Result
 - Passed
 - Can find test files in `__test__`
+- Unit test Result
 
  ![Button-test](https://i.imgur.com/sfSmchV.png)
- ![Button-test](https://i.imgur.com/HJwH0Et.png)
+ 
+- Integration test Result 
+
+ ![Button-test](https://i.imgur.com/Z8yYSKQ.png)
+
+ 
+ 
