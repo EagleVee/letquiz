@@ -3,7 +3,7 @@
  */
 
 import { AppRegistry, LogBox } from "react-native";
-import App from "./src/App";
+import App from "./App";
 import { name as appName } from "./app.json";
 
 LogBox.ignoreLogs([
@@ -16,3 +16,6 @@ LogBox.ignoreLogs([
 ]);
 
 AppRegistry.registerComponent(appName, () => App);
+// AppRegistry.runApplication(appName, {
+//   rootTag: document.getElementById("root"),
+// });
