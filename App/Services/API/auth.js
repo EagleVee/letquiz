@@ -1,29 +1,24 @@
 import { instance, POST } from "./base";
 
 export function setAuthorizationHeader(accessToken) {
-  instance.defaults.headers.common.Authorization = `Bearer ${accessToken}`;
+  instance.defaults.headers.common.Authorization = accessToken;
 }
 
-export function login(phone, password) {
-  const path = "/customer/login";
+export function login(email, password) {
+  const path = "/auth/login";
   const data = {
-    phone: phone,
+    email: email,
     password: password,
   };
   return POST(path, data);
 }
 
-export function loginSocial(params) {
-  const path = "/customer/login";
+export function register(params) {
+  const path = "/auth/register";
   return POST(path, params);
 }
 
 export function refreshToken() {
-  const path = "/customer/refresh";
-  return POST(path);
-}
-
-export function logout() {
-  const path = "/customer/logout";
+  const path = "/auth/refresh";
   return POST(path);
 }

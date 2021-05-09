@@ -34,6 +34,9 @@ export const FlashCardScreenStyle = OriginalComponent => props => {
       height: ((deviceWidth - 40 * WIDTH_RATIO) * 16) / 9,
       borderRadius: 8 * WIDTH_RATIO,
     },
+    cardStack: {
+      alignItems: "center",
+    },
   });
 
   return <OriginalComponent {...props} styles={styles} />;

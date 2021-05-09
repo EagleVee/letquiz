@@ -6,7 +6,7 @@ import StudySetTransform from "../../Transforms/StudySetTransform";
 import { studySets } from "../../Fixtures/StudySet";
 
 export const INITIAL_STATE = Immutable({
-  currentStudySets: TransformHelper.transformData(studySets, StudySetTransform),
+  currentStudySets: [],
 });
 
 export const getCurrentStudySetsSuccess = (state, action) => {

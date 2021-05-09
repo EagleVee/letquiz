@@ -54,21 +54,25 @@ function FlashCardScreen(props) {
         backgroundColor={Colors.cardBackground}
         title={`${progress} / ${cards.length}`}
       />
-      <View style={styles.flexOne}>{renderProgressBar()}</View>
-      <CardStack
-        verticalSwipe={false}
-        renderNoMoreCards={renderEmpty}
-        onSwipedLeft={onSwipedLeft}
-        onSwipedRight={onSwipedRight}
-        ref={swiperRef}>
-        {data.map((item, index) => {
-          return (
-            <Card key={index.toString()}>
-              <FlipCardLargeItem card={item} />
-            </Card>
-          );
-        })}
-      </CardStack>
+      <View style={styles.flexOne}>
+        {renderProgressBar()}
+        <CardStack
+          style={styles.cardStack}
+          verticalSwipe={false}
+          horizontalSwipe={true}
+          renderNoMoreCards={renderEmpty}
+          onSwipedLeft={onSwipedLeft}
+          onSwipedRight={onSwipedRight}
+          ref={swiperRef}>
+          {data.map((item, index) => {
+            return (
+              <Card key={index.toString()}>
+                <FlipCardLargeItem card={item} />
+              </Card>
+            );
+          })}
+        </CardStack>
+      </View>
     </Container>
   );
 }

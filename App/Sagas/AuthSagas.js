@@ -11,6 +11,9 @@ export function* login(action) {
   const response = yield call(API.auth.login, phone, password);
   if (response.status === true) {
     yield put(AuthActions.authenticateSuccess(response, onSuccess, onFailed));
+    yield call(onSuccess, response);
+  } else {
+    yield call(onFailed, response);
   }
 }
 
