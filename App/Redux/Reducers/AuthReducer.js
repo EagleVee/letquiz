@@ -1,6 +1,6 @@
 import Immutable from "seamless-immutable";
 import { createReducer } from "reduxsauce";
-import { AuthTypes } from "Actions/AuthActions";
+import { AuthTypes } from "Redux/Actions/AuthActions";
 
 export const INITIAL_STATE = Immutable({
   phone: "",

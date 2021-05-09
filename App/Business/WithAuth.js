@@ -10,9 +10,28 @@ export const WithAuth = OriginalComponent => props => {
   const auth = useSelector(state => state.auth);
   const NavigationMethods = useNavigationMethods();
 
-  function logout(onSuccess = NavigationMethods.resetStackToTab, onFailed) {
+  function login(email, password, onSuccess, onFailed) {
+    dispatch(AuthActions.login(email, password, onSuccess, onFailed));
+  }
+
+  function register(params, onSuccess, onFailed) {
+    dispatch(AuthActions.register(params, onSuccess, onFailed));
+  }
+
+  function onLogoutSuccess() {
+    NavigationMethods.resetStack("WelcomeScreen");
+  }
+
+  function logout(onSuccess = onLogoutSuccess, onFailed) {
     dispatch(AuthActions.logoutToken(onSuccess, onFailed));
   }
 
-  return <OriginalComponent {...props} logout={logout} />;
+  return (
+    <OriginalComponent
+      {...props}
+      logout={logout}
+      login={login}
+      register={register}
+    />
+  );
 };

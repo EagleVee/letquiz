@@ -38,9 +38,7 @@ function AppNavigation(props) {
 
   return (
     <NavigationContainer>
-      <Stack.Navigator
-        headerMode="none"
-        initialRouteName="StudySetDetailScreen">
+      <Stack.Navigator headerMode="none" initialRouteName="LaunchScreen">
         <Stack.Screen name="LaunchScreen" component={LaunchScreen} />
         <Stack.Screen name="Tab" component={TabWithActionModal} />
         <Stack.Screen name="WelcomeScreen" component={WelcomeScreen} />

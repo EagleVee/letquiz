@@ -3,7 +3,7 @@ import { createReducer } from "reduxsauce";
 import { CustomerTypes } from "Redux/Actions/CustomerActions";
 import CustomerTransform from "../../Transforms/CustomerTransform";
 
-export const INITIAL_STATE = Immutable(new CustomerTransform());
+export const INITIAL_STATE = Immutable({});
 
 export const updateCustomer = (state, action) => {
   const { customer } = action;

@@ -92,10 +92,4 @@ export default class ModalService {
       false,
     );
   }
-
-  static showFileTooLargeModal() {
-    ModalHelper.alert("Lỗi", "Vui lòng chọn tệp có dung lượng dưới 25MB", [
-      { text: "OK" },
-    ]);
-  }
 }

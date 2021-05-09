@@ -4,8 +4,6 @@ import { Text, View } from "react-native";
 import { LaunchScreenStyle } from "./LaunchScreenStyle";
 import Container from "Components/Container/Container";
 import { WithStartup } from "../../Business/WithStartup";
-import AppLogo from "Assets/Svgs/VectorImages/AppLogoGradient.svg";
-import { WIDTH_RATIO } from "../../Themes/Metrics";
 import I18n from "../../Locales";
 import { APP_VERSION_NAME } from "../../Config/MetaData";
 import { useThemeColors } from "../../Hooks/useThemeColors";

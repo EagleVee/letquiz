@@ -5,7 +5,6 @@ import { compose } from "ramda";
 import { ProfileScreenHeaderStyle } from "./ProfileScreenHeaderStyle";
 import PropTypes from "prop-types";
 import FastImage from "Components/RNComponents/FastImage";
-import { WIDTH_RATIO } from "Themes/Metrics";
 import { useThemeSvgs } from "Hooks/useThemeSvgs";
 import AppLogoWithVersion from "Components/AppLogoWithVersion/AppLogoWithVersion";
 
@@ -23,8 +22,6 @@ function ProfileScreenHeader(props) {
     return (
       <View style={styles.unauthenticatedContainer}>
         <AppLogoWithVersion />
-        {/*<View style={styles.socialButtonContainer}>*/}
-        {/*</View>*/}
       </View>
     );
   }

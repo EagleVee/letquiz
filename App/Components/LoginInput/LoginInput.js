@@ -36,6 +36,7 @@ function LoginInput(props: TextInputProps) {
           style={styles.input}
           secureTextEntry={secureText}
           onTextChange={onTextChange}
+          placeholderTextColor={Colors.inputTitle}
         />
         {secureTextEntry === true && (
           <TouchableOpacity style={styles.eyeButton} onPress={onEyePress}>

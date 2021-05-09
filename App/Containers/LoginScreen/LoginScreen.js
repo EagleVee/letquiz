@@ -10,10 +10,13 @@ import LoginInput from "../../Components/LoginInput/LoginInput";
 import BlockDivider from "../../Components/Dividers/BlockDivider";
 import { WIDTH_RATIO } from "../../Themes/Metrics";
 import PrimaryButton from "../../Components/Buttons/PrimaryButton";
+import { useThemeColors } from "../../Hooks/useThemeColors";
+import { WithAuth } from "../../Business/WithAuth";
 
 function LoginScreen(props) {
   const { styles, navigation, route } = props;
   const NavigationMethods = useNavigationMethods();
+  const Colors = useThemeColors();
   const [state, setState] = useState({
     email: "",
     password: "",
@@ -26,14 +29,12 @@ function LoginScreen(props) {
     });
   }
 
-  function onLoginPress() {
-    NavigationMethods.resetStackToTab();
-  }
+  function onLoginPress() {}
 
   function onForgotPasswordPress() {}
 
   return (
-    <Container>
+    <Container statusBarColor={Colors.cardBackground}>
       <BackHeaderBar />
       <View style={styles.main}>
         <Text style={styles.h7}>LOGIN WITH YOUR ACCOUNT</Text>
@@ -75,4 +76,7 @@ function LoginScreen(props) {
   );
 }
 
-export default compose(LoginScreenStyle)(LoginScreen);
+export default compose(
+  LoginScreenStyle,
+  WithAuth,
+)(LoginScreen);

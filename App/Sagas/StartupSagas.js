@@ -25,21 +25,21 @@ export function* startup(action) {
   yield put(DeviceActions.changeTheme(savedTheme));
 
   // Handle authentication
-  let isAuthenticated = true;
+  let isAuthenticated = false;
   const savedRefreshToken = yield call(
     LocalStorageService.get,
     Keys.refreshToken,
     "",
   );
 
-  yield put(AuthActions.setAuthenticated(true));
+  // yield put(AuthActions.setAuthenticated(true));
 
-  // yield call(API.auth.setAuthorizationHeader, savedRefreshToken);
-  // const refreshResponse = yield call(API.auth.refreshToken);
-  // if (refreshResponse.status === true) {
-  //   isAuthenticated = true;
-  //   yield put(AuthActions.authenticateSuccess(refreshResponse));
-  // }
+  yield call(API.auth.setAuthorizationHeader, savedRefreshToken);
+  const refreshResponse = yield call(API.auth.refreshToken);
+  if (refreshResponse.status === true) {
+    isAuthenticated = true;
+    yield put(AuthActions.authenticateSuccess(refreshResponse));
+  }
 
   // Callback
   yield call(callback, isAuthenticated);

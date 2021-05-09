@@ -17,6 +17,17 @@ export function* login(action) {
   }
 }
 
+export function* register(action) {
+  const { params, onSuccess = () => {}, onFailed = () => {} } = action;
+  const response = yield call(API.auth.register, params);
+  if (response.status === true) {
+    yield put(AuthActions.authenticateSuccess(response, onSuccess, onFailed));
+    yield call(onSuccess, response);
+  } else {
+    yield call(onFailed, response);
+  }
+}
+
 export function* logoutToken(action) {
   const { onSuccess = () => {}, onFailed = () => {} } = action;
   yield call(LocalStorageService.delete, Keys.refreshToken);
@@ -53,9 +64,9 @@ export function* authenticateSuccess(action) {
 }
 
 function* handleTokenResponse(response) {
-  const { access_token, refresh_token } = response;
-  yield call(API.auth.setAuthorizationHeader, access_token);
-  yield call(LocalStorageService.set, Keys.refreshToken, refresh_token);
+  const { accessToken, refreshToken } = response;
+  yield call(API.auth.setAuthorizationHeader, accessToken);
+  yield call(LocalStorageService.set, Keys.refreshToken, refreshToken);
 }
 
 function* getCustomerData() {
