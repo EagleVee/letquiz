@@ -4,7 +4,7 @@ import TransformHelper from "../Utils/TransformHelper";
 import CustomerTransform from "./CustomerTransform";
 export default class StudySetTransform extends BaseTransform {
   fields = {
-    id: 0,
+    _id: "",
     title: "",
     cards: [],
     createdBy: new CustomerTransform(),

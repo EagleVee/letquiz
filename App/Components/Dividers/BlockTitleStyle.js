@@ -15,7 +15,7 @@ export const BlockTitleStyle = OriginalComponent => props => {
       paddingHorizontal: padding,
     },
     title: {
-      ...ApplicationStyles.text.h6Bold,
+      ...ApplicationStyles.text.h7Bold,
       ...titleStyle,
     },
   });

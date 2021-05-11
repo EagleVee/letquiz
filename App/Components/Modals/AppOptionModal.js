@@ -99,9 +99,6 @@ function AppOptionModal(props, ref) {
       onBackdropPress={backHandler}
       onBackButtonPress={backHandler}>
       <View style={styles.container}>
-        {/*<View style={styles.titleContainer}>*/}
-        {/*  <Text style={styles.h8Bold}>{title}</Text>*/}
-        {/*</View>*/}
         <View style={styles.contentContainer}>
           <Text style={styles.content}>{content}</Text>
         </View>

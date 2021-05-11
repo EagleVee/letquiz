@@ -35,7 +35,7 @@ function LoginInput(props: TextInputProps) {
           {...props}
           style={styles.input}
           secureTextEntry={secureText}
-          onTextChange={onTextChange}
+          onChangeText={onTextChange}
           placeholderTextColor={Colors.inputTitle}
         />
         {secureTextEntry === true && (

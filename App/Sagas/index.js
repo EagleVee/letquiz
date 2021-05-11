@@ -5,6 +5,7 @@ import mapAuthSagas from "./MapSagas/mapAuthSagas";
 import mapCustomerSagas from "./MapSagas/mapCustomerSagas";
 import mapDeviceSagas from "./MapSagas/mapDeviceSagas";
 import mapContentSagas from "./MapSagas/mapContentSagas";
+import mapStudySetSagas from "./MapSagas/mapStudySetSagas";
 
 /* ------------- Types ------------- */
 
@@ -16,6 +17,7 @@ export default function* root() {
       mapCustomerSagas,
       mapDeviceSagas,
       mapContentSagas,
+      mapStudySetSagas,
     ),
   );
 }

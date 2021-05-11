@@ -7,11 +7,10 @@ import { LocalStorageService } from "../Services/LocalStorageService";
 import Keys from "../Config/Keys";
 
 export function* login(action) {
-  const { phone, password, onSuccess = () => {}, onFailed = () => {} } = action;
-  const response = yield call(API.auth.login, phone, password);
+  const { email, password, onSuccess = () => {}, onFailed = () => {} } = action;
+  const response = yield call(API.auth.login, email, password);
   if (response.status === true) {
     yield put(AuthActions.authenticateSuccess(response, onSuccess, onFailed));
-    yield call(onSuccess, response);
   } else {
     yield call(onFailed, response);
   }
@@ -64,12 +63,11 @@ export function* authenticateSuccess(action) {
 }
 
 function* handleTokenResponse(response) {
-  const { accessToken, refreshToken } = response;
+  const { accessToken, refreshToken } = response.data;
   yield call(API.auth.setAuthorizationHeader, accessToken);
   yield call(LocalStorageService.set, Keys.refreshToken, refreshToken);
 }
 
 function* getCustomerData() {
   yield put(CustomerActions.getCustomer());
-  yield put(DeviceActions.getDevices());
 }

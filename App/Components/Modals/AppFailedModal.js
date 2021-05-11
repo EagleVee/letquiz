@@ -1,26 +1,29 @@
 import React, { forwardRef, useImperativeHandle, useState } from "react";
-import { View, Text } from "react-native";
-import { AppPromptModalStyle } from "./AppPromptModalStyle";
+import { View, Text, TouchableOpacity } from "react-native";
 import { useFunctionState } from "Hooks/useFunctionState";
 import AppModal from "./AppModal";
-import AntDesign from "react-native-vector-icons/AntDesign";
-import PrimaryButton from "../Buttons/PrimaryButton";
-import { WIDTH_RATIO } from "Themes/Metrics";
-import { Colors } from "Themes";
 
 function AppFailedModal(props, ref) {
   const { styles } = props;
   const [visible, setVisible] = useState(false);
   const [content, setContent] = useState("");
-  const [okText, setOkText] = useState("Đồng ý");
+  const [okText, setOkText] = useState("OK");
   const [okCallback, setOkCallback] = useFunctionState(() => {});
   const [backHandler, setBackHandler] = useFunctionState(close);
 
-  function open(content = "", okCallback = () => {}, backHandler) {
+  function open({
+    content = "",
+    okCallback = () => {},
+    okText = "OK",
+    backHandler = null,
+  }) {
     setContent(content);
+    setOkText(okText);
     setOkCallback(okCallback);
-    if (backHandler) {
-      setBackHandler(backHandler);
+    if (backHandler === false) {
+      setBackHandler(() => {});
+    } else {
+      setBackHandler(close);
     }
     setVisible(true);
   }
@@ -48,22 +51,15 @@ function AppFailedModal(props, ref) {
       onBackdropPress={backHandler}
       onBackButtonPress={backHandler}>
       <View style={styles.container}>
-        <View style={styles.iconContainer}>
-          <AntDesign
-            name={"closecircle"}
-            color={Colors.primaryRed}
-            size={70 * WIDTH_RATIO}
-          />
-        </View>
         <View style={styles.contentContainer}>
           <Text style={styles.content}>{content}</Text>
         </View>
         <View style={styles.footer}>
-          <PrimaryButton
-            title={okText}
+          <TouchableOpacity
             onPress={closeWithCallback}
-            style={styles.singleButton}
-          />
+            style={styles.dualButton}>
+            <Text style={styles.okText}>{okText}</Text>
+          </TouchableOpacity>
         </View>
       </View>
     </AppModal>

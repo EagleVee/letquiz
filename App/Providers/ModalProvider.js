@@ -47,7 +47,7 @@ function Provider({ children, styles }) {
   return (
     <AppModalContext.Provider value={value}>
       {children}
-      {/*<AppFailedModal styles={styles} ref={failedModalRef} />*/}
+      <AppFailedModal styles={styles} ref={failedModalRef} />
       {/*<AppSuccessModal styles={styles} ref={successModalRef} />*/}
       <AppOptionModal styles={styles} ref={optionModalRef} />
     </AppModalContext.Provider>

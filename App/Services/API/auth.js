@@ -19,6 +19,6 @@ export function register(params) {
 }
 
 export function refreshToken() {
-  const path = "/auth/refresh";
+  const path = "/auth/token/refresh";
   return POST(path);
 }

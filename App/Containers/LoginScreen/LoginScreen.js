@@ -12,15 +12,19 @@ import { WIDTH_RATIO } from "../../Themes/Metrics";
 import PrimaryButton from "../../Components/Buttons/PrimaryButton";
 import { useThemeColors } from "../../Hooks/useThemeColors";
 import { WithAuth } from "../../Business/WithAuth";
+import lodash from "lodash";
+import { validateEmail } from "../../Utils/validator";
+import { useModal } from "../../Hooks/useModal";
+import { useSetState } from "../../Hooks/useSetState";
 
 function LoginScreen(props) {
-  const { styles, navigation, route } = props;
+  const { styles, login } = props;
   const NavigationMethods = useNavigationMethods();
   const Colors = useThemeColors();
-  const [state, setState] = useState({
+  const Modal = useModal();
+  const [state, setState] = useSetState({
     email: "",
     password: "",
-    showPassword: false,
   });
 
   function onTextChange(key, value) {
@@ -29,7 +33,21 @@ function LoginScreen(props) {
     });
   }
 
-  function onLoginPress() {}
+  function onLoginPress() {
+    if (validateEmail(state.email)) {
+      login(
+        state.email,
+        state.password,
+        NavigationMethods.resetStackToTab,
+        () => {},
+      );
+    } else {
+      Modal.showFailedModal({
+        content:
+          "Your email is invalid, please enter a valid email and try again",
+      });
+    }
+  }
 
   function onForgotPasswordPress() {}
 
@@ -40,7 +58,7 @@ function LoginScreen(props) {
         <Text style={styles.h7}>LOGIN WITH YOUR ACCOUNT</Text>
         <BlockDivider height={24 * WIDTH_RATIO} />
         <LoginInput
-          value={state.username}
+          value={state.email}
           onChangeText={onTextChange}
           inputKey={"email"}
           placeholder={"Your email"}

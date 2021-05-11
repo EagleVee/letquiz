@@ -13,12 +13,16 @@ import Feather from "react-native-vector-icons/Feather";
 import { studySets } from "../../Fixtures/StudySet";
 import StudySetItem from "../../Components/StudySetItem/StudySetItem";
 import { useSelector } from "react-redux";
+import { WithHomeFetch } from "../../Business/WithHomeFetch";
+import { WithStudySetFetch } from "../../Business/WithStudySetFetch";
+import BlockTitle from "../../Components/Dividers/BlockTitle";
 
 function HomeScreen(props) {
   const { styles, navigation, route, onCreateTabPress } = props;
   const NavigationMethods = useNavigationMethods();
   const Colors = useThemeColors();
   const { currentStudySets } = useSelector(state => state.studySet);
+  const customer = useSelector(state => state.customer);
 
   function onSearchPress() {
     NavigationMethods.goToScreen("SearchScreen");
@@ -36,6 +40,10 @@ function HomeScreen(props) {
     );
   }
 
+  function renderListHeader() {
+    return <Text style={styles.h8Bold}>Sets</Text>;
+  }
+
   return (
     <Container
       statusBarColor={Colors.primary}
@@ -43,7 +51,7 @@ function HomeScreen(props) {
       <RNScrollView>
         <View style={styles.header}>
           <Text style={[styles.h4Bold, { color: Colors.white }]}>
-            Hello Duy!
+            Hello {customer.name}!
           </Text>
           <Text style={[styles.h5Bold, { color: Colors.white }]}>
             What do you want to do?
@@ -83,10 +91,14 @@ function HomeScreen(props) {
             </View>
           </TouchableOpacity>
         </View>
+        <BlockDivider height={16 * WIDTH_RATIO} />
+        <BlockTitle title={"Sets"} />
         <RNFlatList
           data={currentStudySets}
           renderItem={renderStudySetItem}
           dividerHeight={12 * WIDTH_RATIO}
+          dividerWidth={16 * WIDTH_RATIO}
+          horizontal
           contentContainerStyle={styles.listContent}
         />
       </RNScrollView>
@@ -94,4 +106,8 @@ function HomeScreen(props) {
   );
 }
 
-export default compose(HomeScreenStyle)(HomeScreen);
+export default compose(
+  HomeScreenStyle,
+  WithStudySetFetch,
+  WithHomeFetch,
+)(HomeScreen);

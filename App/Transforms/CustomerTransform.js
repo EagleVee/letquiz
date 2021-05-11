@@ -3,9 +3,9 @@ import { Images } from "../Themes";
 
 export default class CustomerTransform extends BaseTransform {
   fields = {
-    id: 0,
-    email: "dreamow@gmail.com",
-    username: "Duy",
+    _id: "",
+    email: "",
+    username: "",
     avatar: "",
     theme: "dark",
   };

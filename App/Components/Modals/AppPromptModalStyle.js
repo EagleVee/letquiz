@@ -26,12 +26,12 @@ export const AppPromptModalStyle = OriginalComponent => props => {
       borderColor: Colors.primaryTitle,
     },
     contentContainer: {
-      marginVertical: 15,
+      marginVertical: 16 * WIDTH_RATIO,
+      paddingHorizontal: 16 * WIDTH_RATIO,
       width: "100%",
       alignItems: "center",
     },
     content: {
-      marginTop: 5,
       ...ApplicationStyles.text.h8,
       textAlign: "center",
     },
