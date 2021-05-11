@@ -6,8 +6,13 @@ export default class StudySetTransform extends BaseTransform {
   fields = {
     _id: "",
     title: "",
-    cards: [],
-    createdBy: new CustomerTransform(),
+    description: "",
+    cards: [
+      {
+        term: "XCode",
+        definition: "IDE of MacOS",
+      },
+    ],
   };
 
   transformedCards = [];

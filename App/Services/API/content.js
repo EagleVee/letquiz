@@ -1,6 +1,6 @@
 import { GET, POST } from "./base";
 
-export function getFaqs() {
-  const path = "/faqs";
+export function getLanguages() {
+  const path = "/content/languages";
   return GET(path);
 }

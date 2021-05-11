@@ -1,8 +1,8 @@
 import BaseTransform from "./BaseTransform";
 export default class CardTransform extends BaseTransform {
   fields = {
-    term: "Flutter",
-    definition: "SDK của Google",
+    term: "",
+    definition: "",
   };
   constructor(params = {}) {
     super(params);

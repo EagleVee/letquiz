@@ -12,6 +12,8 @@ import {
   STATUS_UNAUTHORIZED,
 } from "Config/Remote";
 import { deviceId, deviceName, getPlatformOS } from "Utils/platform";
+import { LocalStorageService } from "../LocalStorageService";
+import Keys from "../../Config/Keys";
 
 export const instance = axios.create({
   baseURL: API_ENDPOINT_V1,
@@ -64,6 +66,50 @@ const logError = error => {
     ...errorData,
   };
 };
+
+function onSuccess(response) {
+  return response;
+}
+
+async function onFailure(error) {
+  const originalRequest = error.config;
+  const refreshToken = await LocalStorageService.get(Keys.refreshToken, "");
+  if (
+    refreshToken &&
+    refreshToken.length > 0 &&
+    error.response?.status === STATUS_UNAUTHORIZED &&
+    !originalRequest._retry
+  ) {
+    originalRequest._retry = true;
+    const res = await instance.post(
+      `/auth/token/refresh`,
+      {},
+      {
+        headers: {
+          Authorization: refreshToken,
+        },
+      },
+    );
+
+    console.log("REFRESH TOKEN RESPONSE", res);
+
+    if (res.status === STATUS_OK) {
+      const { accessToken, refreshToken } = res.data.data;
+      await LocalStorageService.set(Keys.refreshToken, refreshToken);
+      instance.defaults.headers.common.Authorization = accessToken;
+      originalRequest.headers.Authorization = accessToken;
+      return instance(originalRequest, {
+        headers: {
+          Authorization: accessToken,
+        },
+      });
+    }
+  }
+
+  return Promise.reject(error);
+}
+
+instance.interceptors.response.use(onSuccess, onFailure);
 
 export const GET = (url, params, config = {}) => {
   const queryString = qs.stringify(params);

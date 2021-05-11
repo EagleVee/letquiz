@@ -8,6 +8,7 @@ import LoginScreen from "../Containers/LoginScreen/LoginScreen";
 import CreateActionModal from "../Components/CreateActionModal/CreateActionModal";
 import StudySetDetailScreen from "../Containers/StudySetDetailScreen/StudySetDetailScreen";
 import FlashCardScreen from "../Containers/FlashCardScreen/FlashCardScreen";
+import StudySetEditScreen from "../Containers/StudySetEditScreen/StudySetEditScreen";
 
 const Stack = createStackNavigator();
 
@@ -46,6 +47,10 @@ function AppNavigation(props) {
         <Stack.Screen
           name="StudySetDetailScreen"
           component={StudySetDetailScreen}
+        />
+        <Stack.Screen
+          name="StudySetEditScreen"
+          component={StudySetEditScreen}
         />
         <Stack.Screen name="FlashCardScreen" component={FlashCardScreen} />
       </Stack.Navigator>

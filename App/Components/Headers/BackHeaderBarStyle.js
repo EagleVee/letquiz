@@ -29,7 +29,7 @@ export const BackHeaderBarStyle = OriginalComponent => props => {
     title: {
       flex: 1,
       ...ApplicationStyles.text.h7,
-      textAlign: "center",
+      // textAlign: "center",
     },
     placeholder: {
       width: "20%",

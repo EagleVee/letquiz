@@ -24,6 +24,15 @@ export function* startup(action) {
   );
   yield put(DeviceActions.changeTheme(savedTheme));
 
+  const savedLanguageList = yield call(
+    LocalStorageService.get,
+    Keys.languages,
+    [],
+  );
+  if (savedLanguageList.length === 0) {
+    yield put(ContentActions.getLanguages());
+  }
+
   // Handle authentication
   let isAuthenticated = false;
   const savedRefreshToken = yield call(
