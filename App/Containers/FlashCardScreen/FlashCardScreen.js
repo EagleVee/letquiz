@@ -152,7 +152,7 @@ function FlashCardScreen(props) {
         style={styles.cardStack}
         verticalSwipe={false}
         horizontalSwipe={true}
-        renderNoMoreCards={renderEmpty}
+        renderNoMoreCards={() => <View />}
         onSwipedLeft={onSwipedLeft}
         onSwipedRight={onSwipedRight}
         ref={swiperRef}>

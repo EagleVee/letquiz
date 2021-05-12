@@ -1,5 +1,10 @@
 import React, { useRef, useState } from "react";
-import { View, Text, TouchableOpacity } from "react-native";
+import {
+  View,
+  Text,
+  TouchableOpacity,
+  TouchableWithoutFeedback,
+} from "react-native";
 import { compose } from "ramda";
 import { FlipCardLargeItemStyle } from "./FlipCardLargeItemStyle";
 import PropTypes from "prop-types";
@@ -31,15 +36,19 @@ function FlipCardLargeItem(props: FlipCardProps) {
       ref={flipRef}
       flipDirection={"y"}
       {...cardFlipProps}>
-      <TouchableOpacity style={styles.card} onPress={onFlip}>
-        <Text style={getTextStyle(term)} numberOfLines={8}>
-          {term}
-        </Text>
-      </TouchableOpacity>
-      <TouchableOpacity style={styles.card} onPress={onFlip}>
-        <Text style={getTextStyle(definition)} numberOfLines={8}>
-          {definition}
-        </Text>
+      <TouchableWithoutFeedback onPress={onFlip}>
+        <View style={styles.card}>
+          <Text style={getTextStyle(term)} numberOfLines={8}>
+            {term}
+          </Text>
+        </View>
+      </TouchableWithoutFeedback>
+      <TouchableOpacity onPress={onFlip}>
+        <View style={styles.card}>
+          <Text style={getTextStyle(definition)} numberOfLines={8}>
+            {definition}
+          </Text>
+        </View>
       </TouchableOpacity>
     </CardFlip>
   );
