@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">Quizlet</string>
-    <string moduleConfig="true" name="CodePushDeploymentKey">7Ax_UGxpzxj0VA2lk7j2ATN-bJ-u9IQJ7W8E</string>
+    <string moduleConfig="true" name="CodePushDeploymentKey">c-0OWZ-rTtBXT2_iaYkxd4rrB5AjCfMATAhKc</string>
     <string name="appCenterCrashes_whenToSendCrashes" moduleConfig="true" translatable="false">DO_NOT_ASK_JAVASCRIPT</string>
     <string name="appCenterAnalytics_whenToEnableAnalytics" moduleConfig="true" translatable="false">ALWAYS_SEND</string>
     <string name="freshchat_file_provider_authority">com.example.demoapp.provider</string>
