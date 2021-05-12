@@ -2,7 +2,6 @@ import API from "Services/API";
 import { call, put } from "redux-saga/effects";
 import AuthActions from "Redux/Actions/AuthActions";
 import CustomerActions from "Redux/Actions/CustomerActions";
-import DeviceActions from "Redux/Actions/DeviceActions";
 import { LocalStorageService } from "../Services/LocalStorageService";
 import Keys from "../Config/Keys";
 
@@ -21,7 +20,6 @@ export function* register(action) {
   const response = yield call(API.auth.register, params);
   if (response.status === true) {
     yield put(AuthActions.authenticateSuccess(response, onSuccess, onFailed));
-    yield call(onSuccess, response);
   } else {
     yield call(onFailed, response);
   }

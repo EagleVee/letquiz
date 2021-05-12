@@ -5,7 +5,8 @@ export default class CustomerTransform extends BaseTransform {
   fields = {
     _id: "",
     email: "",
-    username: "",
+    name: "",
+    school: "",
     avatar: "",
     theme: "dark",
   };

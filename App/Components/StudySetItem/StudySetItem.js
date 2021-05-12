@@ -11,8 +11,8 @@ import { Images } from "Themes";
 
 function StudySetItem(props) {
   const { styles, studySet = new StudySetTransform(), index, onPress } = props;
-  const { title, cards, createdBy } = studySet;
-  const { username } = createdBy;
+  const { title, transformedCards, transformedCreator } = studySet;
+  const { name } = transformedCreator;
   return (
     <TouchableOpacity
       style={styles.container}
@@ -23,10 +23,10 @@ function StudySetItem(props) {
         </Text>
       </View>
       <BlockDivider height={4 * WIDTH_RATIO} />
-      <Text style={styles.description}>{cards.length} items</Text>
+      <Text style={styles.description}>{transformedCards.length} items</Text>
       <View style={styles.footer}>
         <FastImage source={Images.placeholder} style={styles.avatar} />
-        <Text style={styles.h9Bold}>{username}</Text>
+        <Text style={styles.h9Bold}>{name}</Text>
       </View>
     </TouchableOpacity>
   );

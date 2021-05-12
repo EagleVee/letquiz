@@ -3,21 +3,59 @@ import { createReducer } from "reduxsauce";
 import { StudySetTypes } from "Redux/Actions/StudySetActions";
 import TransformHelper from "../../Utils/TransformHelper";
 import StudySetTransform from "../../Transforms/StudySetTransform";
-import { studySets } from "../../Fixtures/StudySet";
 
 export const INITIAL_STATE = Immutable({
-  currentStudySets: [],
+  userStudySets: [],
+  studySets: [],
 });
 
-export const getCurrentStudySetsSuccess = (state, action) => {
+export const getStudySetsSuccess = (state, action) => {
   return state.merge({
-    currentStudySets: TransformHelper.transformData(
+    studySets: TransformHelper.transformData(
+      action.response.data,
+      StudySetTransform,
+    ),
+  });
+};
+export const getUserStudySetsSuccess = (state, action) => {
+  return state.merge({
+    userStudySets: TransformHelper.transformData(
       action.response.data,
       StudySetTransform,
     ),
   });
 };
 
+export const createStudySetSuccess = (state, action) => {
+  const transformedSet = TransformHelper.transformData(
+    action.response.data,
+    StudySetTransform,
+  );
+  const _studySets = [...state.userStudySets];
+  _studySets.unshift(transformedSet);
+  return state.merge({
+    userStudySets: _studySets,
+  });
+};
+
+export const updateStudySetSuccess = (state, action) => {
+  const transformedSet = TransformHelper.transformData(
+    action.response.data,
+    StudySetTransform,
+  );
+  const _studySets = [...state.userStudySets];
+  const findIndex = _studySets.findIndex(e => e._id === transformedSet._id);
+  if (findIndex >= 0) {
+    _studySets[findIndex] = transformedSet;
+  }
+  return state.merge({
+    userStudySets: _studySets,
+  });
+};
+
 export const reducer = createReducer(INITIAL_STATE, {
-  [StudySetTypes.GET_STUDY_SETS_SUCCESS]: getCurrentStudySetsSuccess,
+  [StudySetTypes.GET_STUDY_SETS_SUCCESS]: getStudySetsSuccess,
+  [StudySetTypes.GET_USER_STUDY_SETS_SUCCESS]: getUserStudySetsSuccess,
+  [StudySetTypes.CREATE_STUDY_SET_SUCCESS]: createStudySetSuccess,
+  [StudySetTypes.UPDATE_STUDY_SET_SUCCESS]: updateStudySetSuccess,
 });

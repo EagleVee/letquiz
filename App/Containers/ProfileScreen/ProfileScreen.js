@@ -18,6 +18,7 @@ import { RNScrollView } from "Components/RNComponents";
 import AppLogoWithVersion from "Components/AppLogoWithVersion/AppLogoWithVersion";
 import { WithAuth } from "../../Business/WithAuth";
 import { useModal } from "../../Hooks/useModal";
+import LinkingService from "../../Services/LinkingService";
 
 function ProfileScreen(props) {
   const { styles, logout } = props;
@@ -50,6 +51,10 @@ function ProfileScreen(props) {
     });
   }
 
+  function onSupportPress() {
+    LinkingService.openURL("https://help.quizlet.com/hc/en-us");
+  }
+
   return (
     <Container statusBarColor={Colors.cardBackground}>
       <RNScrollView>
@@ -60,7 +65,7 @@ function ProfileScreen(props) {
         <View style={styles.profileMain}>
           <BlockDivider height={12 * WIDTH_RATIO} />
           <ProfileRouteBar
-            onPress={onBarPress.bind(this, "WorkoutHistoryScreen")}
+            onPress={onSupportPress}
             title={I18n.t("ProfileScreen.SuggestionsAndSupport")}
             Icon={Svgs.Profile.ChatBubble}
             iconFill={theme === LIGHT_THEME ? "black" : null}

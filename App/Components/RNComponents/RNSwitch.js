@@ -43,11 +43,11 @@ function RNSwitch(props) {
     }),
     borderColor: interpolateColors(switchTranslate, {
       inputRange: [0, 14],
-      outputColorRange: [Colors.background, Colors.primaryButton],
+      outputColorRange: [Colors.background, Colors.primaryNeon],
     }),
     shadowColor: interpolateColors(switchTranslate, {
       inputRange: [0, 14],
-      outputColorRange: ["rgba(132, 30, 22, 0.16)", "transparent"],
+      outputColorRange: ["rgba(43, 173, 173, 0.16)", "transparent"],
     }),
     borderWidth: 2 * WIDTH_RATIO,
     shadowOffset: {
@@ -61,11 +61,11 @@ function RNSwitch(props) {
   const interpolateThumbStyle = {
     backgroundColor: interpolateColors(switchTranslate, {
       inputRange: [0, 14],
-      outputColorRange: [Colors.primaryButton, Colors.white],
+      outputColorRange: [Colors.primaryNeon, Colors.white],
     }),
     borderColor: interpolateColors(switchTranslate, {
       inputRange: [0, 14],
-      outputColorRange: [Colors.buttonBackground, Colors.primaryButton],
+      outputColorRange: [Colors.buttonBackground, Colors.primaryNeon],
     }),
   };
   const memoizedOnSwitchPressCallback = React.useCallback(() => {

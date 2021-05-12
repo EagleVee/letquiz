@@ -9,40 +9,18 @@ import CreateActionModal from "../Components/CreateActionModal/CreateActionModal
 import StudySetDetailScreen from "../Containers/StudySetDetailScreen/StudySetDetailScreen";
 import FlashCardScreen from "../Containers/FlashCardScreen/FlashCardScreen";
 import StudySetEditScreen from "../Containers/StudySetEditScreen/StudySetEditScreen";
+import RegisterScreen from "../Containers/RegisterScreen/RegisterScreen";
 
 const Stack = createStackNavigator();
 
 function AppNavigation(props) {
-  const [actionModalVisible, setActionModalVisible] = useState(false);
-
-  function onCloseActionModal() {
-    setActionModalVisible(false);
-  }
-
-  function onOpenActionModal() {
-    setActionModalVisible(true);
-  }
-
-  function TabWithActionModal(props) {
-    return (
-      <>
-        <TabNavigator {...props} onCreateTabPress={onOpenActionModal} />
-        <CreateActionModal
-          isVisible={actionModalVisible}
-          onBackdropPress={onCloseActionModal}
-          onBackButtonPress={onCloseActionModal}
-          onVisibleChange={setActionModalVisible}
-        />
-      </>
-    );
-  }
-
   return (
     <NavigationContainer>
       <Stack.Navigator headerMode="none" initialRouteName="LaunchScreen">
         <Stack.Screen name="LaunchScreen" component={LaunchScreen} />
-        <Stack.Screen name="Tab" component={TabWithActionModal} />
+        <Stack.Screen name="Tab" component={TabNavigator} />
         <Stack.Screen name="WelcomeScreen" component={WelcomeScreen} />
+        <Stack.Screen name="RegisterScreen" component={RegisterScreen} />
         <Stack.Screen name="LoginScreen" component={LoginScreen} />
         <Stack.Screen
           name="StudySetDetailScreen"

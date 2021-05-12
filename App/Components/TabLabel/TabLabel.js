@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Text } from "react-native";
+import { View, Text, TouchableWithoutFeedback } from "react-native";
 import { TabLabelStyle } from "./TabLabelStyle";
 import PropTypes from "prop-types";
 import { compose } from "ramda";

@@ -21,6 +21,7 @@ export const UnderlineTextInputStyle = OriginalComponent => props => {
       borderBottomColor: Colors.primaryTitle,
     },
     input: {
+      flex: 1,
       ...ApplicationStyles.text.h8,
     },
     inputDescription: {

@@ -10,6 +10,11 @@ export const CreateActionModalStyle = OriginalComponent => props => {
   const styles = StyleSheet.create({
     ...ApplicationStyles.utils,
     ...ApplicationStyles.text,
+    bottom: {
+      flex: 1,
+      backgroundColor: Colors.cardBackground,
+      justifyContent: "flex-end",
+    },
     container: {
       backgroundColor: Colors.cardBackground,
       paddingBottom: tabBottom,

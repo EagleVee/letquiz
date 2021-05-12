@@ -6,10 +6,12 @@ import {
   authenticateSuccess,
   refreshToken,
   logoutToken,
+  register,
 } from "Sagas/AuthSagas";
 
 const mapAuthSagas = [
   takeLatest(AuthTypes.LOGIN, login),
+  takeLatest(AuthTypes.REGISTER, register),
   takeLatest(AuthTypes.LOGIN_SOCIAL, loginSocial),
   takeLatest(AuthTypes.LOGOUT_TOKEN, logoutToken),
   takeLatest(AuthTypes.AUTHENTICATE_SUCCESS, authenticateSuccess),

@@ -9,8 +9,8 @@ export const WithStartup = OriginalComponent => props => {
 
   function startupCallback(isAuthenticated) {
     if (isAuthenticated) {
-      // NavigationMethods.resetStackToTab();
-      NavigationMethods.resetStack("StudySetEditScreen");
+      NavigationMethods.resetStackToTab();
+      // NavigationMethods.resetStack("StudySetEditScreen");
     } else {
       NavigationMethods.resetStack("WelcomeScreen");
     }

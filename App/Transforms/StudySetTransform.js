@@ -7,21 +7,22 @@ export default class StudySetTransform extends BaseTransform {
     _id: "",
     title: "",
     description: "",
-    cards: [
-      {
-        term: "XCode",
-        definition: "IDE of MacOS",
-      },
-    ],
+    cards: [],
+    creator: {},
   };
 
   transformedCards = [];
+  transformedCreator = [];
   constructor(params = {}) {
     super(params);
     this.appendFields(params);
     this.transformedCards = TransformHelper.transformData(
       this.cards,
       CardTransform,
+    );
+    this.transformedCreator = TransformHelper.transformData(
+      this.creator,
+      CustomerTransform,
     );
   }
 }

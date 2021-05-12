@@ -1,7 +1,11 @@
 import { DELETE, GET, POST, PUT } from "./base";
 
-export function getStudySets(params = {}) {
+export function getUserStudySets(params = {}) {
   const path = "/study-set/user";
+  return GET(path, params);
+}
+export function getStudySets(params = {}) {
+  const path = "/study-set";
   return GET(path, params);
 }
 

@@ -11,16 +11,34 @@ import { useThemeColors } from "../../Hooks/useThemeColors";
 import lodash from "lodash";
 import BlockDivider from "../../Components/Dividers/BlockDivider";
 import SimpleTabBar from "../../Components/TabBars/SimpleTabBar";
+import { WithStudySetFetch } from "../../Business/WithStudySetFetch";
+import StudySetItem from "../../Components/StudySetItem/StudySetItem";
 
 function SearchScreen(props) {
-  const { styles, navigation, route } = props;
+  const { styles, getStudySets, studySet } = props;
   const NavigationMethods = useNavigationMethods();
   const Colors = useThemeColors();
+  const [searchResult, setSearchResult] = useState([]);
   const [searchValue, setSearchValue] = useState("");
   const [tabIndex, setTabIndex] = useState(0);
   const searchInputRef = useRef();
 
-  const debouncedSearch = lodash.debounce(() => {}, 300);
+  function onSearchSuccess(response) {
+    if (tabIndex === 0) {
+      setSearchResult(studySet.studySets);
+    }
+  }
+
+  const debouncedSearch = lodash.debounce(text => {
+    if (tabIndex === 0) {
+      const params = {
+        search: text,
+        paginate: 10,
+        page: 1,
+      };
+      getStudySets(params, onSearchSuccess);
+    }
+  }, 300);
 
   function onSearchTextChange(text) {
     setSearchValue(text);
@@ -35,9 +53,25 @@ function SearchScreen(props) {
     setTabIndex(index);
   }
 
+  function onStudySetPress(item) {
+    NavigationMethods.goToScreen("StudySetDetailScreen", {
+      studySet: item,
+    });
+  }
+
   function renderSearchItem({ item, index }) {
+    if (tabIndex === 0) {
+      return (
+        <StudySetItem studySet={item} index={index} onPress={onStudySetPress} />
+      );
+    }
+
     return <View />;
   }
+
+  useEffect(() => {
+    setSearchResult([]);
+  }, [tabIndex]);
 
   function renderListEmpty() {
     return searchValue.length > 0 ? (
@@ -90,12 +124,17 @@ function SearchScreen(props) {
         />
       </View>
       <RNFlatList
-        data={[]}
+        data={searchResult}
+        contentContainerStyle={styles.listContent}
         renderItem={renderSearchItem}
+        dividerHeight={12 * WIDTH_RATIO}
         ListEmptyComponent={renderListEmpty}
       />
     </Container>
   );
 }
 
-export default compose(SearchScreenStyle)(SearchScreen);
+export default compose(
+  SearchScreenStyle,
+  WithStudySetFetch,
+)(SearchScreen);

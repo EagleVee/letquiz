@@ -10,6 +10,7 @@ export const BackHeaderBarStyle = OriginalComponent => props => {
   const {
     notSafeArea = false,
     backgroundColor = Colors.cardBackground,
+    titleStyle = {},
   } = props;
   const styles = StyleSheet.create({
     ...ApplicationStyles.utils,
@@ -29,7 +30,7 @@ export const BackHeaderBarStyle = OriginalComponent => props => {
     title: {
       flex: 1,
       ...ApplicationStyles.text.h7,
-      // textAlign: "center",
+      ...titleStyle,
     },
     placeholder: {
       width: "20%",

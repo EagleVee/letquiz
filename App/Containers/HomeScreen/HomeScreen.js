@@ -16,12 +16,13 @@ import { useSelector } from "react-redux";
 import { WithHomeFetch } from "../../Business/WithHomeFetch";
 import { WithStudySetFetch } from "../../Business/WithStudySetFetch";
 import BlockTitle from "../../Components/Dividers/BlockTitle";
+import { WithModalRedux } from "../../Business/WithModalRedux";
 
 function HomeScreen(props) {
-  const { styles, navigation, route, onCreateTabPress } = props;
+  const { styles, navigation, route, setCreateActionModalVisible } = props;
   const NavigationMethods = useNavigationMethods();
   const Colors = useThemeColors();
-  const { currentStudySets } = useSelector(state => state.studySet);
+  const { userStudySets } = useSelector(state => state.studySet);
   const customer = useSelector(state => state.customer);
 
   function onSearchPress() {
@@ -74,7 +75,9 @@ function HomeScreen(props) {
             </View>
           </TouchableOpacity>
           <BlockDivider height={16 * WIDTH_RATIO} />
-          <TouchableOpacity style={styles.card} onPress={onCreateTabPress}>
+          <TouchableOpacity
+            style={styles.card}
+            onPress={setCreateActionModalVisible.bind(this, true)}>
             <Feather
               name={"plus-circle"}
               size={36 * WIDTH_RATIO}
@@ -94,7 +97,7 @@ function HomeScreen(props) {
         <BlockDivider height={16 * WIDTH_RATIO} />
         <BlockTitle title={"Sets"} />
         <RNFlatList
-          data={currentStudySets}
+          data={userStudySets}
           renderItem={renderStudySetItem}
           dividerHeight={12 * WIDTH_RATIO}
           dividerWidth={16 * WIDTH_RATIO}
@@ -109,5 +112,6 @@ function HomeScreen(props) {
 export default compose(
   HomeScreenStyle,
   WithStudySetFetch,
+  WithModalRedux,
   WithHomeFetch,
 )(HomeScreen);

@@ -8,6 +8,9 @@ export const WithStudySetFetch = OriginalComponent => props => {
   function getStudySets(params, onSuccess, onFailed) {
     dispatch(StudySetActions.getStudySets(params, onSuccess, onFailed));
   }
+  function getUserStudySets(params, onSuccess, onFailed) {
+    dispatch(StudySetActions.getUserStudySets(params, onSuccess, onFailed));
+  }
   function createStudySet(params, onSuccess, onFailed) {
     dispatch(StudySetActions.createStudySet(params, onSuccess, onFailed));
   }
@@ -20,7 +23,9 @@ export const WithStudySetFetch = OriginalComponent => props => {
   return (
     <OriginalComponent
       {...props}
+      studySet={studySet}
       getStudySets={getStudySets}
+      getUserStudySets={getUserStudySets}
       createStudySet={createStudySet}
       updateStudySet={updateStudySet}
       deleteStudySet={deleteStudySet}

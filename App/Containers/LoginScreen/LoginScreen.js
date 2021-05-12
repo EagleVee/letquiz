@@ -16,6 +16,7 @@ import lodash from "lodash";
 import { validateEmail } from "../../Utils/validator";
 import { useModal } from "../../Hooks/useModal";
 import { useSetState } from "../../Hooks/useSetState";
+import UnderlineTextInput from "../../Components/UnderlineTextInput/UnderlineTextInput";
 
 function LoginScreen(props) {
   const { styles, login } = props;
@@ -26,12 +27,6 @@ function LoginScreen(props) {
     email: "",
     password: "",
   });
-
-  function onTextChange(key, value) {
-    setState({
-      [key]: value,
-    });
-  }
 
   function onLoginPress() {
     if (validateEmail(state.email)) {
@@ -57,18 +52,24 @@ function LoginScreen(props) {
       <View style={styles.main}>
         <Text style={styles.h7}>LOGIN WITH YOUR ACCOUNT</Text>
         <BlockDivider height={24 * WIDTH_RATIO} />
-        <LoginInput
+        <UnderlineTextInput
           value={state.email}
-          onChangeText={onTextChange}
-          inputKey={"email"}
+          onChangeText={text => {
+            setState({
+              email: text,
+            });
+          }}
           placeholder={"Your email"}
           title={"EMAIL"}
         />
         <BlockDivider height={12 * WIDTH_RATIO} />
-        <LoginInput
+        <UnderlineTextInput
           value={state.password}
-          onChangeText={onTextChange}
-          inputKey={"password"}
+          onChangeText={text => {
+            setState({
+              password: text,
+            });
+          }}
           secureTextEntry={true}
           placeholder={"Your password"}
           title={"PASSWORD"}

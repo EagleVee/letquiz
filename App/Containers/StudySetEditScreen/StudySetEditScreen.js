@@ -49,6 +49,20 @@ function StudySetEditScreen(props) {
     }
   }, []);
 
+  function onCreateSuccess(response) {
+    NavigationMethods.goBack();
+  }
+
+  function onCreateFailed(response) {
+    if (response.message) {
+      Modal.showFailedModal({ content: response.message });
+    } else {
+      Modal.showFailedModal({
+        content: "Some errors happened while creating your set",
+      });
+    }
+  }
+
   function onDonePress() {
     const verifiedCards = getVerifiedCards();
     if (studySet.title.length === 0) {
@@ -65,9 +79,9 @@ function StudySetEditScreen(props) {
       cards: verifiedCards,
     };
     if (studySet._id.length > 0) {
-      updateStudySet(studySet._id, params);
+      updateStudySet(studySet._id, params, onCreateSuccess, onCreateFailed);
     } else {
-      createStudySet(params);
+      createStudySet(params, onCreateSuccess, onCreateFailed);
     }
   }
 
@@ -106,6 +120,11 @@ function StudySetEditScreen(props) {
   function onTitleChange(text) {
     setStudySet({
       title: text,
+    });
+  }
+  function onDescriptionChange(text) {
+    setStudySet({
+      description: text,
     });
   }
 
@@ -156,12 +175,14 @@ function StudySetEditScreen(props) {
         <View style={styles.cardMain}>
           <UnderlineTextInput
             value={item.term}
+            multiline={true}
             onChangeText={text => onTermChange(index, text)}
             title={"TERM"}
           />
           <BlockDivider height={12 * WIDTH_RATIO} />
           <UnderlineTextInput
             value={item.definition}
+            multiline={true}
             onChangeText={text => onDefinitionChange(index, text)}
             title={"DEFINITION"}
           />
@@ -196,7 +217,7 @@ function StudySetEditScreen(props) {
           />
           <UnderlineTextInput
             value={studySet.description}
-            onChangeText={onTitleChange}
+            onChangeText={onDescriptionChange}
             title={"DESCRIPTION"}
           />
         </View>

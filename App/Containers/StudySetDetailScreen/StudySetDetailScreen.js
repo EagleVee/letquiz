@@ -17,21 +17,30 @@ import Entypo from "react-native-vector-icons/Entypo";
 import ShareService from "../../Services/ShareService";
 import { studySets } from "../../Fixtures/StudySet";
 import StudySetNavigator from "./StudySetNavigator/StudySetNavigator";
+import { useSelector } from "react-redux";
 
 function StudySetDetailScreen(props) {
   const { styles, navigation, route } = props;
   const NavigationMethods = useNavigationMethods();
   const Colors = useThemeColors();
-  const studySet = NavigationMethods.getParam(
+  const paramStudySet = NavigationMethods.getParam(
     "studySet",
-    new StudySetTransform(studySets[0]),
+    new StudySetTransform(),
   );
-  const { transformedCards } = studySet;
+  const { studySetDetail, customer } = useSelector(state => state);
+  const studySet = studySetDetail[paramStudySet._id] || paramStudySet;
+  const { transformedCards, title } = studySet;
 
   async function onSharePress() {
     await ShareService.shareURL({
       message: "Check out this awesome study set!",
       url: "https://quizlet.com",
+    });
+  }
+
+  function onEditPress() {
+    NavigationMethods.goToScreen("StudySetEditScreen", {
+      studySet: studySet,
     });
   }
 
@@ -45,20 +54,22 @@ function StudySetDetailScreen(props) {
             color={Colors.primaryTitle}
           />
         </TouchableOpacity>
-        <TouchableOpacity style={styles.utilButton}>
-          <Feather
-            name={"more-vertical"}
-            size={20 * WIDTH_RATIO}
-            color={Colors.primaryTitle}
-          />
-        </TouchableOpacity>
+        {studySet.transformedCreator._id === customer._id && (
+          <TouchableOpacity style={styles.utilButton} onPress={onEditPress}>
+            <Feather
+              name={"edit"}
+              size={20 * WIDTH_RATIO}
+              color={Colors.primaryTitle}
+            />
+          </TouchableOpacity>
+        )}
       </View>
     );
   }
 
   return (
     <Container statusBarColor={Colors.cardBackground}>
-      <BackHeaderBar renderRight={renderRightHeader} />
+      <BackHeaderBar renderRight={renderRightHeader} title={title} />
       <RNScrollView>
         <StudySetCarousel cards={transformedCards} />
         <StudySetNavigator cards={transformedCards} />

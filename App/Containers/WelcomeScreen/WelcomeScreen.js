@@ -38,7 +38,7 @@ function WelcomeScreen(props) {
   }
 
   function onRegisterPress() {
-    NavigationMethods.resetStackToTab();
+    NavigationMethods.goToScreen("RegisterScreen");
   }
 
   function onLoginPress() {

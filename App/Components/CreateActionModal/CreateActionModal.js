@@ -9,33 +9,34 @@ import { ModalProps } from "react-native-modal";
 import { WIDTH_RATIO } from "../../Themes/Metrics";
 import { useThemeColors } from "../../Hooks/useThemeColors";
 import { Feather, Ionicons } from "../RNComponents/RNVectorIcons";
+import { WithModalRedux } from "../../Business/WithModalRedux";
 
 function CreateActionModal(props: ModalProps) {
   const {
     styles,
     isVisible,
-    onVisibleChange = () => {},
+    setCreateActionModalVisible,
     ...otherProps
   } = props;
   const NavigationMethods = useNavigationMethods();
   const Colors = useThemeColors();
-  const [visible, setVisible] = useState(props.isVisible);
 
-  useEffect(() => {
-    setVisible(props.isVisible);
-  }, [props.isVisible]);
-
-  useEffect(() => {
-    onVisibleChange(visible);
-  }, [visible]);
+  function closeActionModal() {
+    setCreateActionModalVisible(false);
+  }
 
   function onCreateStudySet() {
-    setVisible(false);
-    NavigationMethods.goToScreen("StudySetDetailScreen");
+    closeActionModal();
+    NavigationMethods.goToScreen("StudySetEditScreen");
   }
 
   return (
-    <AppModal position={"bottom"} {...otherProps} isVisible={visible}>
+    <AppModal
+      position={"bottom"}
+      isVisible={isVisible}
+      onBackdropPress={closeActionModal}
+      onBackButtonPress={closeActionModal}
+      {...otherProps}>
       <View style={styles.container}>
         <TouchableOpacity
           onPress={onCreateStudySet}
@@ -80,4 +81,7 @@ CreateActionModal.defaultProps = {
   isVisible: false,
 };
 
-export default compose(CreateActionModalStyle)(CreateActionModal);
+export default compose(
+  CreateActionModalStyle,
+  WithModalRedux,
+)(CreateActionModal);

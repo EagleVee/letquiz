@@ -12,7 +12,7 @@ function ProfileScreenHeader(props) {
   const { styles, customer, isAuthenticated } = props;
   const Svgs = useThemeSvgs();
   const NavigationMethods = useNavigationMethods();
-  const { avatarSource, username, email } = customer;
+  const { avatarSource, name, email } = customer;
 
   function onLoginSuccess() {
     NavigationMethods.resetStackToTab();
@@ -35,7 +35,7 @@ function ProfileScreenHeader(props) {
           resizeMode="cover"
         />
         <View style={styles.nameContainer}>
-          <Text style={styles.h6Bold}>{username}</Text>
+          <Text style={styles.h6Bold}>{name}</Text>
           <Text style={styles.email}>{email}</Text>
         </View>
       </View>
