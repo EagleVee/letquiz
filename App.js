@@ -1,6 +1,5 @@
 import React from "react";
 import AppNavigation from "Navigation/AppNavigation";
-import CodePush from "react-native-code-push";
 import { Provider } from "react-redux";
 import createStore from "Redux";
 import AppModalProvider from "Providers/ModalProvider";
@@ -20,4 +19,4 @@ function App() {
   );
 }
 
-export default CodePush(App);
+export default App;
