@@ -71,14 +71,20 @@ function FlashCardScreen(props) {
     const _unlearned = [...unlearned];
     _unlearned.push(learnData[index]);
     setUnlearned(_unlearned);
-    setProgress(progress + 1);
+    increaseProgress();
   }
 
   function onSwipedRight(index) {
     const _learned = [...learned];
     _learned.push(learnData[index]);
     setLearned(_learned);
-    setProgress(progress + 1);
+    increaseProgress();
+  }
+
+  function increaseProgress() {
+    if (progress < learnData.length) {
+      setProgress(progress + 1);
+    }
   }
 
   function renderEmpty() {
