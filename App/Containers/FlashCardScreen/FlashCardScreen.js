@@ -149,7 +149,6 @@ function FlashCardScreen(props) {
   function renderStack() {
     return (
       <CardStack
-        key={Date.now()}
         style={styles.cardStack}
         verticalSwipe={false}
         horizontalSwipe={true}

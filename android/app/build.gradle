@@ -8,7 +8,6 @@ buildscript {
 
 apply plugin: "com.android.application"
 // apply plugin: 'com.google.gms.google-services' // <- Add this line
-
 apply from: project(':react-native-config').projectDir.getPath() + "/dotenv.gradle"
 
 import com.android.build.OutputFile
@@ -142,7 +141,7 @@ android {
     }
 
     defaultConfig {
-        resValue "string", "build_config_package", "com.trainery_app"
+        resValue "string", "build_config_package", "com.letquiz"
         missingDimensionStrategy 'react-native-camera', 'general'
         applicationId "com.eaglevee.quizlet.quiz"
         minSdkVersion rootProject.ext.minSdkVersion

@@ -34,7 +34,7 @@ function LoginScreen(props) {
         state.email,
         state.password,
         NavigationMethods.resetStackToTab,
-        () => {},
+        onLoginFailed,
       );
     } else {
       Modal.showFailedModal({
@@ -44,12 +44,24 @@ function LoginScreen(props) {
     }
   }
 
+  function onLoginFailed(response) {
+    if (response.message) {
+      Modal.showFailedModal({
+        content: response.message,
+      });
+    } else {
+      Modal.showFailedModal({
+        content: "Some errors happened, please try again",
+      });
+    }
+  }
+
   function onForgotPasswordPress() {}
 
   return (
     <Container statusBarColor={Colors.cardBackground}>
       <BackHeaderBar />
-      <View style={styles.main}>
+      <RNScrollView style={styles.main}>
         <Text style={styles.h7}>LOGIN WITH YOUR ACCOUNT</Text>
         <BlockDivider height={24 * WIDTH_RATIO} />
         <UnderlineTextInput
@@ -81,7 +93,7 @@ function LoginScreen(props) {
           style={styles.forgotPasswordButton}>
           <Text style={styles.h8BoldPrimary}>Forgot your password?</Text>
         </TouchableOpacity>
-      </View>
+      </RNScrollView>
       <View style={styles.footer}>
         <Text style={[styles.h8Bold, styles.alignCenter]}>
           By login, I accept{" "}

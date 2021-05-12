@@ -66,7 +66,7 @@ function RegisterScreen(props) {
   return (
     <Container statusBarColor={Colors.cardBackground}>
       <BackHeaderBar />
-      <View style={styles.main}>
+      <RNScrollView style={styles.main}>
         <Text style={styles.h7}>REGISTER A NEW ACCOUNT</Text>
         <BlockDivider height={24 * WIDTH_RATIO} />
         <UnderlineTextInput
@@ -115,7 +115,7 @@ function RegisterScreen(props) {
         />
         <BlockDivider height={40 * WIDTH_RATIO} />
         <PrimaryButton title={"Register"} onPress={onRegisterPress} />
-      </View>
+      </RNScrollView>
       <View style={styles.footer}>
         <Text style={[styles.h8Bold, styles.alignCenter]}>
           By register, I accept{" "}

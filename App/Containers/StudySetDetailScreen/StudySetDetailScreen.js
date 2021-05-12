@@ -67,6 +67,12 @@ function StudySetDetailScreen(props) {
     );
   }
 
+  function onFlashCardPress() {
+    NavigationMethods.goToScreen("FlashCardScreen", {
+      cards: transformedCards,
+    });
+  }
+
   return (
     <Container statusBarColor={Colors.cardBackground}>
       <BackHeaderBar renderRight={renderRightHeader} title={title} />
@@ -79,6 +85,7 @@ function StudySetDetailScreen(props) {
         <PrimaryButton
           title={"Study this set"}
           isAvailable={true}
+          onPress={onFlashCardPress}
           labelStyle={styles.h8Bold}
         />
       </View>

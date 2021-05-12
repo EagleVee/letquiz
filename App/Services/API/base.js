@@ -39,7 +39,7 @@ const checkStatus = response => {
 };
 
 const logError = error => {
-  console.log("ERROR RESPONSE ", error.config.url, ": ", error.response);
+  console.log("ERROR RESPONSE ", error);
   let errorData = {};
   if (error.response) {
     const { status, data } = error.response;
