@@ -10,13 +10,14 @@ import StudySetDetailScreen from "../Containers/StudySetDetailScreen/StudySetDet
 import FlashCardScreen from "../Containers/FlashCardScreen/FlashCardScreen";
 import StudySetEditScreen from "../Containers/StudySetEditScreen/StudySetEditScreen";
 import RegisterScreen from "../Containers/RegisterScreen/RegisterScreen";
+import LearnScreen from "../Containers/LearnScreen/LearnScreen";
 
 const Stack = createStackNavigator();
 
 function AppNavigation(props) {
   return (
     <NavigationContainer>
-      <Stack.Navigator headerMode="none" initialRouteName="LaunchScreen">
+      <Stack.Navigator headerMode="none" initialRouteName="LearnScreen">
         <Stack.Screen name="LaunchScreen" component={LaunchScreen} />
         <Stack.Screen name="Tab" component={TabNavigator} />
         <Stack.Screen name="WelcomeScreen" component={WelcomeScreen} />
@@ -31,6 +32,7 @@ function AppNavigation(props) {
           component={StudySetEditScreen}
         />
         <Stack.Screen name="FlashCardScreen" component={FlashCardScreen} />
+        <Stack.Screen name="LearnScreen" component={LearnScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );

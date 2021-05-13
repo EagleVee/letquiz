@@ -13,21 +13,32 @@ function RNProgressBar(props) {
   const {
     progress,
     animationDuration,
-    backgroundColor = Colors.primaryText,
+    backgroundColor = Colors.primaryGrey,
+    progressColor = Colors.progress,
+    showThumb = true,
   } = props;
 
   const styles = useMemo(() => {
     return {
       container: {
         backgroundColor: backgroundColor,
-        height: 4,
+        height: 2 * WIDTH_RATIO,
         width: "100%",
         flexDirection: "row",
       },
       progress: {
         width: `${progress}%`,
-        height: 4 * WIDTH_RATIO,
-        backgroundColor: Colors.primaryRed,
+        height: 2 * WIDTH_RATIO,
+        backgroundColor: progressColor,
+      },
+      progressThumb: {
+        position: "absolute",
+        right: -4 * WIDTH_RATIO,
+        top: -3 * WIDTH_RATIO,
+        width: 8 * WIDTH_RATIO,
+        height: 8 * WIDTH_RATIO,
+        borderRadius: 4 * WIDTH_RATIO,
+        backgroundColor: progressColor,
       },
     };
   }, []);
@@ -47,7 +58,9 @@ function RNProgressBar(props) {
   }, [progress]);
   return (
     <View style={styles.container}>
-      <Animatable.View style={styles.progress} ref={progressRef} />
+      <Animatable.View style={styles.progress} ref={progressRef}>
+        {showThumb && <View style={styles.progressThumb} />}
+      </Animatable.View>
     </View>
   );
 }

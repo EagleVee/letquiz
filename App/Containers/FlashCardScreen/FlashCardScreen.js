@@ -16,53 +16,51 @@ import {
   Ionicons,
   MaterialCommunityIcons,
 } from "../../Components/RNComponents/RNVectorIcons";
+import RNProgressBar from "../../Components/RNComponents/RNProgressBar";
+import { randomizeCards } from "../../Utils/cardShuffler";
 
 function FlashCardScreen(props) {
   const { styles, navigation, route } = props;
   const NavigationMethods = useNavigationMethods();
   const Colors = useThemeColors();
   const cards = NavigationMethods.getParam("cards", []);
-  const [progress, setProgress] = useState(0);
+  const [progress, setProgress] = useState(1);
   const [shuffle, setShuffle] = useState(true);
-  const [studyCount, setStudyCount] = useState(0);
   const [learnData, setLearnData] = useState([]);
+  const [learnCount, setLearnCount] = useState(0);
+  const [finished, setFinished] = useState(false);
   const [unlearned, setUnlearned] = useState([]);
   const [learned, setLearned] = useState([]);
   const swiperRef = useRef();
 
-  useEffect(() => {
-    randomizeCard(cards);
-  }, [studyCount]);
+  function randomizeLearnData(cards) {
+    const randomCards = randomizeCards(cards);
+    setLearnSet(randomCards);
+  }
 
-  function randomizeCard(cards) {
-    const randomCards = [...cards].sort(() => (Math.random() > 0.5 ? 1 : -1));
-    setLearnData(randomCards);
+  function setLearnSet(cards) {
+    setLearnData(cards);
+    setLearnCount(learnCount + 1);
+    setFinished(false);
+    setProgress(1);
   }
 
   function onShufflePress() {
     const _shuffle = !shuffle;
     setShuffle(_shuffle);
     if (_shuffle) {
-      randomizeCard(cards);
+      randomizeLearnData(cards);
     } else {
-      setLearnData(cards);
+      setLearnSet(cards);
     }
   }
 
   function renderProgressBar() {
-    const progressBarStyle = {
-      width: `${((progress + 1) / learnData.length) * 100}%`,
-      backgroundColor: Colors.primaryNeon,
-      height: 2 * WIDTH_RATIO,
-    };
-
+    const progressDivided =
+      learnData.length > 0 ? progress / learnData.length : 0;
     return (
       <View style={styles.progressBarContainer}>
-        <View style={styles.progressTrack}>
-          <View style={progressBarStyle}>
-            <View style={styles.progressThumb} />
-          </View>
-        </View>
+        <RNProgressBar progress={progressDivided * 100} />
       </View>
     );
   }
@@ -83,7 +81,9 @@ function FlashCardScreen(props) {
 
   function increaseProgress() {
     if (progress < learnData.length) {
-      setProgress(progress + 1);
+      setProgress(progress);
+    } else {
+      setFinished(true);
     }
   }
 
@@ -136,25 +136,24 @@ function FlashCardScreen(props) {
   }
 
   function onContinue() {
-    randomizeCard(unlearned);
+    randomizeLearnData(unlearned);
     setUnlearned([]);
-    setProgress(0);
   }
 
   function onReset() {
     if (shuffle) {
-      randomizeCard(cards);
+      randomizeLearnData(cards);
     } else {
-      setLearnData(cards);
+      setLearnSet(cards);
     }
     setUnlearned([]);
     setLearned([]);
-    setProgress(0);
   }
 
   function renderStack() {
     return (
       <CardStack
+        key={learnCount.toString()}
         style={styles.cardStack}
         verticalSwipe={false}
         horizontalSwipe={true}
@@ -173,16 +172,20 @@ function FlashCardScreen(props) {
     );
   }
 
+  useEffect(() => {
+    randomizeLearnData(cards);
+  }, []);
+
   return (
     <Container statusBarColor={Colors.cardBackground}>
       <BackHeaderBar
         backgroundColor={Colors.cardBackground}
         titleStyle={styles.headerTitle}
-        title={`${progress + 1} / ${cards.length}`}
+        title={`${progress} / ${learnData.length}`}
       />
       <View style={styles.container}>
         {renderProgressBar()}
-        {progress === learnData.length ? renderEmpty() : renderStack()}
+        {finished ? renderEmpty() : renderStack()}
       </View>
       <View style={styles.footer}>
         <View style={styles.centerRow}>

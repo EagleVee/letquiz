@@ -93,6 +93,9 @@ export const lightThemeColors = {
   tab: {
     line: sharedColors.primaryBorder,
   },
+  progress: sharedColors.primary,
+  active: sharedColors.primaryButton,
+  inactive: sharedColors.primaryGrey,
 };
 
 export const darkThemeColors = {
@@ -145,5 +148,8 @@ export const darkThemeColors = {
   tab: {
     line: sharedColors.darkCard,
   },
+  progress: sharedColors.primaryNeon,
+  active: sharedColors.primaryNeon,
+  inactive: sharedColors.white,
 };
 export default lightThemeColors;
